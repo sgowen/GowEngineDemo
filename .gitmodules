@@ -1,3 +1,6 @@
 [submodule "deps/GowEngine"]
 	path = deps/GowEngine
 	url = https://github.com/sgowen/GowEngine.git
+[submodule "deps/glfw"]
+	path = deps/glfw
+	url = https://github.com/glfw/glfw.git
