@@ -10,7 +10,7 @@
 
 @interface NSEngine : NSObject
 
-- (instancetype)init:(int)framesPerSecond;
+- (instancetype)init;
 
 - (void)createDeviceDependentResources;
 - (void)onWindowSizeChanged:(int)screenWidth :(int)screenHeight :(int)cursorWidth :(int)cursorHeight;

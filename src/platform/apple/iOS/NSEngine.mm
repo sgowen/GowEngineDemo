@@ -6,11 +6,10 @@
 //  Copyright © 2020 Stephen Gowen. All rights reserved.
 //
 
-#import <memory>
-
 #import "NSEngine.hpp"
+
 #include "MainEngineController.hpp"
-#import "Engine.hpp"
+#include "Engine.hpp"
 
 @implementation NSEngine
 {
@@ -19,7 +18,7 @@
     Engine* _engine;
 }
 
-- (NSEngine*)init:(int)framesPerSecond
+- (NSEngine*)init
 {
     _controller = new MainEngineController();
     _engine = new Engine(_controller);

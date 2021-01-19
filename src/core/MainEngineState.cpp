@@ -8,6 +8,7 @@
 
 #include "MainEngineState.hpp"
 
+#include <stdlib.h>
 #include <assert.h>
 
 MainEngineState* MainEngineState::s_instance = NULL;

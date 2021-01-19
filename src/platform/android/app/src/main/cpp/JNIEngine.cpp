@@ -1,9 +1,11 @@
 #include <jni.h>
 
 #include "Engine.hpp"
+#include "MainEngineController.hpp"
 #include "android/JNIAndroidAssetHandler.hpp"
 
 Engine* _engine = NULL;
+MainEngineController* _mainEngineController = NULL;
 
 extern "C"
 JNIEXPORT jobject JNICALL
@@ -101,11 +103,12 @@ Java_com_sgowen_gowenginedemo_Engine_onCursorUp(JNIEnv *env, jobject thiz, jfloa
 
 extern "C"
 JNIEXPORT jobject JNICALL
-Java_com_sgowen_gowenginedemo_Engine_init(JNIEnv *env, jobject thiz, jint frames_per_second)
+Java_com_sgowen_gowenginedemo_Engine_init(JNIEnv *env, jobject thiz)
 {
     if (_engine == NULL)
     {
-        _engine = new Engine(frames_per_second);
+        _mainEngineController = new MainEngineController();
+        _engine = new Engine(_mainEngineController);
     }
 
     return 0;

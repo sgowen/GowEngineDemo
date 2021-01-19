@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB16D1E525B74CD100C340C1 /* shaders in Resources */ = {isa = PBXBuildFile; fileRef = BB16D1E025B74CD100C340C1 /* shaders */; };
+		BB16D1E625B74CD100C340C1 /* shaders in Resources */ = {isa = PBXBuildFile; fileRef = BB16D1E025B74CD100C340C1 /* shaders */; };
+		BB16D1E725B74CD100C340C1 /* json in Resources */ = {isa = PBXBuildFile; fileRef = BB16D1E125B74CD100C340C1 /* json */; };
+		BB16D1E825B74CD100C340C1 /* json in Resources */ = {isa = PBXBuildFile; fileRef = BB16D1E125B74CD100C340C1 /* json */; };
+		BB16D1E925B74CD100C340C1 /* music in Resources */ = {isa = PBXBuildFile; fileRef = BB16D1E225B74CD100C340C1 /* music */; };
+		BB16D1EA25B74CD100C340C1 /* music in Resources */ = {isa = PBXBuildFile; fileRef = BB16D1E225B74CD100C340C1 /* music */; };
+		BB16D1EB25B74CD100C340C1 /* textures in Resources */ = {isa = PBXBuildFile; fileRef = BB16D1E325B74CD100C340C1 /* textures */; };
+		BB16D1EC25B74CD100C340C1 /* textures in Resources */ = {isa = PBXBuildFile; fileRef = BB16D1E325B74CD100C340C1 /* textures */; };
+		BB16D1ED25B74CD100C340C1 /* sounds in Resources */ = {isa = PBXBuildFile; fileRef = BB16D1E425B74CD100C340C1 /* sounds */; };
+		BB16D1EE25B74CD100C340C1 /* sounds in Resources */ = {isa = PBXBuildFile; fileRef = BB16D1E425B74CD100C340C1 /* sounds */; };
 		BB7B046525B644E10021E545 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB7B046425B644E10021E545 /* Assets.xcassets */; };
 		BB7B047525B6455F0021E545 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB7B047425B6455F0021E545 /* main.cpp */; };
 		BB7B08B125B64A620021E545 /* Animation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB7B07B925B646BA0021E545 /* Animation.cpp */; };
@@ -17,15 +27,11 @@
 		BB7B08B625B64A620021E545 /* Assets.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB7B079D25B646BA0021E545 /* Assets.cpp */; };
 		BB7B08B725B64A620021E545 /* CursorConverter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB7B079925B646BA0021E545 /* CursorConverter.cpp */; };
 		BB7B08B825B64A620021E545 /* CursorInputManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB7B07BA25B646BA0021E545 /* CursorInputManager.cpp */; };
-		BB7B08B925B64A620021E545 /* DragView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB7B07A125B646BA0021E545 /* DragView.cpp */; };
 		BB7B08BA25B64A620021E545 /* Engine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB7B07CB25B646BA0021E545 /* Engine.cpp */; };
 		BB7B08BB25B64A620021E545 /* Entity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB7B07A625B646BA0021E545 /* Entity.cpp */; };
 		BB7B08BC25B64A620021E545 /* FPSUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB7B07B625B646BA0021E545 /* FPSUtil.cpp */; };
-		BB7B08BD25B64A620021E545 /* ItemSelectView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB7B07AB25B646BA0021E545 /* ItemSelectView.cpp */; };
-		BB7B08BE25B64A620021E545 /* MainView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB7B079F25B646BA0021E545 /* MainView.cpp */; };
 		BB7B08BF25B64A620021E545 /* OpenGLWrapper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB7B07D625B646BA0021E545 /* OpenGLWrapper.cpp */; };
 		BB7B08C025B64A620021E545 /* Renderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB7B07D925B646BA0021E545 /* Renderer.cpp */; };
-		BB7B08C125B64A620021E545 /* SceneSelectView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB7B07B225B646BA0021E545 /* SceneSelectView.cpp */; };
 		BB7B08C225B64A620021E545 /* ScreenRenderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB7B07DC25B646BA0021E545 /* ScreenRenderer.cpp */; };
 		BB7B08C325B64A620021E545 /* ShaderDescriptor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB7B07D725B646BA0021E545 /* ShaderDescriptor.cpp */; };
 		BB7B08C425B64A620021E545 /* ShaderLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB7B07D525B646BA0021E545 /* ShaderLoader.cpp */; };
@@ -35,7 +41,6 @@
 		BB7B08C825B64A620021E545 /* TextureLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB7B079C25B646BA0021E545 /* TextureLoader.cpp */; };
 		BB7B08C925B64A620021E545 /* TextureManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB7B07C625B646BA0021E545 /* TextureManager.cpp */; };
 		BB7B08CA25B64A620021E545 /* Vector2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB7B07A725B646BA0021E545 /* Vector2.cpp */; };
-		BB7B08CB25B64A620021E545 /* View.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB7B07B325B646BA0021E545 /* View.cpp */; };
 		BB7B08D225B64CF20021E545 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB7B08D125B64CF20021E545 /* OpenGL.framework */; };
 		BB7B08D525B64DFB0021E545 /* context.c in Sources */ = {isa = PBXBuildFile; fileRef = BB7B087D25B646BB0021E545 /* context.c */; };
 		BB7B08D625B64DFB0021E545 /* init.c in Sources */ = {isa = PBXBuildFile; fileRef = BB7B085F25B646BB0021E545 /* init.c */; };
@@ -57,14 +62,6 @@
 		BB7B091325B652D80021E545 /* EngineState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB7B091025B652D80021E545 /* EngineState.cpp */; };
 		BB7B091925B659280021E545 /* MainEngineController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB7B091825B659280021E545 /* MainEngineController.cpp */; };
 		BB7B091D25B659E70021E545 /* MainEngineState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB7B091C25B659E70021E545 /* MainEngineState.cpp */; };
-		BB8BCCD725B6637E005F57B8 /* assets.json in Resources */ = {isa = PBXBuildFile; fileRef = BB7B089325B646BB0021E545 /* assets.json */; };
-		BB8BCCD825B6637E005F57B8 /* shader_000.fsh in Resources */ = {isa = PBXBuildFile; fileRef = BB7B089225B646BB0021E545 /* shader_000.fsh */; };
-		BB8BCCD925B6637E005F57B8 /* shader_000.vsh in Resources */ = {isa = PBXBuildFile; fileRef = BB7B089025B646BB0021E545 /* shader_000.vsh */; };
-		BB8BCCDA25B6637E005F57B8 /* shader_001.fsh in Resources */ = {isa = PBXBuildFile; fileRef = BB7B089125B646BB0021E545 /* shader_001.fsh */; };
-		BB8BCCDB25B6637E005F57B8 /* shader_001.vsh in Resources */ = {isa = PBXBuildFile; fileRef = BB7B088F25B646BB0021E545 /* shader_001.vsh */; };
-		BB8BCCDC25B6637E005F57B8 /* texture_000.png in Resources */ = {isa = PBXBuildFile; fileRef = BB7B088C25B646BB0021E545 /* texture_000.png */; };
-		BB8BCCDD25B6637E005F57B8 /* texture_001.png in Resources */ = {isa = PBXBuildFile; fileRef = BB7B088D25B646BB0021E545 /* texture_001.png */; };
-		BB8BCCDE25B6637E005F57B8 /* texture_002.png in Resources */ = {isa = PBXBuildFile; fileRef = BB7B088E25B646BB0021E545 /* texture_002.png */; };
 		BB8BCCEA25B682E8005F57B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8BCCE925B682E8005F57B8 /* AppDelegate.swift */; };
 		BB8BCCEC25B682E8005F57B8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8BCCEB25B682E8005F57B8 /* SceneDelegate.swift */; };
 		BB8BCCEE25B682E8005F57B8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8BCCED25B682E8005F57B8 /* ViewController.swift */; };
@@ -81,17 +78,13 @@
 		BB8BCD1925B68490005F57B8 /* Assets.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB7B079D25B646BA0021E545 /* Assets.cpp */; };
 		BB8BCD1A25B68490005F57B8 /* CursorConverter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB7B079925B646BA0021E545 /* CursorConverter.cpp */; };
 		BB8BCD1B25B68490005F57B8 /* CursorInputManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB7B07BA25B646BA0021E545 /* CursorInputManager.cpp */; };
-		BB8BCD1C25B68490005F57B8 /* DragView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB7B07A125B646BA0021E545 /* DragView.cpp */; };
 		BB8BCD1D25B68490005F57B8 /* Engine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB7B07CB25B646BA0021E545 /* Engine.cpp */; };
 		BB8BCD1E25B68490005F57B8 /* EngineController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB7B090E25B652D80021E545 /* EngineController.cpp */; };
 		BB8BCD1F25B68490005F57B8 /* EngineState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB7B091025B652D80021E545 /* EngineState.cpp */; };
 		BB8BCD2025B68490005F57B8 /* Entity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB7B07A625B646BA0021E545 /* Entity.cpp */; };
 		BB8BCD2125B68490005F57B8 /* FPSUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB7B07B625B646BA0021E545 /* FPSUtil.cpp */; };
-		BB8BCD2225B68490005F57B8 /* ItemSelectView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB7B07AB25B646BA0021E545 /* ItemSelectView.cpp */; };
-		BB8BCD2325B68490005F57B8 /* MainView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB7B079F25B646BA0021E545 /* MainView.cpp */; };
 		BB8BCD2425B68490005F57B8 /* OpenGLWrapper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB7B07D625B646BA0021E545 /* OpenGLWrapper.cpp */; };
 		BB8BCD2525B68490005F57B8 /* Renderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB7B07D925B646BA0021E545 /* Renderer.cpp */; };
-		BB8BCD2625B68490005F57B8 /* SceneSelectView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB7B07B225B646BA0021E545 /* SceneSelectView.cpp */; };
 		BB8BCD2725B68490005F57B8 /* ScreenRenderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB7B07DC25B646BA0021E545 /* ScreenRenderer.cpp */; };
 		BB8BCD2825B68490005F57B8 /* ShaderDescriptor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB7B07D725B646BA0021E545 /* ShaderDescriptor.cpp */; };
 		BB8BCD2925B68490005F57B8 /* ShaderLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB7B07D525B646BA0021E545 /* ShaderLoader.cpp */; };
@@ -101,19 +94,15 @@
 		BB8BCD2D25B68490005F57B8 /* TextureLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB7B079C25B646BA0021E545 /* TextureLoader.cpp */; };
 		BB8BCD2E25B68490005F57B8 /* TextureManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB7B07C625B646BA0021E545 /* TextureManager.cpp */; };
 		BB8BCD2F25B68490005F57B8 /* Vector2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB7B07A725B646BA0021E545 /* Vector2.cpp */; };
-		BB8BCD3025B68490005F57B8 /* View.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB7B07B325B646BA0021E545 /* View.cpp */; };
 		BB8BCD3325B6849A005F57B8 /* NSAppleAssetHandler.mm in Sources */ = {isa = PBXBuildFile; fileRef = BB7B079525B646BA0021E545 /* NSAppleAssetHandler.mm */; };
-		BB8BCD4425B685D4005F57B8 /* assets.json in Resources */ = {isa = PBXBuildFile; fileRef = BB7B089325B646BB0021E545 /* assets.json */; };
-		BB8BCD4525B685D4005F57B8 /* shader_000.fsh in Resources */ = {isa = PBXBuildFile; fileRef = BB7B089225B646BB0021E545 /* shader_000.fsh */; };
-		BB8BCD4625B685D4005F57B8 /* shader_000.vsh in Resources */ = {isa = PBXBuildFile; fileRef = BB7B089025B646BB0021E545 /* shader_000.vsh */; };
-		BB8BCD4725B685D4005F57B8 /* shader_001.fsh in Resources */ = {isa = PBXBuildFile; fileRef = BB7B089125B646BB0021E545 /* shader_001.fsh */; };
-		BB8BCD4825B685D4005F57B8 /* shader_001.vsh in Resources */ = {isa = PBXBuildFile; fileRef = BB7B088F25B646BB0021E545 /* shader_001.vsh */; };
-		BB8BCD4925B685D4005F57B8 /* texture_000.png in Resources */ = {isa = PBXBuildFile; fileRef = BB7B088C25B646BB0021E545 /* texture_000.png */; };
-		BB8BCD4A25B685D4005F57B8 /* texture_001.png in Resources */ = {isa = PBXBuildFile; fileRef = BB7B088D25B646BB0021E545 /* texture_001.png */; };
-		BB8BCD4B25B685D4005F57B8 /* texture_002.png in Resources */ = {isa = PBXBuildFile; fileRef = BB7B088E25B646BB0021E545 /* texture_002.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BB16D1E025B74CD100C340C1 /* shaders */ = {isa = PBXFileReference; lastKnownFileType = folder; path = shaders; sourceTree = "<group>"; };
+		BB16D1E125B74CD100C340C1 /* json */ = {isa = PBXFileReference; lastKnownFileType = folder; path = json; sourceTree = "<group>"; };
+		BB16D1E225B74CD100C340C1 /* music */ = {isa = PBXFileReference; lastKnownFileType = folder; path = music; sourceTree = "<group>"; };
+		BB16D1E325B74CD100C340C1 /* textures */ = {isa = PBXFileReference; lastKnownFileType = folder; path = textures; sourceTree = "<group>"; };
+		BB16D1E425B74CD100C340C1 /* sounds */ = {isa = PBXFileReference; lastKnownFileType = folder; path = sounds; sourceTree = "<group>"; };
 		BB7B045D25B644E00021E545 /* GowEngineDemo-macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GowEngineDemo-macOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB7B046425B644E10021E545 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB7B046925B644E10021E545 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -169,9 +158,7 @@
 		BB7B079C25B646BA0021E545 /* TextureLoader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TextureLoader.cpp; sourceTree = "<group>"; };
 		BB7B079D25B646BA0021E545 /* Assets.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Assets.cpp; sourceTree = "<group>"; };
 		BB7B079E25B646BA0021E545 /* ShaderLoader.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ShaderLoader.hpp; sourceTree = "<group>"; };
-		BB7B079F25B646BA0021E545 /* MainView.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MainView.cpp; sourceTree = "<group>"; };
 		BB7B07A025B646BA0021E545 /* OpenGLWrapper.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = OpenGLWrapper.hpp; sourceTree = "<group>"; };
-		BB7B07A125B646BA0021E545 /* DragView.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DragView.cpp; sourceTree = "<group>"; };
 		BB7B07A225B646BA0021E545 /* ShaderDescriptor.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ShaderDescriptor.hpp; sourceTree = "<group>"; };
 		BB7B07A325B646BA0021E545 /* AssetHandler.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AssetHandler.cpp; sourceTree = "<group>"; };
 		BB7B07A425B646BA0021E545 /* Renderer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Renderer.hpp; sourceTree = "<group>"; };
@@ -181,20 +168,16 @@
 		BB7B07A825B646BA0021E545 /* FPSUtil.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FPSUtil.hpp; sourceTree = "<group>"; };
 		BB7B07A925B646BA0021E545 /* Macros.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Macros.hpp; sourceTree = "<group>"; };
 		BB7B07AA25B646BA0021E545 /* Animation.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Animation.hpp; sourceTree = "<group>"; };
-		BB7B07AB25B646BA0021E545 /* ItemSelectView.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ItemSelectView.cpp; sourceTree = "<group>"; };
 		BB7B07AC25B646BA0021E545 /* CursorEvent.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CursorEvent.hpp; sourceTree = "<group>"; };
 		BB7B07AD25B646BA0021E545 /* ShaderInput.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ShaderInput.hpp; sourceTree = "<group>"; };
 		BB7B07AE25B646BA0021E545 /* ShaderUniform.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ShaderUniform.hpp; sourceTree = "<group>"; };
 		BB7B07AF25B646BA0021E545 /* CursorInputManager.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CursorInputManager.hpp; sourceTree = "<group>"; };
 		BB7B07B025B646BA0021E545 /* AssetHandlerFactory.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AssetHandlerFactory.cpp; sourceTree = "<group>"; };
 		BB7B07B125B646BA0021E545 /* TextureManager.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = TextureManager.hpp; sourceTree = "<group>"; };
-		BB7B07B225B646BA0021E545 /* SceneSelectView.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SceneSelectView.cpp; sourceTree = "<group>"; };
-		BB7B07B325B646BA0021E545 /* View.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = View.cpp; sourceTree = "<group>"; };
 		BB7B07B425B646BA0021E545 /* FileData.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FileData.hpp; sourceTree = "<group>"; };
 		BB7B07B525B646BA0021E545 /* Rectangle.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Rectangle.hpp; sourceTree = "<group>"; };
 		BB7B07B625B646BA0021E545 /* FPSUtil.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FPSUtil.cpp; sourceTree = "<group>"; };
 		BB7B07B725B646BA0021E545 /* ShaderAttribute.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ShaderAttribute.hpp; sourceTree = "<group>"; };
-		BB7B07B825B646BA0021E545 /* ItemSelectView.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ItemSelectView.hpp; sourceTree = "<group>"; };
 		BB7B07B925B646BA0021E545 /* Animation.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Animation.cpp; sourceTree = "<group>"; };
 		BB7B07BA25B646BA0021E545 /* CursorInputManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CursorInputManager.cpp; sourceTree = "<group>"; };
 		BB7B07BB25B646BA0021E545 /* Framebuffer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Framebuffer.hpp; sourceTree = "<group>"; };
@@ -208,8 +191,6 @@
 		BB7B07C425B646BA0021E545 /* AndroidAssetHandler.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AndroidAssetHandler.hpp; sourceTree = "<group>"; };
 		BB7B07C525B646BA0021E545 /* JNIAndroidAssetHandler.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = JNIAndroidAssetHandler.cpp; sourceTree = "<group>"; };
 		BB7B07C625B646BA0021E545 /* TextureManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TextureManager.cpp; sourceTree = "<group>"; };
-		BB7B07C725B646BA0021E545 /* SceneSelectView.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SceneSelectView.hpp; sourceTree = "<group>"; };
-		BB7B07C825B646BA0021E545 /* View.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = View.hpp; sourceTree = "<group>"; };
 		BB7B07C925B646BA0021E545 /* Color.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Color.hpp; sourceTree = "<group>"; };
 		BB7B07CA25B646BA0021E545 /* Shader.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Shader.hpp; sourceTree = "<group>"; };
 		BB7B07CB25B646BA0021E545 /* Engine.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Engine.cpp; sourceTree = "<group>"; };
@@ -221,11 +202,9 @@
 		BB7B07D125B646BA0021E545 /* TextureLoader.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = TextureLoader.hpp; sourceTree = "<group>"; };
 		BB7B07D225B646BA0021E545 /* ShaderManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ShaderManager.cpp; sourceTree = "<group>"; };
 		BB7B07D325B646BA0021E545 /* Assets.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Assets.hpp; sourceTree = "<group>"; };
-		BB7B07D425B646BA0021E545 /* MainView.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MainView.hpp; sourceTree = "<group>"; };
 		BB7B07D525B646BA0021E545 /* ShaderLoader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ShaderLoader.cpp; sourceTree = "<group>"; };
 		BB7B07D625B646BA0021E545 /* OpenGLWrapper.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = OpenGLWrapper.cpp; sourceTree = "<group>"; };
 		BB7B07D725B646BA0021E545 /* ShaderDescriptor.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ShaderDescriptor.cpp; sourceTree = "<group>"; };
-		BB7B07D825B646BA0021E545 /* DragView.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = DragView.hpp; sourceTree = "<group>"; };
 		BB7B07D925B646BA0021E545 /* Renderer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Renderer.cpp; sourceTree = "<group>"; };
 		BB7B07DA25B646BA0021E545 /* AssetHandler.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AssetHandler.hpp; sourceTree = "<group>"; };
 		BB7B07DB25B646BA0021E545 /* StaticPool.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = StaticPool.hpp; sourceTree = "<group>"; };
@@ -311,14 +290,6 @@
 		BB7B088725B646BB0021E545 /* linux_joystick.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = linux_joystick.c; sourceTree = "<group>"; };
 		BB7B088825B646BB0021E545 /* cocoa_monitor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = cocoa_monitor.m; sourceTree = "<group>"; };
 		BB7B088925B646BB0021E545 /* window.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = window.c; sourceTree = "<group>"; };
-		BB7B088C25B646BB0021E545 /* texture_000.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = texture_000.png; sourceTree = "<group>"; };
-		BB7B088D25B646BB0021E545 /* texture_001.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = texture_001.png; sourceTree = "<group>"; };
-		BB7B088E25B646BB0021E545 /* texture_002.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = texture_002.png; sourceTree = "<group>"; };
-		BB7B088F25B646BB0021E545 /* shader_001.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = shader_001.vsh; sourceTree = "<group>"; };
-		BB7B089025B646BB0021E545 /* shader_000.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = shader_000.vsh; sourceTree = "<group>"; };
-		BB7B089125B646BB0021E545 /* shader_001.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = shader_001.fsh; sourceTree = "<group>"; };
-		BB7B089225B646BB0021E545 /* shader_000.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = shader_000.fsh; sourceTree = "<group>"; };
-		BB7B089325B646BB0021E545 /* assets.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = assets.json; sourceTree = "<group>"; };
 		BB7B08D125B64CF20021E545 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		BB7B090A25B651F20021E545 /* GlfwMain.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = GlfwMain.hpp; sourceTree = "<group>"; };
 		BB7B090B25B651F20021E545 /* GlfwMain.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GlfwMain.cpp; sourceTree = "<group>"; };
@@ -364,10 +335,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BB16D15225B74CC100C340C1 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				BB16D1E125B74CD100C340C1 /* json */,
+				BB16D1E225B74CD100C340C1 /* music */,
+				BB16D1E025B74CD100C340C1 /* shaders */,
+				BB16D1E425B74CD100C340C1 /* sounds */,
+				BB16D1E325B74CD100C340C1 /* textures */,
+			);
+			name = assets;
+			path = ../../../assets;
+			sourceTree = "<group>";
+		};
 		BB7B045425B644E00021E545 = {
 			isa = PBXGroup;
 			children = (
-				BB7B088A25B646BB0021E545 /* assets */,
+				BB16D15225B74CC100C340C1 /* assets */,
 				BB7B090825B651F20021E545 /* core */,
 				BB7B047925B646B90021E545 /* deps */,
 				BB7B08D025B64CF20021E545 /* Frameworks */,
@@ -538,8 +522,6 @@
 				BB7B07BD25B646BA0021E545 /* CursorEventType.hpp */,
 				BB7B07BA25B646BA0021E545 /* CursorInputManager.cpp */,
 				BB7B07AF25B646BA0021E545 /* CursorInputManager.hpp */,
-				BB7B07A125B646BA0021E545 /* DragView.cpp */,
-				BB7B07D825B646BA0021E545 /* DragView.hpp */,
 				BB7B07CB25B646BA0021E545 /* Engine.cpp */,
 				BB7B079725B646BA0021E545 /* Engine.hpp */,
 				BB7B090E25B652D80021E545 /* EngineController.cpp */,
@@ -552,11 +534,7 @@
 				BB7B07B625B646BA0021E545 /* FPSUtil.cpp */,
 				BB7B07A825B646BA0021E545 /* FPSUtil.hpp */,
 				BB7B07BB25B646BA0021E545 /* Framebuffer.hpp */,
-				BB7B07AB25B646BA0021E545 /* ItemSelectView.cpp */,
-				BB7B07B825B646BA0021E545 /* ItemSelectView.hpp */,
 				BB7B07A925B646BA0021E545 /* Macros.hpp */,
-				BB7B079F25B646BA0021E545 /* MainView.cpp */,
-				BB7B07D425B646BA0021E545 /* MainView.hpp */,
 				BB7B07C025B646BA0021E545 /* MathUtil.hpp */,
 				BB7B07D625B646BA0021E545 /* OpenGLWrapper.cpp */,
 				BB7B07A025B646BA0021E545 /* OpenGLWrapper.hpp */,
@@ -564,8 +542,6 @@
 				BB7B07B525B646BA0021E545 /* Rectangle.hpp */,
 				BB7B07D925B646BA0021E545 /* Renderer.cpp */,
 				BB7B07A425B646BA0021E545 /* Renderer.hpp */,
-				BB7B07B225B646BA0021E545 /* SceneSelectView.cpp */,
-				BB7B07C725B646BA0021E545 /* SceneSelectView.hpp */,
 				BB7B07DC25B646BA0021E545 /* ScreenRenderer.cpp */,
 				BB7B07A525B646BA0021E545 /* ScreenRenderer.hpp */,
 				BB7B07CA25B646BA0021E545 /* Shader.hpp */,
@@ -593,8 +569,6 @@
 				BB7B07CE25B646BA0021E545 /* TextureRegion.hpp */,
 				BB7B07A725B646BA0021E545 /* Vector2.cpp */,
 				BB7B07DD25B646BA0021E545 /* Vector2.hpp */,
-				BB7B07B325B646BA0021E545 /* View.cpp */,
-				BB7B07C825B646BA0021E545 /* View.hpp */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -763,30 +737,6 @@
 			path = src;
 			sourceTree = "<group>";
 		};
-		BB7B088A25B646BB0021E545 /* assets */ = {
-			isa = PBXGroup;
-			children = (
-				BB7B088B25B646BB0021E545 /* out */,
-			);
-			name = assets;
-			path = ../../../assets;
-			sourceTree = "<group>";
-		};
-		BB7B088B25B646BB0021E545 /* out */ = {
-			isa = PBXGroup;
-			children = (
-				BB7B089325B646BB0021E545 /* assets.json */,
-				BB7B089225B646BB0021E545 /* shader_000.fsh */,
-				BB7B089025B646BB0021E545 /* shader_000.vsh */,
-				BB7B089125B646BB0021E545 /* shader_001.fsh */,
-				BB7B088F25B646BB0021E545 /* shader_001.vsh */,
-				BB7B088C25B646BB0021E545 /* texture_000.png */,
-				BB7B088D25B646BB0021E545 /* texture_001.png */,
-				BB7B088E25B646BB0021E545 /* texture_002.png */,
-			);
-			path = out;
-			sourceTree = "<group>";
-		};
 		BB7B08D025B64CF20021E545 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -914,14 +864,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB7B046525B644E10021E545 /* Assets.xcassets in Resources */,
-				BB8BCCD725B6637E005F57B8 /* assets.json in Resources */,
-				BB8BCCD825B6637E005F57B8 /* shader_000.fsh in Resources */,
-				BB8BCCD925B6637E005F57B8 /* shader_000.vsh in Resources */,
-				BB8BCCDA25B6637E005F57B8 /* shader_001.fsh in Resources */,
-				BB8BCCDB25B6637E005F57B8 /* shader_001.vsh in Resources */,
-				BB8BCCDC25B6637E005F57B8 /* texture_000.png in Resources */,
-				BB8BCCDD25B6637E005F57B8 /* texture_001.png in Resources */,
-				BB8BCCDE25B6637E005F57B8 /* texture_002.png in Resources */,
+				BB16D1EB25B74CD100C340C1 /* textures in Resources */,
+				BB16D1ED25B74CD100C340C1 /* sounds in Resources */,
+				BB16D1E725B74CD100C340C1 /* json in Resources */,
+				BB16D1E925B74CD100C340C1 /* music in Resources */,
+				BB16D1E525B74CD100C340C1 /* shaders in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -929,16 +876,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB16D1E625B74CD100C340C1 /* shaders in Resources */,
 				BB8BCCF625B682E9005F57B8 /* LaunchScreen.storyboard in Resources */,
+				BB16D1EE25B74CD100C340C1 /* sounds in Resources */,
+				BB16D1EC25B74CD100C340C1 /* textures in Resources */,
+				BB16D1EA25B74CD100C340C1 /* music in Resources */,
+				BB16D1E825B74CD100C340C1 /* json in Resources */,
 				BB8BCCF325B682E9005F57B8 /* Assets.xcassets in Resources */,
-				BB8BCD4425B685D4005F57B8 /* assets.json in Resources */,
-				BB8BCD4525B685D4005F57B8 /* shader_000.fsh in Resources */,
-				BB8BCD4625B685D4005F57B8 /* shader_000.vsh in Resources */,
-				BB8BCD4725B685D4005F57B8 /* shader_001.fsh in Resources */,
-				BB8BCD4825B685D4005F57B8 /* shader_001.vsh in Resources */,
-				BB8BCD4925B685D4005F57B8 /* texture_000.png in Resources */,
-				BB8BCD4A25B685D4005F57B8 /* texture_001.png in Resources */,
-				BB8BCD4B25B685D4005F57B8 /* texture_002.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -959,16 +903,12 @@
 				BB7B091325B652D80021E545 /* EngineState.cpp in Sources */,
 				BB7B08B725B64A620021E545 /* CursorConverter.cpp in Sources */,
 				BB7B08B825B64A620021E545 /* CursorInputManager.cpp in Sources */,
-				BB7B08B925B64A620021E545 /* DragView.cpp in Sources */,
 				BB7B08BA25B64A620021E545 /* Engine.cpp in Sources */,
 				BB7B08BB25B64A620021E545 /* Entity.cpp in Sources */,
 				BB7B08BC25B64A620021E545 /* FPSUtil.cpp in Sources */,
 				BB7B091925B659280021E545 /* MainEngineController.cpp in Sources */,
-				BB7B08BD25B64A620021E545 /* ItemSelectView.cpp in Sources */,
-				BB7B08BE25B64A620021E545 /* MainView.cpp in Sources */,
 				BB7B08BF25B64A620021E545 /* OpenGLWrapper.cpp in Sources */,
 				BB7B08C025B64A620021E545 /* Renderer.cpp in Sources */,
-				BB7B08C125B64A620021E545 /* SceneSelectView.cpp in Sources */,
 				BB7B08C225B64A620021E545 /* ScreenRenderer.cpp in Sources */,
 				BB7B08C325B64A620021E545 /* ShaderDescriptor.cpp in Sources */,
 				BB7B091225B652D80021E545 /* EngineController.cpp in Sources */,
@@ -979,7 +919,6 @@
 				BB7B08C825B64A620021E545 /* TextureLoader.cpp in Sources */,
 				BB7B08C925B64A620021E545 /* TextureManager.cpp in Sources */,
 				BB7B08CA25B64A620021E545 /* Vector2.cpp in Sources */,
-				BB7B08CB25B64A620021E545 /* View.cpp in Sources */,
 				BB7B08D525B64DFB0021E545 /* context.c in Sources */,
 				BB7B08D625B64DFB0021E545 /* init.c in Sources */,
 				BB7B08D725B64DFB0021E545 /* input.c in Sources */,
@@ -1019,17 +958,13 @@
 				BB8BCD3325B6849A005F57B8 /* NSAppleAssetHandler.mm in Sources */,
 				BB8BCD1A25B68490005F57B8 /* CursorConverter.cpp in Sources */,
 				BB8BCD1B25B68490005F57B8 /* CursorInputManager.cpp in Sources */,
-				BB8BCD1C25B68490005F57B8 /* DragView.cpp in Sources */,
 				BB8BCD1D25B68490005F57B8 /* Engine.cpp in Sources */,
 				BB8BCD1E25B68490005F57B8 /* EngineController.cpp in Sources */,
 				BB8BCD1F25B68490005F57B8 /* EngineState.cpp in Sources */,
 				BB8BCD2025B68490005F57B8 /* Entity.cpp in Sources */,
 				BB8BCD2125B68490005F57B8 /* FPSUtil.cpp in Sources */,
-				BB8BCD2225B68490005F57B8 /* ItemSelectView.cpp in Sources */,
-				BB8BCD2325B68490005F57B8 /* MainView.cpp in Sources */,
 				BB8BCD2425B68490005F57B8 /* OpenGLWrapper.cpp in Sources */,
 				BB8BCD2525B68490005F57B8 /* Renderer.cpp in Sources */,
-				BB8BCD2625B68490005F57B8 /* SceneSelectView.cpp in Sources */,
 				BB8BCD2725B68490005F57B8 /* ScreenRenderer.cpp in Sources */,
 				BB8BCD2825B68490005F57B8 /* ShaderDescriptor.cpp in Sources */,
 				BB8BCD2925B68490005F57B8 /* ShaderLoader.cpp in Sources */,
@@ -1039,7 +974,6 @@
 				BB8BCD2D25B68490005F57B8 /* TextureLoader.cpp in Sources */,
 				BB8BCD2E25B68490005F57B8 /* TextureManager.cpp in Sources */,
 				BB8BCD2F25B68490005F57B8 /* Vector2.cpp in Sources */,
-				BB8BCD3025B68490005F57B8 /* View.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -12,9 +12,9 @@ public class Engine: NSObject
 {
     var engine: NSEngine?
     
-    public required init(framesPerSecond: Int32)
+    public override init()
     {
-        engine = NSEngine(framesPerSecond)
+        engine = NSEngine()
     }
     
     public func createDeviceDependentResources()

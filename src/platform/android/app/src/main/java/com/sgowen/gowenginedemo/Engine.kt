@@ -2,11 +2,11 @@ package com.sgowen.gowenginedemo
 
 import android.content.res.AssetManager
 
-class Engine(framesPerSecond: Int)
+class Engine
 {
     init
     {
-        init(framesPerSecond)
+        init()
     }
 
     external fun createDeviceDependentResources(assetManager: AssetManager): Void
@@ -20,7 +20,7 @@ class Engine(framesPerSecond: Int)
     external fun onCursorDragged(x: Float, y: Float, isAlt: Boolean): Void
     external fun onCursorUp(x: Float, y: Float, isAlt: Boolean): Void
 
-    private external fun init(framesPerSecond: Int): Void
+    private external fun init(): Void
 
     companion object
     {

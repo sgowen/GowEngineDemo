@@ -44,7 +44,7 @@ final class ViewController: GLKViewController
         size.width = CGFloat(roundf(Float(size.width)))
         size.height = CGFloat(roundf(Float(size.height)))
         
-        engine = Engine(framesPerSecond: Int32(self.preferredFramesPerSecond))
+        engine = Engine()
 
         engine!.createDeviceDependentResources()
         

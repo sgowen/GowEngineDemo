@@ -8,7 +8,6 @@ import android.os.SystemClock
 import android.view.MotionEvent
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
-import com.sgowen.gowenginedemo.Engine
 import javax.microedition.khronos.egl.EGLConfig
 import javax.microedition.khronos.opengles.GL10
 
@@ -18,7 +17,7 @@ class MainActivity : AppCompatActivity()
     {
         super.onCreate(savedInstanceState)
 
-        engine = Engine(framesPerSecond = 30)
+        engine = Engine()
 
         setContentView(MyGLSurfaceView(engine, this))
     }
