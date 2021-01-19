@@ -191,30 +191,6 @@
 		BBAD9ACE25B1052300324113 /* Vector2.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Vector2.hpp; sourceTree = "<group>"; };
 		BBAD9ACF25B1052300324113 /* Entity.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Entity.hpp; sourceTree = "<group>"; };
 		BBAD9D7025B106BB00324113 /* EngineObjCBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EngineObjCBridge.h; sourceTree = "<group>"; };
-		BBAD9D7C25B1126B00324113 /* ms_duck.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ms_duck.png; sourceTree = "<group>"; };
-		BBAD9D7E25B1126B00324113 /* poof_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = poof_4.png; sourceTree = "<group>"; };
-		BBAD9D7F25B1126B00324113 /* poof_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = poof_3.png; sourceTree = "<group>"; };
-		BBAD9D8025B1126B00324113 /* poof_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = poof_2.png; sourceTree = "<group>"; };
-		BBAD9D8125B1126B00324113 /* poof_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = poof_1.png; sourceTree = "<group>"; };
-		BBAD9D8225B1126B00324113 /* obj_food_watermelon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = obj_food_watermelon.png; sourceTree = "<group>"; };
-		BBAD9D8325B1126B00324113 /* texturepacker_002.tps */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = texturepacker_002.tps; sourceTree = "<group>"; };
-		BBAD9D8425B1126B00324113 /* texturepacker_000.tps */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = texturepacker_000.tps; sourceTree = "<group>"; };
-		BBAD9D8525B1126B00324113 /* texturepacker_001.tps */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = texturepacker_001.tps; sourceTree = "<group>"; };
-		BBAD9D8625B1126B00324113 /* menu_characters_tab_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu_characters_tab_3.png; sourceTree = "<group>"; };
-		BBAD9D8725B1126B00324113 /* mr_baby2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mr_baby2.png; sourceTree = "<group>"; };
-		BBAD9D8825B1126B00324113 /* forest.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = forest.png; sourceTree = "<group>"; };
-		BBAD9D8925B1126B00324113 /* baby_triceratops.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = baby_triceratops.png; sourceTree = "<group>"; };
-		BBAD9D8A25B1126B00324113 /* btn_forest.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_forest.png; sourceTree = "<group>"; };
-		BBAD9D8B25B1126B00324113 /* texture_002.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = texture_002.json; sourceTree = "<group>"; };
-		BBAD9D8C25B1126B00324113 /* menu_food_tab_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu_food_tab_3.png; sourceTree = "<group>"; };
-		BBAD9D8D25B1126B00324113 /* texture_001.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = texture_001.json; sourceTree = "<group>"; };
-		BBAD9D8F25B1126B00324113 /* obj_food_chicken.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = obj_food_chicken.png; sourceTree = "<group>"; };
-		BBAD9D9025B1126B00324113 /* texture_000.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = texture_000.json; sourceTree = "<group>"; };
-		BBAD9D9125B1126B00324113 /* mr_pig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mr_pig.png; sourceTree = "<group>"; };
-		BBAD9D9225B1126B00324113 /* forest_grass2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = forest_grass2.png; sourceTree = "<group>"; };
-		BBAD9D9325B1126B00324113 /* menu_toys_tab_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu_toys_tab_3.png; sourceTree = "<group>"; };
-		BBAD9D9425B1126B00324113 /* btn_livingRoom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_livingRoom.png; sourceTree = "<group>"; };
-		BBAD9D9525B1126B00324113 /* glove2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = glove2.png; sourceTree = "<group>"; };
 		BBAD9D9625B1127A00324113 /* shader_001.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = shader_001.fsh; sourceTree = "<group>"; };
 		BBAD9D9725B1127A00324113 /* shader_001.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = shader_001.vsh; sourceTree = "<group>"; };
 		BBAD9D9825B1127A00324113 /* texture_001.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = texture_001.png; sourceTree = "<group>"; };
@@ -326,29 +302,29 @@
 		BBAD9A0A25B1052300324113 /* rapidjson */ = {
 			isa = PBXGroup;
 			children = (
-				BBAD9A0B25B1052300324113 /* fwd.h */,
-				BBAD9A0C25B1052300324113 /* memorystream.h */,
-				BBAD9A0D25B1052300324113 /* reader.h */,
-				BBAD9A0E25B1052300324113 /* prettywriter.h */,
-				BBAD9A0F25B1052300324113 /* ostreamwrapper.h */,
-				BBAD9A1025B1052300324113 /* encodedstream.h */,
-				BBAD9A1125B1052300324113 /* filereadstream.h */,
+				BBAD9A2925B1052300324113 /* allocators.h */,
 				BBAD9A1225B1052300324113 /* cursorstreamwrapper.h */,
-				BBAD9A1325B1052300324113 /* istreamwrapper.h */,
-				BBAD9A1425B1052300324113 /* stringbuffer.h */,
-				BBAD9A1525B1052300324113 /* internal */,
+				BBAD9A2825B1052300324113 /* document.h */,
+				BBAD9A1025B1052300324113 /* encodedstream.h */,
 				BBAD9A2325B1052300324113 /* encodings.h */,
+				BBAD9A2B25B1052300324113 /* error */,
+				BBAD9A1125B1052300324113 /* filereadstream.h */,
+				BBAD9A2625B1052300324113 /* filewritestream.h */,
+				BBAD9A0B25B1052300324113 /* fwd.h */,
+				BBAD9A1525B1052300324113 /* internal */,
+				BBAD9A1325B1052300324113 /* istreamwrapper.h */,
+				BBAD9A2E25B1052300324113 /* memorybuffer.h */,
+				BBAD9A0C25B1052300324113 /* memorystream.h */,
+				BBAD9A3025B1052300324113 /* msinttypes */,
+				BBAD9A0F25B1052300324113 /* ostreamwrapper.h */,
+				BBAD9A2F25B1052300324113 /* pointer.h */,
+				BBAD9A0E25B1052300324113 /* prettywriter.h */,
+				BBAD9A2725B1052300324113 /* rapidjson.h */,
+				BBAD9A0D25B1052300324113 /* reader.h */,
 				BBAD9A2425B1052300324113 /* schema.h */,
 				BBAD9A2525B1052300324113 /* stream.h */,
-				BBAD9A2625B1052300324113 /* filewritestream.h */,
-				BBAD9A2725B1052300324113 /* rapidjson.h */,
-				BBAD9A2825B1052300324113 /* document.h */,
-				BBAD9A2925B1052300324113 /* allocators.h */,
+				BBAD9A1425B1052300324113 /* stringbuffer.h */,
 				BBAD9A2A25B1052300324113 /* writer.h */,
-				BBAD9A2B25B1052300324113 /* error */,
-				BBAD9A2E25B1052300324113 /* memorybuffer.h */,
-				BBAD9A2F25B1052300324113 /* pointer.h */,
-				BBAD9A3025B1052300324113 /* msinttypes */,
 			);
 			path = rapidjson;
 			sourceTree = "<group>";
@@ -356,19 +332,19 @@
 		BBAD9A1525B1052300324113 /* internal */ = {
 			isa = PBXGroup;
 			children = (
-				BBAD9A1625B1052300324113 /* ieee754.h */,
-				BBAD9A1725B1052300324113 /* strtod.h */,
-				BBAD9A1825B1052300324113 /* swap.h */,
-				BBAD9A1925B1052300324113 /* regex.h */,
-				BBAD9A1A25B1052300324113 /* diyfp.h */,
 				BBAD9A1B25B1052300324113 /* biginteger.h */,
-				BBAD9A1C25B1052300324113 /* strfunc.h */,
-				BBAD9A1D25B1052300324113 /* itoa.h */,
-				BBAD9A1E25B1052300324113 /* stack.h */,
-				BBAD9A1F25B1052300324113 /* dtoa.h */,
 				BBAD9A2025B1052300324113 /* clzll.h */,
+				BBAD9A1A25B1052300324113 /* diyfp.h */,
+				BBAD9A1F25B1052300324113 /* dtoa.h */,
+				BBAD9A1625B1052300324113 /* ieee754.h */,
+				BBAD9A1D25B1052300324113 /* itoa.h */,
 				BBAD9A2125B1052300324113 /* meta.h */,
 				BBAD9A2225B1052300324113 /* pow10.h */,
+				BBAD9A1925B1052300324113 /* regex.h */,
+				BBAD9A1E25B1052300324113 /* stack.h */,
+				BBAD9A1C25B1052300324113 /* strfunc.h */,
+				BBAD9A1725B1052300324113 /* strtod.h */,
+				BBAD9A1825B1052300324113 /* swap.h */,
 			);
 			path = internal;
 			sourceTree = "<group>";
@@ -376,8 +352,8 @@
 		BBAD9A2B25B1052300324113 /* error */ = {
 			isa = PBXGroup;
 			children = (
-				BBAD9A2C25B1052300324113 /* error.h */,
 				BBAD9A2D25B1052300324113 /* en.h */,
+				BBAD9A2C25B1052300324113 /* error.h */,
 			);
 			path = error;
 			sourceTree = "<group>";
@@ -493,7 +469,6 @@
 			isa = PBXGroup;
 			children = (
 				BBAD9D7225B1126B00324113 /* out */,
-				BBAD9D7B25B1126B00324113 /* src */,
 			);
 			name = assets;
 			path = ../../../assets;
@@ -512,45 +487,6 @@
 				BBAD9D9B25B1127A00324113 /* texture_002.png */,
 			);
 			path = out;
-			sourceTree = "<group>";
-		};
-		BBAD9D7B25B1126B00324113 /* src */ = {
-			isa = PBXGroup;
-			children = (
-				BBAD9D8925B1126B00324113 /* baby_triceratops.png */,
-				BBAD9D8A25B1126B00324113 /* btn_forest.png */,
-				BBAD9D9425B1126B00324113 /* btn_livingRoom.png */,
-				BBAD9D9225B1126B00324113 /* forest_grass2.png */,
-				BBAD9D8825B1126B00324113 /* forest.png */,
-				BBAD9D9525B1126B00324113 /* glove2.png */,
-				BBAD9D8625B1126B00324113 /* menu_characters_tab_3.png */,
-				BBAD9D8C25B1126B00324113 /* menu_food_tab_3.png */,
-				BBAD9D9325B1126B00324113 /* menu_toys_tab_3.png */,
-				BBAD9D8725B1126B00324113 /* mr_baby2.png */,
-				BBAD9D9125B1126B00324113 /* mr_pig.png */,
-				BBAD9D7C25B1126B00324113 /* ms_duck.png */,
-				BBAD9D8F25B1126B00324113 /* obj_food_chicken.png */,
-				BBAD9D8225B1126B00324113 /* obj_food_watermelon.png */,
-				BBAD9D7D25B1126B00324113 /* poof_1 */,
-				BBAD9D9025B1126B00324113 /* texture_000.json */,
-				BBAD9D8D25B1126B00324113 /* texture_001.json */,
-				BBAD9D8B25B1126B00324113 /* texture_002.json */,
-				BBAD9D8425B1126B00324113 /* texturepacker_000.tps */,
-				BBAD9D8525B1126B00324113 /* texturepacker_001.tps */,
-				BBAD9D8325B1126B00324113 /* texturepacker_002.tps */,
-			);
-			path = src;
-			sourceTree = "<group>";
-		};
-		BBAD9D7D25B1126B00324113 /* poof_1 */ = {
-			isa = PBXGroup;
-			children = (
-				BBAD9D8125B1126B00324113 /* poof_1.png */,
-				BBAD9D8025B1126B00324113 /* poof_2.png */,
-				BBAD9D7F25B1126B00324113 /* poof_3.png */,
-				BBAD9D7E25B1126B00324113 /* poof_4.png */,
-			);
-			path = poof_1;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -804,7 +740,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 83V22B9TY9;
 				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
 					"$(inherited)",
 					GLES_SILENCE_DEPRECATION,
 				);
