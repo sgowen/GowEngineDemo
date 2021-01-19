@@ -1,0 +1,14 @@
+# specific to CodeBlocks IDE
+*.layout
+*.depend
+# generated directories
+bin/
+obj/
+
+# copied to project dir after build
+json/
+music/
+shaders/
+sounds/
+textures/
+GowEngineDemo

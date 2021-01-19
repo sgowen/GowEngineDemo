@@ -17,6 +17,8 @@
 		BB16D1EC25B74CD100C340C1 /* textures in Resources */ = {isa = PBXBuildFile; fileRef = BB16D1E325B74CD100C340C1 /* textures */; };
 		BB16D1ED25B74CD100C340C1 /* sounds in Resources */ = {isa = PBXBuildFile; fileRef = BB16D1E425B74CD100C340C1 /* sounds */; };
 		BB16D1EE25B74CD100C340C1 /* sounds in Resources */ = {isa = PBXBuildFile; fileRef = BB16D1E425B74CD100C340C1 /* sounds */; };
+		BB16D1FF25B7623700C340C1 /* LinuxAssetHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB16D1FB25B75F5100C340C1 /* LinuxAssetHandler.cpp */; };
+		BB16D20225B7623C00C340C1 /* LinuxAssetHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB16D1FB25B75F5100C340C1 /* LinuxAssetHandler.cpp */; };
 		BB7B046525B644E10021E545 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB7B046425B644E10021E545 /* Assets.xcassets */; };
 		BB7B047525B6455F0021E545 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB7B047425B6455F0021E545 /* main.cpp */; };
 		BB7B08B125B64A620021E545 /* Animation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB7B07B925B646BA0021E545 /* Animation.cpp */; };
@@ -103,6 +105,10 @@
 		BB16D1E225B74CD100C340C1 /* music */ = {isa = PBXFileReference; lastKnownFileType = folder; path = music; sourceTree = "<group>"; };
 		BB16D1E325B74CD100C340C1 /* textures */ = {isa = PBXFileReference; lastKnownFileType = folder; path = textures; sourceTree = "<group>"; };
 		BB16D1E425B74CD100C340C1 /* sounds */ = {isa = PBXFileReference; lastKnownFileType = folder; path = sounds; sourceTree = "<group>"; };
+		BB16D1F825B75F5100C340C1 /* WindowsAssetHandler.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = WindowsAssetHandler.cpp; sourceTree = "<group>"; };
+		BB16D1F925B75F5100C340C1 /* WindowsAssetHandler.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = WindowsAssetHandler.hpp; sourceTree = "<group>"; };
+		BB16D1FB25B75F5100C340C1 /* LinuxAssetHandler.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LinuxAssetHandler.cpp; sourceTree = "<group>"; };
+		BB16D1FC25B75F5100C340C1 /* LinuxAssetHandler.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinuxAssetHandler.hpp; sourceTree = "<group>"; };
 		BB7B045D25B644E00021E545 /* GowEngineDemo-macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GowEngineDemo-macOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB7B046425B644E10021E545 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB7B046925B644E10021E545 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -348,6 +354,24 @@
 			path = ../../../assets;
 			sourceTree = "<group>";
 		};
+		BB16D1F725B75F5100C340C1 /* windows */ = {
+			isa = PBXGroup;
+			children = (
+				BB16D1F825B75F5100C340C1 /* WindowsAssetHandler.cpp */,
+				BB16D1F925B75F5100C340C1 /* WindowsAssetHandler.hpp */,
+			);
+			path = windows;
+			sourceTree = "<group>";
+		};
+		BB16D1FA25B75F5100C340C1 /* linux */ = {
+			isa = PBXGroup;
+			children = (
+				BB16D1FB25B75F5100C340C1 /* LinuxAssetHandler.cpp */,
+				BB16D1FC25B75F5100C340C1 /* LinuxAssetHandler.hpp */,
+			);
+			path = linux;
+			sourceTree = "<group>";
+		};
 		BB7B045425B644E00021E545 = {
 			isa = PBXGroup;
 			children = (
@@ -534,6 +558,7 @@
 				BB7B07B625B646BA0021E545 /* FPSUtil.cpp */,
 				BB7B07A825B646BA0021E545 /* FPSUtil.hpp */,
 				BB7B07BB25B646BA0021E545 /* Framebuffer.hpp */,
+				BB16D1FA25B75F5100C340C1 /* linux */,
 				BB7B07A925B646BA0021E545 /* Macros.hpp */,
 				BB7B07C025B646BA0021E545 /* MathUtil.hpp */,
 				BB7B07D625B646BA0021E545 /* OpenGLWrapper.cpp */,
@@ -569,6 +594,7 @@
 				BB7B07CE25B646BA0021E545 /* TextureRegion.hpp */,
 				BB7B07A725B646BA0021E545 /* Vector2.cpp */,
 				BB7B07DD25B646BA0021E545 /* Vector2.hpp */,
+				BB16D1F725B75F5100C340C1 /* windows */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -917,6 +943,7 @@
 				BB7B08C625B64A620021E545 /* SpriteBatcher.cpp in Sources */,
 				BB7B08C725B64A620021E545 /* TextureDescriptor.cpp in Sources */,
 				BB7B08C825B64A620021E545 /* TextureLoader.cpp in Sources */,
+				BB16D1FF25B7623700C340C1 /* LinuxAssetHandler.cpp in Sources */,
 				BB7B08C925B64A620021E545 /* TextureManager.cpp in Sources */,
 				BB7B08CA25B64A620021E545 /* Vector2.cpp in Sources */,
 				BB7B08D525B64DFB0021E545 /* context.c in Sources */,
@@ -957,6 +984,7 @@
 				BB8BCD1925B68490005F57B8 /* Assets.cpp in Sources */,
 				BB8BCD3325B6849A005F57B8 /* NSAppleAssetHandler.mm in Sources */,
 				BB8BCD1A25B68490005F57B8 /* CursorConverter.cpp in Sources */,
+				BB16D20225B7623C00C340C1 /* LinuxAssetHandler.cpp in Sources */,
 				BB8BCD1B25B68490005F57B8 /* CursorInputManager.cpp in Sources */,
 				BB8BCD1D25B68490005F57B8 /* Engine.cpp in Sources */,
 				BB8BCD1E25B68490005F57B8 /* EngineController.cpp in Sources */,
@@ -1127,6 +1155,7 @@
 					"\"$(SRCROOT)/../../../deps/GowEngine/deps/rapidjson/include\"",
 					"\"$(SRCROOT)/../../../deps/GowEngine/deps/stb\"",
 					"\"$(SRCROOT)/../../../deps/GowEngine/src\"",
+					"\"$(SRCROOT)/../../core\"",
 				);
 				INFOPLIST_FILE = macOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1160,6 +1189,7 @@
 					"\"$(SRCROOT)/../../../deps/GowEngine/deps/rapidjson/include\"",
 					"\"$(SRCROOT)/../../../deps/GowEngine/deps/stb\"",
 					"\"$(SRCROOT)/../../../deps/GowEngine/src\"",
+					"\"$(SRCROOT)/../../core\"",
 				);
 				INFOPLIST_FILE = macOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1190,6 +1220,7 @@
 					"\"$(SRCROOT)/../../../deps/GowEngine/deps/rapidjson/include\"",
 					"\"$(SRCROOT)/../../../deps/GowEngine/deps/stb\"",
 					"\"$(SRCROOT)/../../../deps/GowEngine/src\"",
+					"\"$(SRCROOT)/../../core\"",
 				);
 				INFOPLIST_FILE = iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
@@ -1220,6 +1251,7 @@
 					"\"$(SRCROOT)/../../../deps/GowEngine/deps/rapidjson/include\"",
 					"\"$(SRCROOT)/../../../deps/GowEngine/deps/stb\"",
 					"\"$(SRCROOT)/../../../deps/GowEngine/src\"",
+					"\"$(SRCROOT)/../../core\"",
 				);
 				INFOPLIST_FILE = iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.3;

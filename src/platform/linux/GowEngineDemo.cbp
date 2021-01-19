@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="GowEngineDemo" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/GowEngineDemo" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-DDEBUG=1" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/GowEngineDemo" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+			<Add option="-D_GLFW_X11" />
+			<Add directory="../../core" />
+			<Add directory="../../../deps/glfw/include" />
+			<Add directory="../../../deps/GowEngine/src" />
+			<Add directory="../../../deps/GowEngine/deps/rapidjson/include" />
+			<Add directory="../../../deps/GowEngine/deps/stb" />
+		</Compiler>
+		<Linker>
+			<Add option="-ldl" />
+			<Add option="-lpthread" />
+			<Add option="-lGLEW" />
+			<Add option="-lGL" />
+		</Linker>
+		<ExtraCommands>
+			<Add before="if [ -d $(PROJECT_DIR)/json ]; then rm -Rf $(PROJECT_DIR)/json; fi" />
+			<Add before="if [ -d $(PROJECT_DIR)/music ]; then rm -Rf $(PROJECT_DIR)/music; fi" />
+			<Add before="if [ -d $(PROJECT_DIR)/shaders ]; then rm -Rf $(PROJECT_DIR)/shaders; fi" />
+			<Add before="if [ -d $(PROJECT_DIR)/sounds ]; then rm -Rf $(PROJECT_DIR)/sounds; fi" />
+			<Add before="if [ -d $(PROJECT_DIR)/textures ]; then rm -Rf $(PROJECT_DIR)/textures; fi" />
+			<Add after="cp -r $(PROJECT_DIR)../../../assets/. $(PROJECT_DIR)" />
+			<Add after="cp $(TARGET_OUTPUT_FILE) $(PROJECT_DIR)" />
+			<Mode after="always" />
+		</ExtraCommands>
+		<Unit filename="../../../deps/GowEngine/src/Animation.cpp" />
+		<Unit filename="../../../deps/GowEngine/src/Animation.hpp" />
+		<Unit filename="../../../deps/GowEngine/src/AssetHandler.cpp" />
+		<Unit filename="../../../deps/GowEngine/src/AssetHandler.hpp" />
+		<Unit filename="../../../deps/GowEngine/src/AssetHandlerFactory.cpp" />
+		<Unit filename="../../../deps/GowEngine/src/AssetHandlerFactory.hpp" />
+		<Unit filename="../../../deps/GowEngine/src/Assets.cpp" />
+		<Unit filename="../../../deps/GowEngine/src/Assets.hpp" />
+		<Unit filename="../../../deps/GowEngine/src/Color.hpp" />
+		<Unit filename="../../../deps/GowEngine/src/Constants.hpp" />
+		<Unit filename="../../../deps/GowEngine/src/CursorConverter.cpp" />
+		<Unit filename="../../../deps/GowEngine/src/CursorConverter.hpp" />
+		<Unit filename="../../../deps/GowEngine/src/CursorEvent.hpp" />
+		<Unit filename="../../../deps/GowEngine/src/CursorEventType.hpp" />
+		<Unit filename="../../../deps/GowEngine/src/CursorInputManager.cpp" />
+		<Unit filename="../../../deps/GowEngine/src/CursorInputManager.hpp" />
+		<Unit filename="../../../deps/GowEngine/src/Engine.cpp" />
+		<Unit filename="../../../deps/GowEngine/src/Engine.hpp" />
+		<Unit filename="../../../deps/GowEngine/src/EngineController.cpp" />
+		<Unit filename="../../../deps/GowEngine/src/EngineController.hpp" />
+		<Unit filename="../../../deps/GowEngine/src/EngineState.cpp" />
+		<Unit filename="../../../deps/GowEngine/src/EngineState.hpp" />
+		<Unit filename="../../../deps/GowEngine/src/Entity.cpp" />
+		<Unit filename="../../../deps/GowEngine/src/Entity.hpp" />
+		<Unit filename="../../../deps/GowEngine/src/FPSUtil.cpp" />
+		<Unit filename="../../../deps/GowEngine/src/FPSUtil.hpp" />
+		<Unit filename="../../../deps/GowEngine/src/FileData.hpp" />
+		<Unit filename="../../../deps/GowEngine/src/Framebuffer.hpp" />
+		<Unit filename="../../../deps/GowEngine/src/Macros.hpp" />
+		<Unit filename="../../../deps/GowEngine/src/MathUtil.hpp" />
+		<Unit filename="../../../deps/GowEngine/src/OpenGLWrapper.cpp" />
+		<Unit filename="../../../deps/GowEngine/src/OpenGLWrapper.hpp" />
+		<Unit filename="../../../deps/GowEngine/src/PlatformMacros.hpp" />
+		<Unit filename="../../../deps/GowEngine/src/Rectangle.hpp" />
+		<Unit filename="../../../deps/GowEngine/src/Renderer.cpp" />
+		<Unit filename="../../../deps/GowEngine/src/Renderer.hpp" />
+		<Unit filename="../../../deps/GowEngine/src/ScreenRenderer.cpp" />
+		<Unit filename="../../../deps/GowEngine/src/ScreenRenderer.hpp" />
+		<Unit filename="../../../deps/GowEngine/src/Shader.hpp" />
+		<Unit filename="../../../deps/GowEngine/src/ShaderAttribute.hpp" />
+		<Unit filename="../../../deps/GowEngine/src/ShaderDescriptor.cpp" />
+		<Unit filename="../../../deps/GowEngine/src/ShaderDescriptor.hpp" />
+		<Unit filename="../../../deps/GowEngine/src/ShaderInput.hpp" />
+		<Unit filename="../../../deps/GowEngine/src/ShaderLoader.cpp" />
+		<Unit filename="../../../deps/GowEngine/src/ShaderLoader.hpp" />
+		<Unit filename="../../../deps/GowEngine/src/ShaderManager.cpp" />
+		<Unit filename="../../../deps/GowEngine/src/ShaderManager.hpp" />
+		<Unit filename="../../../deps/GowEngine/src/ShaderUniform.hpp" />
+		<Unit filename="../../../deps/GowEngine/src/SpriteBatcher.cpp" />
+		<Unit filename="../../../deps/GowEngine/src/SpriteBatcher.hpp" />
+		<Unit filename="../../../deps/GowEngine/src/State.hpp" />
+		<Unit filename="../../../deps/GowEngine/src/StateMachine.hpp" />
+		<Unit filename="../../../deps/GowEngine/src/StaticPool.hpp" />
+		<Unit filename="../../../deps/GowEngine/src/Texture.hpp" />
+		<Unit filename="../../../deps/GowEngine/src/TextureDescriptor.cpp" />
+		<Unit filename="../../../deps/GowEngine/src/TextureDescriptor.hpp" />
+		<Unit filename="../../../deps/GowEngine/src/TextureLoader.cpp" />
+		<Unit filename="../../../deps/GowEngine/src/TextureLoader.hpp" />
+		<Unit filename="../../../deps/GowEngine/src/TextureManager.cpp" />
+		<Unit filename="../../../deps/GowEngine/src/TextureManager.hpp" />
+		<Unit filename="../../../deps/GowEngine/src/TextureRegion.hpp" />
+		<Unit filename="../../../deps/GowEngine/src/Vector2.cpp" />
+		<Unit filename="../../../deps/GowEngine/src/Vector2.hpp" />
+		<Unit filename="../../../deps/GowEngine/src/linux/LinuxAssetHandler.cpp" />
+		<Unit filename="../../../deps/GowEngine/src/linux/LinuxAssetHandler.hpp" />
+		<Unit filename="../../../deps/glfw/src/context.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../deps/glfw/src/egl_context.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../deps/glfw/src/glx_context.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../deps/glfw/src/init.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../deps/glfw/src/input.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../deps/glfw/src/linux_joystick.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../deps/glfw/src/monitor.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../deps/glfw/src/osmesa_context.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../deps/glfw/src/posix_thread.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../deps/glfw/src/posix_time.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../deps/glfw/src/vulkan.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../deps/glfw/src/window.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../deps/glfw/src/x11_init.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../deps/glfw/src/x11_monitor.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../deps/glfw/src/x11_window.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../deps/glfw/src/xkb_unicode.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../core/MainEngineController.cpp" />
+		<Unit filename="../../core/MainEngineController.hpp" />
+		<Unit filename="../../core/MainEngineState.cpp" />
+		<Unit filename="../../core/MainEngineState.hpp" />
+		<Unit filename="../../core/glfw/GlfwMain.cpp" />
+		<Unit filename="../../core/glfw/GlfwMain.hpp" />
+		<Unit filename="main.cpp" />
+		<Extensions>
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

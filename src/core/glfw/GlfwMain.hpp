@@ -3,9 +3,10 @@
 //  GowEngineDemo
 //
 //  Created by Stephen Gowen on 11/16/17.
-//  Copyright © 2020 Stephen Gowen. All rights reserved.
+//  Copyright © 2021 Stephen Gowen. All rights reserved.
 //
 
+#include "OpenGLWrapper.hpp"
 #include <GLFW/glfw3.h>
 
 class EngineController;
