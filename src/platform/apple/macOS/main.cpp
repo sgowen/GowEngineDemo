@@ -3,11 +3,11 @@
 //  GowEngineDemo
 //
 //  Created by Stephen Gowen on 1/18/21.
-//  Copyright © 2020 Stephen Gowen. All rights reserved.
+//  Copyright © 2021 Stephen Gowen. All rights reserved.
 //
 
 #include "MainEngineController.hpp"
-#include "GlfwMain.hpp"
+#include "glfw/GlfwMain.hpp"
 
 int main(void)
 {
