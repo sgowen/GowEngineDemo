@@ -65,10 +65,56 @@
 		BB8BCCDC25B6637E005F57B8 /* texture_000.png in Resources */ = {isa = PBXBuildFile; fileRef = BB7B088C25B646BB0021E545 /* texture_000.png */; };
 		BB8BCCDD25B6637E005F57B8 /* texture_001.png in Resources */ = {isa = PBXBuildFile; fileRef = BB7B088D25B646BB0021E545 /* texture_001.png */; };
 		BB8BCCDE25B6637E005F57B8 /* texture_002.png in Resources */ = {isa = PBXBuildFile; fileRef = BB7B088E25B646BB0021E545 /* texture_002.png */; };
+		BB8BCCEA25B682E8005F57B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8BCCE925B682E8005F57B8 /* AppDelegate.swift */; };
+		BB8BCCEC25B682E8005F57B8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8BCCEB25B682E8005F57B8 /* SceneDelegate.swift */; };
+		BB8BCCEE25B682E8005F57B8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8BCCED25B682E8005F57B8 /* ViewController.swift */; };
+		BB8BCCF325B682E9005F57B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB8BCCF225B682E9005F57B8 /* Assets.xcassets */; };
+		BB8BCCF625B682E9005F57B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB8BCCF425B682E9005F57B8 /* LaunchScreen.storyboard */; };
+		BB8BCD0A25B68446005F57B8 /* Engine.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8BCD0725B68446005F57B8 /* Engine.swift */; };
+		BB8BCD0B25B68446005F57B8 /* NSEngine.mm in Sources */ = {isa = PBXBuildFile; fileRef = BB8BCD0925B68446005F57B8 /* NSEngine.mm */; };
+		BB8BCD1325B68490005F57B8 /* MainEngineController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB7B091825B659280021E545 /* MainEngineController.cpp */; };
+		BB8BCD1425B68490005F57B8 /* MainEngineState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB7B091C25B659E70021E545 /* MainEngineState.cpp */; };
+		BB8BCD1525B68490005F57B8 /* Animation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB7B07B925B646BA0021E545 /* Animation.cpp */; };
+		BB8BCD1625B68490005F57B8 /* AppleAssetHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB7B079425B646BA0021E545 /* AppleAssetHandler.cpp */; };
+		BB8BCD1725B68490005F57B8 /* AssetHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB7B07A325B646BA0021E545 /* AssetHandler.cpp */; };
+		BB8BCD1825B68490005F57B8 /* AssetHandlerFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB7B07B025B646BA0021E545 /* AssetHandlerFactory.cpp */; };
+		BB8BCD1925B68490005F57B8 /* Assets.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB7B079D25B646BA0021E545 /* Assets.cpp */; };
+		BB8BCD1A25B68490005F57B8 /* CursorConverter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB7B079925B646BA0021E545 /* CursorConverter.cpp */; };
+		BB8BCD1B25B68490005F57B8 /* CursorInputManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB7B07BA25B646BA0021E545 /* CursorInputManager.cpp */; };
+		BB8BCD1C25B68490005F57B8 /* DragView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB7B07A125B646BA0021E545 /* DragView.cpp */; };
+		BB8BCD1D25B68490005F57B8 /* Engine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB7B07CB25B646BA0021E545 /* Engine.cpp */; };
+		BB8BCD1E25B68490005F57B8 /* EngineController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB7B090E25B652D80021E545 /* EngineController.cpp */; };
+		BB8BCD1F25B68490005F57B8 /* EngineState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB7B091025B652D80021E545 /* EngineState.cpp */; };
+		BB8BCD2025B68490005F57B8 /* Entity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB7B07A625B646BA0021E545 /* Entity.cpp */; };
+		BB8BCD2125B68490005F57B8 /* FPSUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB7B07B625B646BA0021E545 /* FPSUtil.cpp */; };
+		BB8BCD2225B68490005F57B8 /* ItemSelectView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB7B07AB25B646BA0021E545 /* ItemSelectView.cpp */; };
+		BB8BCD2325B68490005F57B8 /* MainView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB7B079F25B646BA0021E545 /* MainView.cpp */; };
+		BB8BCD2425B68490005F57B8 /* OpenGLWrapper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB7B07D625B646BA0021E545 /* OpenGLWrapper.cpp */; };
+		BB8BCD2525B68490005F57B8 /* Renderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB7B07D925B646BA0021E545 /* Renderer.cpp */; };
+		BB8BCD2625B68490005F57B8 /* SceneSelectView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB7B07B225B646BA0021E545 /* SceneSelectView.cpp */; };
+		BB8BCD2725B68490005F57B8 /* ScreenRenderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB7B07DC25B646BA0021E545 /* ScreenRenderer.cpp */; };
+		BB8BCD2825B68490005F57B8 /* ShaderDescriptor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB7B07D725B646BA0021E545 /* ShaderDescriptor.cpp */; };
+		BB8BCD2925B68490005F57B8 /* ShaderLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB7B07D525B646BA0021E545 /* ShaderLoader.cpp */; };
+		BB8BCD2A25B68490005F57B8 /* ShaderManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB7B07D225B646BA0021E545 /* ShaderManager.cpp */; };
+		BB8BCD2B25B68490005F57B8 /* SpriteBatcher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB7B079A25B646BA0021E545 /* SpriteBatcher.cpp */; };
+		BB8BCD2C25B68490005F57B8 /* TextureDescriptor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB7B07CC25B646BA0021E545 /* TextureDescriptor.cpp */; };
+		BB8BCD2D25B68490005F57B8 /* TextureLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB7B079C25B646BA0021E545 /* TextureLoader.cpp */; };
+		BB8BCD2E25B68490005F57B8 /* TextureManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB7B07C625B646BA0021E545 /* TextureManager.cpp */; };
+		BB8BCD2F25B68490005F57B8 /* Vector2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB7B07A725B646BA0021E545 /* Vector2.cpp */; };
+		BB8BCD3025B68490005F57B8 /* View.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB7B07B325B646BA0021E545 /* View.cpp */; };
+		BB8BCD3325B6849A005F57B8 /* NSAppleAssetHandler.mm in Sources */ = {isa = PBXBuildFile; fileRef = BB7B079525B646BA0021E545 /* NSAppleAssetHandler.mm */; };
+		BB8BCD4425B685D4005F57B8 /* assets.json in Resources */ = {isa = PBXBuildFile; fileRef = BB7B089325B646BB0021E545 /* assets.json */; };
+		BB8BCD4525B685D4005F57B8 /* shader_000.fsh in Resources */ = {isa = PBXBuildFile; fileRef = BB7B089225B646BB0021E545 /* shader_000.fsh */; };
+		BB8BCD4625B685D4005F57B8 /* shader_000.vsh in Resources */ = {isa = PBXBuildFile; fileRef = BB7B089025B646BB0021E545 /* shader_000.vsh */; };
+		BB8BCD4725B685D4005F57B8 /* shader_001.fsh in Resources */ = {isa = PBXBuildFile; fileRef = BB7B089125B646BB0021E545 /* shader_001.fsh */; };
+		BB8BCD4825B685D4005F57B8 /* shader_001.vsh in Resources */ = {isa = PBXBuildFile; fileRef = BB7B088F25B646BB0021E545 /* shader_001.vsh */; };
+		BB8BCD4925B685D4005F57B8 /* texture_000.png in Resources */ = {isa = PBXBuildFile; fileRef = BB7B088C25B646BB0021E545 /* texture_000.png */; };
+		BB8BCD4A25B685D4005F57B8 /* texture_001.png in Resources */ = {isa = PBXBuildFile; fileRef = BB7B088D25B646BB0021E545 /* texture_001.png */; };
+		BB8BCD4B25B685D4005F57B8 /* texture_002.png in Resources */ = {isa = PBXBuildFile; fileRef = BB7B088E25B646BB0021E545 /* texture_002.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		BB7B045D25B644E00021E545 /* GowEngineDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GowEngineDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB7B045D25B644E00021E545 /* GowEngineDemo-macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GowEngineDemo-macOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB7B046425B644E10021E545 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB7B046925B644E10021E545 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BB7B047425B6455F0021E545 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
@@ -286,6 +332,17 @@
 		BB7B091825B659280021E545 /* MainEngineController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MainEngineController.cpp; sourceTree = "<group>"; };
 		BB7B091B25B659E70021E545 /* MainEngineState.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MainEngineState.hpp; sourceTree = "<group>"; };
 		BB7B091C25B659E70021E545 /* MainEngineState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MainEngineState.cpp; sourceTree = "<group>"; };
+		BB8BCCE725B682E8005F57B8 /* GowEngineDemo-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GowEngineDemo-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB8BCCE925B682E8005F57B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BB8BCCEB25B682E8005F57B8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BB8BCCED25B682E8005F57B8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BB8BCCF225B682E9005F57B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BB8BCCF525B682E9005F57B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BB8BCCF725B682E9005F57B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB8BCD0525B68446005F57B8 /* GowEngineDemo-iOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GowEngineDemo-iOS-Bridging-Header.h"; sourceTree = "<group>"; };
+		BB8BCD0725B68446005F57B8 /* Engine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Engine.swift; sourceTree = "<group>"; };
+		BB8BCD0825B68446005F57B8 /* NSEngine.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = NSEngine.hpp; sourceTree = "<group>"; };
+		BB8BCD0925B68446005F57B8 /* NSEngine.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = NSEngine.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -294,6 +351,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB7B08D225B64CF20021E545 /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB8BCCE425B682E8005F57B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,7 +371,8 @@
 				BB7B090825B651F20021E545 /* core */,
 				BB7B047925B646B90021E545 /* deps */,
 				BB7B08D025B64CF20021E545 /* Frameworks */,
-				BB7B045F25B644E00021E545 /* GowEngineDemo */,
+				BB8BCCE825B682E8005F57B8 /* iOS */,
+				BB7B045F25B644E00021E545 /* macOS */,
 				BB7B045E25B644E00021E545 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -315,19 +380,20 @@
 		BB7B045E25B644E00021E545 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BB7B045D25B644E00021E545 /* GowEngineDemo.app */,
+				BB7B045D25B644E00021E545 /* GowEngineDemo-macOS.app */,
+				BB8BCCE725B682E8005F57B8 /* GowEngineDemo-iOS.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		BB7B045F25B644E00021E545 /* GowEngineDemo */ = {
+		BB7B045F25B644E00021E545 /* macOS */ = {
 			isa = PBXGroup;
 			children = (
-				BB7B047425B6455F0021E545 /* main.cpp */,
 				BB7B046425B644E10021E545 /* Assets.xcassets */,
 				BB7B046925B644E10021E545 /* Info.plist */,
+				BB7B047425B6455F0021E545 /* main.cpp */,
 			);
-			path = GowEngineDemo;
+			path = macOS;
 			sourceTree = "<group>";
 		};
 		BB7B047925B646B90021E545 /* deps */ = {
@@ -751,12 +817,29 @@
 			path = glfw;
 			sourceTree = "<group>";
 		};
+		BB8BCCE825B682E8005F57B8 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				BB8BCCE925B682E8005F57B8 /* AppDelegate.swift */,
+				BB8BCCF225B682E9005F57B8 /* Assets.xcassets */,
+				BB8BCD0725B68446005F57B8 /* Engine.swift */,
+				BB8BCD0525B68446005F57B8 /* GowEngineDemo-iOS-Bridging-Header.h */,
+				BB8BCCF725B682E9005F57B8 /* Info.plist */,
+				BB8BCCF425B682E9005F57B8 /* LaunchScreen.storyboard */,
+				BB8BCD0825B68446005F57B8 /* NSEngine.hpp */,
+				BB8BCD0925B68446005F57B8 /* NSEngine.mm */,
+				BB8BCCEB25B682E8005F57B8 /* SceneDelegate.swift */,
+				BB8BCCED25B682E8005F57B8 /* ViewController.swift */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		BB7B045C25B644E00021E545 /* GowEngineDemo */ = {
+		BB7B045C25B644E00021E545 /* GowEngineDemo-macOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BB7B046D25B644E10021E545 /* Build configuration list for PBXNativeTarget "GowEngineDemo" */;
+			buildConfigurationList = BB7B046D25B644E10021E545 /* Build configuration list for PBXNativeTarget "GowEngineDemo-macOS" */;
 			buildPhases = (
 				BB7B045925B644E00021E545 /* Sources */,
 				BB7B045A25B644E00021E545 /* Frameworks */,
@@ -766,9 +849,26 @@
 			);
 			dependencies = (
 			);
-			name = GowEngineDemo;
+			name = "GowEngineDemo-macOS";
 			productName = GowEngineDemo;
-			productReference = BB7B045D25B644E00021E545 /* GowEngineDemo.app */;
+			productReference = BB7B045D25B644E00021E545 /* GowEngineDemo-macOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BB8BCCE625B682E8005F57B8 /* GowEngineDemo-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB8BCCF825B682E9005F57B8 /* Build configuration list for PBXNativeTarget "GowEngineDemo-iOS" */;
+			buildPhases = (
+				BB8BCCE325B682E8005F57B8 /* Sources */,
+				BB8BCCE425B682E8005F57B8 /* Frameworks */,
+				BB8BCCE525B682E8005F57B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "GowEngineDemo-iOS";
+			productName = GowEngineDemo;
+			productReference = BB8BCCE725B682E8005F57B8 /* GowEngineDemo-iOS.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -782,6 +882,10 @@
 				TargetAttributes = {
 					BB7B045C25B644E00021E545 = {
 						CreatedOnToolsVersion = 12.3;
+					};
+					BB8BCCE625B682E8005F57B8 = {
+						CreatedOnToolsVersion = 12.3;
+						LastSwiftMigration = 1230;
 					};
 				};
 			};
@@ -798,7 +902,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BB7B045C25B644E00021E545 /* GowEngineDemo */,
+				BB7B045C25B644E00021E545 /* GowEngineDemo-macOS */,
+				BB8BCCE625B682E8005F57B8 /* GowEngineDemo-iOS */,
 			);
 		};
 /* End PBXProject section */
@@ -817,6 +922,23 @@
 				BB8BCCDC25B6637E005F57B8 /* texture_000.png in Resources */,
 				BB8BCCDD25B6637E005F57B8 /* texture_001.png in Resources */,
 				BB8BCCDE25B6637E005F57B8 /* texture_002.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB8BCCE525B682E8005F57B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB8BCCF625B682E9005F57B8 /* LaunchScreen.storyboard in Resources */,
+				BB8BCCF325B682E9005F57B8 /* Assets.xcassets in Resources */,
+				BB8BCD4425B685D4005F57B8 /* assets.json in Resources */,
+				BB8BCD4525B685D4005F57B8 /* shader_000.fsh in Resources */,
+				BB8BCD4625B685D4005F57B8 /* shader_000.vsh in Resources */,
+				BB8BCD4725B685D4005F57B8 /* shader_001.fsh in Resources */,
+				BB8BCD4825B685D4005F57B8 /* shader_001.vsh in Resources */,
+				BB8BCD4925B685D4005F57B8 /* texture_000.png in Resources */,
+				BB8BCD4A25B685D4005F57B8 /* texture_001.png in Resources */,
+				BB8BCD4B25B685D4005F57B8 /* texture_002.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -878,7 +1000,61 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BB8BCCE325B682E8005F57B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB8BCCEE25B682E8005F57B8 /* ViewController.swift in Sources */,
+				BB8BCD0B25B68446005F57B8 /* NSEngine.mm in Sources */,
+				BB8BCD0A25B68446005F57B8 /* Engine.swift in Sources */,
+				BB8BCCEA25B682E8005F57B8 /* AppDelegate.swift in Sources */,
+				BB8BCCEC25B682E8005F57B8 /* SceneDelegate.swift in Sources */,
+				BB8BCD1325B68490005F57B8 /* MainEngineController.cpp in Sources */,
+				BB8BCD1425B68490005F57B8 /* MainEngineState.cpp in Sources */,
+				BB8BCD1525B68490005F57B8 /* Animation.cpp in Sources */,
+				BB8BCD1625B68490005F57B8 /* AppleAssetHandler.cpp in Sources */,
+				BB8BCD1725B68490005F57B8 /* AssetHandler.cpp in Sources */,
+				BB8BCD1825B68490005F57B8 /* AssetHandlerFactory.cpp in Sources */,
+				BB8BCD1925B68490005F57B8 /* Assets.cpp in Sources */,
+				BB8BCD3325B6849A005F57B8 /* NSAppleAssetHandler.mm in Sources */,
+				BB8BCD1A25B68490005F57B8 /* CursorConverter.cpp in Sources */,
+				BB8BCD1B25B68490005F57B8 /* CursorInputManager.cpp in Sources */,
+				BB8BCD1C25B68490005F57B8 /* DragView.cpp in Sources */,
+				BB8BCD1D25B68490005F57B8 /* Engine.cpp in Sources */,
+				BB8BCD1E25B68490005F57B8 /* EngineController.cpp in Sources */,
+				BB8BCD1F25B68490005F57B8 /* EngineState.cpp in Sources */,
+				BB8BCD2025B68490005F57B8 /* Entity.cpp in Sources */,
+				BB8BCD2125B68490005F57B8 /* FPSUtil.cpp in Sources */,
+				BB8BCD2225B68490005F57B8 /* ItemSelectView.cpp in Sources */,
+				BB8BCD2325B68490005F57B8 /* MainView.cpp in Sources */,
+				BB8BCD2425B68490005F57B8 /* OpenGLWrapper.cpp in Sources */,
+				BB8BCD2525B68490005F57B8 /* Renderer.cpp in Sources */,
+				BB8BCD2625B68490005F57B8 /* SceneSelectView.cpp in Sources */,
+				BB8BCD2725B68490005F57B8 /* ScreenRenderer.cpp in Sources */,
+				BB8BCD2825B68490005F57B8 /* ShaderDescriptor.cpp in Sources */,
+				BB8BCD2925B68490005F57B8 /* ShaderLoader.cpp in Sources */,
+				BB8BCD2A25B68490005F57B8 /* ShaderManager.cpp in Sources */,
+				BB8BCD2B25B68490005F57B8 /* SpriteBatcher.cpp in Sources */,
+				BB8BCD2C25B68490005F57B8 /* TextureDescriptor.cpp in Sources */,
+				BB8BCD2D25B68490005F57B8 /* TextureLoader.cpp in Sources */,
+				BB8BCD2E25B68490005F57B8 /* TextureManager.cpp in Sources */,
+				BB8BCD2F25B68490005F57B8 /* Vector2.cpp in Sources */,
+				BB8BCD3025B68490005F57B8 /* View.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BB8BCCF425B682E9005F57B8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB8BCCF525B682E9005F57B8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		BB7B046B25B644E10021E545 /* Debug */ = {
@@ -1018,7 +1194,7 @@
 					"\"$(SRCROOT)/../../../deps/GowEngine/deps/stb\"",
 					"\"$(SRCROOT)/../../../deps/GowEngine/src\"",
 				);
-				INFOPLIST_FILE = GowEngineDemo/Info.plist;
+				INFOPLIST_FILE = macOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -1051,7 +1227,7 @@
 					"\"$(SRCROOT)/../../../deps/GowEngine/deps/stb\"",
 					"\"$(SRCROOT)/../../../deps/GowEngine/src\"",
 				);
-				INFOPLIST_FILE = GowEngineDemo/Info.plist;
+				INFOPLIST_FILE = macOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -1060,6 +1236,70 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				VALIDATE_WORKSPACE_SKIPPED_SDK_FRAMEWORKS = OpenGL;
+			};
+			name = Release;
+		};
+		BB8BCCF925B682E9005F57B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 83V22B9TY9;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					GLES_SILENCE_DEPRECATION,
+				);
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/../../../deps/GowEngine/deps/rapidjson/include\"",
+					"\"$(SRCROOT)/../../../deps/GowEngine/deps/stb\"",
+					"\"$(SRCROOT)/../../../deps/GowEngine/src\"",
+				);
+				INFOPLIST_FILE = iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sgowen.GowEngineDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "iOS/GowEngineDemo-iOS-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BB8BCCFA25B682E9005F57B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 83V22B9TY9;
+				GCC_PREPROCESSOR_DEFINITIONS = GLES_SILENCE_DEPRECATION;
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/../../../deps/GowEngine/deps/rapidjson/include\"",
+					"\"$(SRCROOT)/../../../deps/GowEngine/deps/stb\"",
+					"\"$(SRCROOT)/../../../deps/GowEngine/src\"",
+				);
+				INFOPLIST_FILE = iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sgowen.GowEngineDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "iOS/GowEngineDemo-iOS-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
@@ -1075,11 +1315,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BB7B046D25B644E10021E545 /* Build configuration list for PBXNativeTarget "GowEngineDemo" */ = {
+		BB7B046D25B644E10021E545 /* Build configuration list for PBXNativeTarget "GowEngineDemo-macOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BB7B046E25B644E10021E545 /* Debug */,
 				BB7B046F25B644E10021E545 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB8BCCF825B682E9005F57B8 /* Build configuration list for PBXNativeTarget "GowEngineDemo-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB8BCCF925B682E9005F57B8 /* Debug */,
+				BB8BCCFA25B682E9005F57B8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
