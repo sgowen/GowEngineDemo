@@ -1,0 +1,23 @@
+# Visual Studio
+*.ipch
+*.user
+*.*sdf
+*.suo
+*.exe
+ARM/
+Debug/
+Release/
+Generated Files/
+BundleArtifacts/
+AppPackages/
+*VC.opendb
+*VC.db
+.vs/
+
+# copied to project dir after build
+json/
+music/
+shaders/
+sounds/
+textures/
+GowEngineDemo

@@ -10,6 +10,7 @@
 
 #include "EngineController.hpp"
 
+#include "PlatformMacros.hpp"
 #include "Engine.hpp"
 
 #include <stdlib.h>
@@ -174,9 +175,12 @@ int GlfwMain::exec(EngineController* engineController)
     glfwSetKeyCallback(window, GlfwMain::key_callback);
 
     glfwMakeContextCurrent(window);
+#if IS_WINDOWS
+    gladLoadGL(glfwGetProcAddress);
+#endif
     glfwSwapInterval(1);
 
-#if defined __linux__
+#if IS_LINUX
     glewInit();
 #endif
 
