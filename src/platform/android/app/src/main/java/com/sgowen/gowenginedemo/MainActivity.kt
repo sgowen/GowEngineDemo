@@ -24,9 +24,9 @@ class MainActivity : AppCompatActivity()
 
     override fun onDestroy()
     {
-        super.onDestroy()
-
         engine.releaseDeviceDependentResources()
+
+        super.onDestroy()
     }
 
     override fun onWindowFocusChanged(hasFocus: Boolean)
@@ -56,6 +56,13 @@ class MainActivity : AppCompatActivity()
 
     private class MyGLSurfaceView(val engine: Engine, context: Context) : GLSurfaceView(context)
     {
+        init
+        {
+            setEGLContextClientVersion(3)
+
+            setRenderer(MyGLRenderer(context, engine))
+        }
+
         @SuppressLint("ClickableViewAccessibility")
         override fun onTouchEvent(e: MotionEvent): Boolean
         {
@@ -79,17 +86,6 @@ class MainActivity : AppCompatActivity()
             }
 
             return true
-        }
-
-        private val renderer: MyGLRenderer
-
-        init
-        {
-            setEGLContextClientVersion(3)
-
-            renderer = MyGLRenderer(context, engine)
-
-            setRenderer(renderer)
         }
     }
 
