@@ -97,6 +97,14 @@
 		BB8BCD2E25B68490005F57B8 /* TextureManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB7B07C625B646BA0021E545 /* TextureManager.cpp */; };
 		BB8BCD2F25B68490005F57B8 /* Vector2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB7B07A725B646BA0021E545 /* Vector2.cpp */; };
 		BB8BCD3325B6849A005F57B8 /* NSAppleAssetHandler.mm in Sources */ = {isa = PBXBuildFile; fileRef = BB7B079525B646BA0021E545 /* NSAppleAssetHandler.mm */; };
+		BBBA453425B8822C00C8207D /* GamePadEvent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BBBA452A25B8822C00C8207D /* GamePadEvent.cpp */; };
+		BBBA453525B8822C00C8207D /* GamePadEvent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BBBA452A25B8822C00C8207D /* GamePadEvent.cpp */; };
+		BBBA453625B8822C00C8207D /* KeyboardEvent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BBBA452E25B8822C00C8207D /* KeyboardEvent.cpp */; };
+		BBBA453725B8822C00C8207D /* KeyboardEvent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BBBA452E25B8822C00C8207D /* KeyboardEvent.cpp */; };
+		BBBA453825B8822C00C8207D /* GamePadInputManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BBBA453025B8822C00C8207D /* GamePadInputManager.cpp */; };
+		BBBA453925B8822C00C8207D /* GamePadInputManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BBBA453025B8822C00C8207D /* GamePadInputManager.cpp */; };
+		BBBA453A25B8822C00C8207D /* KeyboardInputManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BBBA453125B8822C00C8207D /* KeyboardInputManager.cpp */; };
+		BBBA453B25B8822C00C8207D /* KeyboardInputManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BBBA453125B8822C00C8207D /* KeyboardInputManager.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -320,6 +328,16 @@
 		BB8BCD0725B68446005F57B8 /* Engine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Engine.swift; sourceTree = "<group>"; };
 		BB8BCD0825B68446005F57B8 /* NSEngine.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = NSEngine.hpp; sourceTree = "<group>"; };
 		BB8BCD0925B68446005F57B8 /* NSEngine.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = NSEngine.mm; sourceTree = "<group>"; };
+		BBBA452A25B8822C00C8207D /* GamePadEvent.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GamePadEvent.cpp; sourceTree = "<group>"; };
+		BBBA452B25B8822C00C8207D /* KeyboardInputManager.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = KeyboardInputManager.hpp; sourceTree = "<group>"; };
+		BBBA452C25B8822C00C8207D /* KeyboardEvent.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = KeyboardEvent.hpp; sourceTree = "<group>"; };
+		BBBA452D25B8822C00C8207D /* GamePadEventType.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = GamePadEventType.hpp; sourceTree = "<group>"; };
+		BBBA452E25B8822C00C8207D /* KeyboardEvent.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KeyboardEvent.cpp; sourceTree = "<group>"; };
+		BBBA452F25B8822C00C8207D /* GamePadEvent.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = GamePadEvent.hpp; sourceTree = "<group>"; };
+		BBBA453025B8822C00C8207D /* GamePadInputManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GamePadInputManager.cpp; sourceTree = "<group>"; };
+		BBBA453125B8822C00C8207D /* KeyboardInputManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KeyboardInputManager.cpp; sourceTree = "<group>"; };
+		BBBA453225B8822C00C8207D /* KeyboardLookup.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = KeyboardLookup.hpp; sourceTree = "<group>"; };
+		BBBA453325B8822C00C8207D /* GamePadInputManager.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = GamePadInputManager.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -558,6 +576,16 @@
 				BB7B07B625B646BA0021E545 /* FPSUtil.cpp */,
 				BB7B07A825B646BA0021E545 /* FPSUtil.hpp */,
 				BB7B07BB25B646BA0021E545 /* Framebuffer.hpp */,
+				BBBA452A25B8822C00C8207D /* GamePadEvent.cpp */,
+				BBBA452F25B8822C00C8207D /* GamePadEvent.hpp */,
+				BBBA452D25B8822C00C8207D /* GamePadEventType.hpp */,
+				BBBA453025B8822C00C8207D /* GamePadInputManager.cpp */,
+				BBBA453325B8822C00C8207D /* GamePadInputManager.hpp */,
+				BBBA452E25B8822C00C8207D /* KeyboardEvent.cpp */,
+				BBBA452C25B8822C00C8207D /* KeyboardEvent.hpp */,
+				BBBA453125B8822C00C8207D /* KeyboardInputManager.cpp */,
+				BBBA452B25B8822C00C8207D /* KeyboardInputManager.hpp */,
+				BBBA453225B8822C00C8207D /* KeyboardLookup.hpp */,
 				BB16D1FA25B75F5100C340C1 /* linux */,
 				BB7B07A925B646BA0021E545 /* Macros.hpp */,
 				BB7B07C025B646BA0021E545 /* MathUtil.hpp */,
@@ -924,6 +952,7 @@
 				BB7B08B225B64A620021E545 /* AppleAssetHandler.cpp in Sources */,
 				BB7B08B325B64A620021E545 /* NSAppleAssetHandler.mm in Sources */,
 				BB7B08B425B64A620021E545 /* AssetHandler.cpp in Sources */,
+				BBBA453A25B8822C00C8207D /* KeyboardInputManager.cpp in Sources */,
 				BB7B08B525B64A620021E545 /* AssetHandlerFactory.cpp in Sources */,
 				BB7B08B625B64A620021E545 /* Assets.cpp in Sources */,
 				BB7B091325B652D80021E545 /* EngineState.cpp in Sources */,
@@ -945,6 +974,8 @@
 				BB7B08C825B64A620021E545 /* TextureLoader.cpp in Sources */,
 				BB16D1FF25B7623700C340C1 /* LinuxAssetHandler.cpp in Sources */,
 				BB7B08C925B64A620021E545 /* TextureManager.cpp in Sources */,
+				BBBA453425B8822C00C8207D /* GamePadEvent.cpp in Sources */,
+				BBBA453625B8822C00C8207D /* KeyboardEvent.cpp in Sources */,
 				BB7B08CA25B64A620021E545 /* Vector2.cpp in Sources */,
 				BB7B08D525B64DFB0021E545 /* context.c in Sources */,
 				BB7B08D625B64DFB0021E545 /* init.c in Sources */,
@@ -957,6 +988,7 @@
 				BB7B08DE25B64E320021E545 /* cocoa_monitor.m in Sources */,
 				BB7B08DF25B64E320021E545 /* cocoa_time.c in Sources */,
 				BB7B090C25B651F20021E545 /* GlfwMain.cpp in Sources */,
+				BBBA453825B8822C00C8207D /* GamePadInputManager.cpp in Sources */,
 				BB7B091D25B659E70021E545 /* MainEngineState.cpp in Sources */,
 				BB7B08E025B64E320021E545 /* cocoa_window.m in Sources */,
 				BB7B08E125B64E320021E545 /* egl_context.c in Sources */,
@@ -973,8 +1005,11 @@
 				BB8BCCEE25B682E8005F57B8 /* ViewController.swift in Sources */,
 				BB8BCD0B25B68446005F57B8 /* NSEngine.mm in Sources */,
 				BB8BCD0A25B68446005F57B8 /* Engine.swift in Sources */,
+				BBBA453725B8822C00C8207D /* KeyboardEvent.cpp in Sources */,
 				BB8BCCEA25B682E8005F57B8 /* AppDelegate.swift in Sources */,
+				BBBA453B25B8822C00C8207D /* KeyboardInputManager.cpp in Sources */,
 				BB8BCCEC25B682E8005F57B8 /* SceneDelegate.swift in Sources */,
+				BBBA453525B8822C00C8207D /* GamePadEvent.cpp in Sources */,
 				BB8BCD1325B68490005F57B8 /* MainEngineController.cpp in Sources */,
 				BB8BCD1425B68490005F57B8 /* MainEngineState.cpp in Sources */,
 				BB8BCD1525B68490005F57B8 /* Animation.cpp in Sources */,
@@ -988,6 +1023,7 @@
 				BB8BCD1B25B68490005F57B8 /* CursorInputManager.cpp in Sources */,
 				BB8BCD1D25B68490005F57B8 /* Engine.cpp in Sources */,
 				BB8BCD1E25B68490005F57B8 /* EngineController.cpp in Sources */,
+				BBBA453925B8822C00C8207D /* GamePadInputManager.cpp in Sources */,
 				BB8BCD1F25B68490005F57B8 /* EngineState.cpp in Sources */,
 				BB8BCD2025B68490005F57B8 /* Entity.cpp in Sources */,
 				BB8BCD2125B68490005F57B8 /* FPSUtil.cpp in Sources */,
