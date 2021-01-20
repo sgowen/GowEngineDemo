@@ -338,6 +338,65 @@
 		BBBA453125B8822C00C8207D /* KeyboardInputManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KeyboardInputManager.cpp; sourceTree = "<group>"; };
 		BBBA453225B8822C00C8207D /* KeyboardLookup.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = KeyboardLookup.hpp; sourceTree = "<group>"; };
 		BBBA453325B8822C00C8207D /* GamePadInputManager.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = GamePadInputManager.hpp; sourceTree = "<group>"; };
+		BBBA45E225B89DF800C8207D /* OALSimpleAudio.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OALSimpleAudio.h; sourceTree = "<group>"; };
+		BBBA45E425B89DF800C8207D /* OALAudioTrack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OALAudioTrack.h; sourceTree = "<group>"; };
+		BBBA45E525B89DF800C8207D /* OALAudioTracks.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OALAudioTracks.m; sourceTree = "<group>"; };
+		BBBA45E625B89DF800C8207D /* OALAudioTrackNotifications.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OALAudioTrackNotifications.h; sourceTree = "<group>"; };
+		BBBA45E725B89DF800C8207D /* OALAudioTrack.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OALAudioTrack.m; sourceTree = "<group>"; };
+		BBBA45E825B89DF800C8207D /* OALAudioTracks.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OALAudioTracks.h; sourceTree = "<group>"; };
+		BBBA45E925B89DF800C8207D /* OALAudioTrackNotifications.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OALAudioTrackNotifications.m; sourceTree = "<group>"; };
+		BBBA45EA25B89DF800C8207D /* ObjectALConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjectALConfig.h; sourceTree = "<group>"; };
+		BBBA45EC25B89DF800C8207D /* ALDevice.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ALDevice.m; sourceTree = "<group>"; };
+		BBBA45ED25B89DF800C8207D /* ALSoundSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ALSoundSource.h; sourceTree = "<group>"; };
+		BBBA45EE25B89DF800C8207D /* ALWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ALWrapper.h; sourceTree = "<group>"; };
+		BBBA45EF25B89DF800C8207D /* ALCaptureDevice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ALCaptureDevice.h; sourceTree = "<group>"; };
+		BBBA45F025B89DF800C8207D /* ALBuffer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ALBuffer.h; sourceTree = "<group>"; };
+		BBBA45F125B89DF800C8207D /* ALListener.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ALListener.m; sourceTree = "<group>"; };
+		BBBA45F225B89DF800C8207D /* ALChannelSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ALChannelSource.m; sourceTree = "<group>"; };
+		BBBA45F325B89DF800C8207D /* ALSoundSourcePool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ALSoundSourcePool.h; sourceTree = "<group>"; };
+		BBBA45F425B89DF800C8207D /* ALContext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ALContext.h; sourceTree = "<group>"; };
+		BBBA45F525B89DF800C8207D /* OpenALManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenALManager.m; sourceTree = "<group>"; };
+		BBBA45F625B89DF800C8207D /* ALSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ALSource.m; sourceTree = "<group>"; };
+		BBBA45F725B89DF800C8207D /* ALWrapper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ALWrapper.m; sourceTree = "<group>"; };
+		BBBA45F825B89DF800C8207D /* ALTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ALTypes.h; sourceTree = "<group>"; };
+		BBBA45F925B89DF800C8207D /* ALDevice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ALDevice.h; sourceTree = "<group>"; };
+		BBBA45FA25B89DF800C8207D /* ALBuffer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ALBuffer.m; sourceTree = "<group>"; };
+		BBBA45FB25B89DF800C8207D /* ALListener.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ALListener.h; sourceTree = "<group>"; };
+		BBBA45FC25B89DF800C8207D /* ALCaptureDevice.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ALCaptureDevice.m; sourceTree = "<group>"; };
+		BBBA45FD25B89DF800C8207D /* ALContext.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ALContext.m; sourceTree = "<group>"; };
+		BBBA45FE25B89DF800C8207D /* ALSoundSourcePool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ALSoundSourcePool.m; sourceTree = "<group>"; };
+		BBBA45FF25B89DF800C8207D /* ALChannelSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ALChannelSource.h; sourceTree = "<group>"; };
+		BBBA460025B89DF800C8207D /* ALSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ALSource.h; sourceTree = "<group>"; };
+		BBBA460125B89DF800C8207D /* OpenALManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenALManager.h; sourceTree = "<group>"; };
+		BBBA460225B89DF800C8207D /* OALSimpleAudio.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OALSimpleAudio.m; sourceTree = "<group>"; };
+		BBBA460425B89DF800C8207D /* OALAudioFile.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OALAudioFile.m; sourceTree = "<group>"; };
+		BBBA460525B89DF800C8207D /* NSMutableDictionary+WeakReferences.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+WeakReferences.m"; sourceTree = "<group>"; };
+		BBBA460625B89DF800C8207D /* ARCSafe_MemMgmt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARCSafe_MemMgmt.h; sourceTree = "<group>"; };
+		BBBA460725B89DF800C8207D /* OALTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OALTools.h; sourceTree = "<group>"; };
+		BBBA460825B89DF800C8207D /* NSMutableArray+WeakReferences.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+WeakReferences.m"; sourceTree = "<group>"; };
+		BBBA460925B89DF800C8207D /* mach_timing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mach_timing.h; sourceTree = "<group>"; };
+		BBBA460A25B89DF800C8207D /* SynthesizeSingleton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SynthesizeSingleton.h; sourceTree = "<group>"; };
+		BBBA460B25B89DF800C8207D /* NSMutableDictionary+WeakReferences.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+WeakReferences.h"; sourceTree = "<group>"; };
+		BBBA460C25B89DF800C8207D /* OALAudioFile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OALAudioFile.h; sourceTree = "<group>"; };
+		BBBA460D25B89DF800C8207D /* ObjectALMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjectALMacros.h; sourceTree = "<group>"; };
+		BBBA460E25B89DF800C8207D /* OALNotifications.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OALNotifications.h; sourceTree = "<group>"; };
+		BBBA460F25B89DF800C8207D /* OALTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OALTools.m; sourceTree = "<group>"; };
+		BBBA461025B89DF800C8207D /* mach_timing.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = mach_timing.c; sourceTree = "<group>"; };
+		BBBA461125B89DF800C8207D /* NSMutableArray+WeakReferences.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+WeakReferences.h"; sourceTree = "<group>"; };
+		BBBA461225B89DF800C8207D /* ObjectAL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjectAL.h; sourceTree = "<group>"; };
+		BBBA461425B89DF800C8207D /* OALUtilityActions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OALUtilityActions.h; sourceTree = "<group>"; };
+		BBBA461525B89DF800C8207D /* OALActionManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OALActionManager.m; sourceTree = "<group>"; };
+		BBBA461625B89DF800C8207D /* OALAudioActions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OALAudioActions.h; sourceTree = "<group>"; };
+		BBBA461725B89DF800C8207D /* OALAction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OALAction.m; sourceTree = "<group>"; };
+		BBBA461825B89DF800C8207D /* OALUtilityActions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OALUtilityActions.m; sourceTree = "<group>"; };
+		BBBA461925B89DF800C8207D /* OALAction+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OALAction+Private.h"; sourceTree = "<group>"; };
+		BBBA461A25B89DF800C8207D /* OALAction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OALAction.h; sourceTree = "<group>"; };
+		BBBA461B25B89DF800C8207D /* OALAudioActions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OALAudioActions.m; sourceTree = "<group>"; };
+		BBBA461C25B89DF800C8207D /* OALActionManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OALActionManager.h; sourceTree = "<group>"; };
+		BBBA461F25B89DF800C8207D /* OALSuspendHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OALSuspendHandler.h; sourceTree = "<group>"; };
+		BBBA462025B89DF800C8207D /* OALAudioSession.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OALAudioSession.m; sourceTree = "<group>"; };
+		BBBA462125B89DF800C8207D /* OALSuspendHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OALSuspendHandler.m; sourceTree = "<group>"; };
+		BBBA462225B89DF800C8207D /* OALAudioSession.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OALAudioSession.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -445,6 +504,7 @@
 		BB7B047E25B646B90021E545 /* deps */ = {
 			isa = PBXGroup;
 			children = (
+				BBBA454425B89DF700C8207D /* ObjectAL-for-iPhone */,
 				BB7B062B25B646BA0021E545 /* rapidjson */,
 				BB7B047F25B646B90021E545 /* stb */,
 			);
@@ -838,6 +898,128 @@
 			path = iOS;
 			sourceTree = "<group>";
 		};
+		BBBA454425B89DF700C8207D /* ObjectAL-for-iPhone */ = {
+			isa = PBXGroup;
+			children = (
+				BBBA45CE25B89DF800C8207D /* ObjectAL */,
+			);
+			path = "ObjectAL-for-iPhone";
+			sourceTree = "<group>";
+		};
+		BBBA45CE25B89DF800C8207D /* ObjectAL */ = {
+			isa = PBXGroup;
+			children = (
+				BBBA45E125B89DF800C8207D /* ObjectAL */,
+			);
+			path = ObjectAL;
+			sourceTree = "<group>";
+		};
+		BBBA45E125B89DF800C8207D /* ObjectAL */ = {
+			isa = PBXGroup;
+			children = (
+				BBBA461325B89DF800C8207D /* Actions */,
+				BBBA45E325B89DF800C8207D /* AudioTrack */,
+				BBBA45E225B89DF800C8207D /* OALSimpleAudio.h */,
+				BBBA460225B89DF800C8207D /* OALSimpleAudio.m */,
+				BBBA461225B89DF800C8207D /* ObjectAL.h */,
+				BBBA45EA25B89DF800C8207D /* ObjectALConfig.h */,
+				BBBA45EB25B89DF800C8207D /* OpenAL */,
+				BBBA461E25B89DF800C8207D /* Session */,
+				BBBA460325B89DF800C8207D /* Support */,
+			);
+			path = ObjectAL;
+			sourceTree = "<group>";
+		};
+		BBBA45E325B89DF800C8207D /* AudioTrack */ = {
+			isa = PBXGroup;
+			children = (
+				BBBA45E425B89DF800C8207D /* OALAudioTrack.h */,
+				BBBA45E725B89DF800C8207D /* OALAudioTrack.m */,
+				BBBA45E625B89DF800C8207D /* OALAudioTrackNotifications.h */,
+				BBBA45E925B89DF800C8207D /* OALAudioTrackNotifications.m */,
+				BBBA45E825B89DF800C8207D /* OALAudioTracks.h */,
+				BBBA45E525B89DF800C8207D /* OALAudioTracks.m */,
+			);
+			path = AudioTrack;
+			sourceTree = "<group>";
+		};
+		BBBA45EB25B89DF800C8207D /* OpenAL */ = {
+			isa = PBXGroup;
+			children = (
+				BBBA45F025B89DF800C8207D /* ALBuffer.h */,
+				BBBA45FA25B89DF800C8207D /* ALBuffer.m */,
+				BBBA45EF25B89DF800C8207D /* ALCaptureDevice.h */,
+				BBBA45FC25B89DF800C8207D /* ALCaptureDevice.m */,
+				BBBA45FF25B89DF800C8207D /* ALChannelSource.h */,
+				BBBA45F225B89DF800C8207D /* ALChannelSource.m */,
+				BBBA45F425B89DF800C8207D /* ALContext.h */,
+				BBBA45FD25B89DF800C8207D /* ALContext.m */,
+				BBBA45F925B89DF800C8207D /* ALDevice.h */,
+				BBBA45EC25B89DF800C8207D /* ALDevice.m */,
+				BBBA45FB25B89DF800C8207D /* ALListener.h */,
+				BBBA45F125B89DF800C8207D /* ALListener.m */,
+				BBBA45ED25B89DF800C8207D /* ALSoundSource.h */,
+				BBBA45F325B89DF800C8207D /* ALSoundSourcePool.h */,
+				BBBA45FE25B89DF800C8207D /* ALSoundSourcePool.m */,
+				BBBA460025B89DF800C8207D /* ALSource.h */,
+				BBBA45F625B89DF800C8207D /* ALSource.m */,
+				BBBA45F825B89DF800C8207D /* ALTypes.h */,
+				BBBA45EE25B89DF800C8207D /* ALWrapper.h */,
+				BBBA45F725B89DF800C8207D /* ALWrapper.m */,
+				BBBA460125B89DF800C8207D /* OpenALManager.h */,
+				BBBA45F525B89DF800C8207D /* OpenALManager.m */,
+			);
+			path = OpenAL;
+			sourceTree = "<group>";
+		};
+		BBBA460325B89DF800C8207D /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				BBBA460625B89DF800C8207D /* ARCSafe_MemMgmt.h */,
+				BBBA461025B89DF800C8207D /* mach_timing.c */,
+				BBBA460925B89DF800C8207D /* mach_timing.h */,
+				BBBA461125B89DF800C8207D /* NSMutableArray+WeakReferences.h */,
+				BBBA460825B89DF800C8207D /* NSMutableArray+WeakReferences.m */,
+				BBBA460B25B89DF800C8207D /* NSMutableDictionary+WeakReferences.h */,
+				BBBA460525B89DF800C8207D /* NSMutableDictionary+WeakReferences.m */,
+				BBBA460C25B89DF800C8207D /* OALAudioFile.h */,
+				BBBA460425B89DF800C8207D /* OALAudioFile.m */,
+				BBBA460E25B89DF800C8207D /* OALNotifications.h */,
+				BBBA460725B89DF800C8207D /* OALTools.h */,
+				BBBA460F25B89DF800C8207D /* OALTools.m */,
+				BBBA460D25B89DF800C8207D /* ObjectALMacros.h */,
+				BBBA460A25B89DF800C8207D /* SynthesizeSingleton.h */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		BBBA461325B89DF800C8207D /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				BBBA461A25B89DF800C8207D /* OALAction.h */,
+				BBBA461725B89DF800C8207D /* OALAction.m */,
+				BBBA461925B89DF800C8207D /* OALAction+Private.h */,
+				BBBA461C25B89DF800C8207D /* OALActionManager.h */,
+				BBBA461525B89DF800C8207D /* OALActionManager.m */,
+				BBBA461625B89DF800C8207D /* OALAudioActions.h */,
+				BBBA461B25B89DF800C8207D /* OALAudioActions.m */,
+				BBBA461425B89DF800C8207D /* OALUtilityActions.h */,
+				BBBA461825B89DF800C8207D /* OALUtilityActions.m */,
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
+		BBBA461E25B89DF800C8207D /* Session */ = {
+			isa = PBXGroup;
+			children = (
+				BBBA462225B89DF800C8207D /* OALAudioSession.h */,
+				BBBA462025B89DF800C8207D /* OALAudioSession.m */,
+				BBBA461F25B89DF800C8207D /* OALSuspendHandler.h */,
+				BBBA462125B89DF800C8207D /* OALSuspendHandler.m */,
+			);
+			path = Session;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -900,6 +1082,7 @@
 			knownRegions = (
 				en,
 				Base,
+				English,
 			);
 			mainGroup = BB7B045425B644E00021E545;
 			productRefGroup = BB7B045E25B644E00021E545 /* Products */;
