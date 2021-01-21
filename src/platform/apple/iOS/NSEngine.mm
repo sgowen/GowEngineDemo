@@ -28,6 +28,7 @@
 - (void)dealloc
 {
     delete _engine;
+    delete _controller;
 }
 
 - (void)createDeviceDependentResources
@@ -65,19 +66,19 @@
     _engine->render();
 }
 
-- (void)onCursorDown:(float)x :(float)y :(bool)isAlt
+- (void)onCursorDown:(float)x :(float)y
 {
-    _engine->onCursorDown(x, y, isAlt);
+    _engine->onCursorDown(x, y);
 }
 
-- (void)onCursorDragged:(float)x :(float)y :(bool)isAlt
+- (void)onCursorDragged:(float)x :(float)y
 {
-    _engine->onCursorDragged(x, y, isAlt);
+    _engine->onCursorDragged(x, y);
 }
 
-- (void)onCursorUp:(float)x :(float)y :(bool)isAlt
+- (void)onCursorUp:(float)x :(float)y
 {
-    _engine->onCursorUp(x, y, isAlt);
+    _engine->onCursorUp(x, y);
 }
 
 @end

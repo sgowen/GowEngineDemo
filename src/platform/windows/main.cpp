@@ -3,7 +3,7 @@
 //  GowEngineDemo
 //
 //  Created by Stephen Gowen on 1/18/21.
-//  Copyright © 2020 Stephen Gowen. All rights reserved.
+//  Copyright ï¿½ 2020 Stephen Gowen. All rights reserved.
 //
 
 #include "MainEngineController.hpp"
@@ -12,5 +12,5 @@
 int main(void)
 {
     MainEngineController controller;
-    return GlfwMain::getInstance()->exec(&controller);
+    return GlfwMain::getInstance().exec(&controller);
 }

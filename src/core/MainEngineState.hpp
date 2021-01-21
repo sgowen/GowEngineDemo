@@ -10,6 +10,8 @@
 
 #include "EngineState.hpp"
 
+#include "Renderer.hpp"
+
 class MainEngineState : public EngineState
 {
 public:
@@ -20,15 +22,19 @@ public:
     virtual void enter(Engine* engine);
     virtual void execute(Engine* engine);
     virtual void exit(Engine* engine);
+    
     virtual void createDeviceDependentResources();
     virtual void onWindowSizeChanged(int screenWidth, int screenHeight, int cursorWidth, int cursorHeight);
     virtual void releaseDeviceDependentResources();
     virtual void onResume();
     virtual void onPause();
-    virtual void render(double alpha);
+    virtual void update();
+    virtual void render();
     
 private:
     static MainEngineState* s_instance;
+    
+    Renderer _renderer;
     
     MainEngineState();
     ~MainEngineState();

@@ -16,9 +16,9 @@ class Engine
     external fun onPause(): Void
     external fun update(deltaTime: Double): Void
     external fun render(): Void
-    external fun onCursorDown(x: Float, y: Float, isAlt: Boolean): Void
-    external fun onCursorDragged(x: Float, y: Float, isAlt: Boolean): Void
-    external fun onCursorUp(x: Float, y: Float, isAlt: Boolean): Void
+    external fun onCursorDown(x: Float, y: Float): Void
+    external fun onCursorDragged(x: Float, y: Float): Void
+    external fun onCursorUp(x: Float, y: Float): Void
 
     private external fun init(): Void
 

@@ -19,8 +19,8 @@
 - (void)onPause;
 - (void)update:(double)deltaTime;
 - (void)render;
-- (void)onCursorDown:(float)x :(float)y :(bool)isAlt;
-- (void)onCursorDragged:(float)x :(float)y :(bool)isAlt;
-- (void)onCursorUp:(float)x :(float)y :(bool)isAlt;
+- (void)onCursorDown:(float)x :(float)y;
+- (void)onCursorDragged:(float)x :(float)y;
+- (void)onCursorUp:(float)x :(float)y;
 
 @end

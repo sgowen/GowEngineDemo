@@ -73,15 +73,15 @@ class MainActivity : AppCompatActivity()
             {
                 MotionEvent.ACTION_DOWN ->
                 {
-                    engine.onCursorDown(x, y, false)
+                    engine.onCursorDown(x, y)
                 }
                 MotionEvent.ACTION_MOVE ->
                 {
-                    engine.onCursorDragged(x, y, false)
+                    engine.onCursorDragged(x, y)
                 }
                 MotionEvent.ACTION_UP ->
                 {
-                    engine.onCursorUp(x, y, false)
+                    engine.onCursorUp(x, y)
                 }
             }
 

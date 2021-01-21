@@ -76,27 +76,27 @@ Java_com_sgowen_gowenginedemo_Engine_render(JNIEnv *env, jobject thiz)
 
 extern "C"
 JNIEXPORT jobject JNICALL
-Java_com_sgowen_gowenginedemo_Engine_onCursorDown(JNIEnv *env, jobject thiz, jfloat x, jfloat y, jboolean is_alt)
+Java_com_sgowen_gowenginedemo_Engine_onCursorDown(JNIEnv *env, jobject thiz, jfloat x, jfloat y)
 {
-    _engine->onCursorDown(x, y, is_alt);
+    _engine->onCursorDown(x, y);
 
     return 0;
 }
 
 extern "C"
 JNIEXPORT jobject JNICALL
-Java_com_sgowen_gowenginedemo_Engine_onCursorDragged(JNIEnv *env, jobject thiz, jfloat x, jfloat y, jboolean is_alt)
+Java_com_sgowen_gowenginedemo_Engine_onCursorDragged(JNIEnv *env, jobject thiz, jfloat x, jfloat y)
 {
-    _engine->onCursorDragged(x, y, is_alt);
+    _engine->onCursorDragged(x, y);
 
     return 0;
 }
 
 extern "C"
 JNIEXPORT jobject JNICALL
-Java_com_sgowen_gowenginedemo_Engine_onCursorUp(JNIEnv *env, jobject thiz, jfloat x, jfloat y, jboolean is_alt)
+Java_com_sgowen_gowenginedemo_Engine_onCursorUp(JNIEnv *env, jobject thiz, jfloat x, jfloat y)
 {
-    _engine->onCursorUp(x, y, is_alt);
+    _engine->onCursorUp(x, y);
 
     return 0;
 }

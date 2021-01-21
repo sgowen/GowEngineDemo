@@ -8,26 +8,27 @@
 
 #include "MainEngineState.hpp"
 
+#include "Assets.hpp"
+#include "Macros.hpp"
+
 #include <stdlib.h>
 #include <assert.h>
 
-MainEngineState* MainEngineState::s_instance = NULL;
-
 void MainEngineState::create()
 {
-    assert(!s_instance);
+    assert(s_instance == NULL);
     
     s_instance = new MainEngineState();
 }
 
-MainEngineState * MainEngineState::getInstance()
+MainEngineState* MainEngineState::getInstance()
 {
     return s_instance;
 }
 
 void MainEngineState::destroy()
 {
-    assert(s_instance);
+    assert(s_instance != NULL);
     
     delete s_instance;
     s_instance = NULL;
@@ -50,17 +51,19 @@ void MainEngineState::exit(Engine* engine)
 
 void MainEngineState::createDeviceDependentResources()
 {
-    // TODO
+    ASSETS.initWithJSONFile("json/assets.json");
+    
+    _renderer.createDeviceDependentResources();
 }
 
 void MainEngineState::onWindowSizeChanged(int screenWidth, int screenHeight, int cursorWidth, int cursorHeight)
 {
-    // TODO
+    _renderer.onWindowSizeChanged(screenWidth, screenHeight);
 }
 
 void MainEngineState::releaseDeviceDependentResources()
 {
-    // TODO
+    _renderer.releaseDeviceDependentResources();
 }
 
 void MainEngineState::onResume()
@@ -73,12 +76,20 @@ void MainEngineState::onPause()
     // Empty
 }
 
-void MainEngineState::render(double alpha)
+void MainEngineState::update()
 {
     // TODO
 }
 
-MainEngineState::MainEngineState() : EngineState()
+void MainEngineState::render()
+{
+    _renderer.render();
+}
+
+MainEngineState* MainEngineState::s_instance = NULL;
+
+MainEngineState::MainEngineState() : EngineState(),
+_renderer()
 {
     // TODO
 }

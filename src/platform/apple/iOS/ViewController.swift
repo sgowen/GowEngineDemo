@@ -12,10 +12,11 @@ import GLKit
 
 final class ViewController: GLKViewController
 {
+    let engine = NSEngine()
+    
     deinit
     {
-        engine!.releaseDeviceDependentResources()
-        engine = nil
+        engine?.releaseDeviceDependentResources()
         
         EAGLContext.setCurrent(nil)
         context = nil
@@ -43,8 +44,6 @@ final class ViewController: GLKViewController
         var size = CGSize(width: screenBounds.size.width, height: screenBounds.size.height)
         size.width = CGFloat(roundf(Float(size.width)))
         size.height = CGFloat(roundf(Float(size.height)))
-        
-        engine = Engine()
 
         engine!.createDeviceDependentResources()
         
@@ -52,7 +51,7 @@ final class ViewController: GLKViewController
         let height = min(size.width, size.height)
         let touchWidth = UIScreen.main.bounds.size.width
         let touchHeight = UIScreen.main.bounds.size.height
-        engine!.onWindowSizeChanged(screenWidth: Int32(width), screenHeight: Int32(height), cursorWidth: Int32(touchWidth), cursorHeight: Int32(touchHeight))
+        engine!.onWindowSizeChanged(Int32(width), Int32(height), Int32(touchWidth), Int32(touchHeight))
         
         NotificationCenter.default.addObserver(self,
                                                selector: #selector(ViewController.willResignActive),
@@ -71,7 +70,7 @@ final class ViewController: GLKViewController
         {
             return
         }
-        engine!.onCursorDown(x: Float32(touchPosition.x), y: Float32(touchPosition.y), isAlt: false)
+        engine!.onCursorDown(Float32(touchPosition.x), Float32(touchPosition.y))
     }
     
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?)
@@ -80,7 +79,7 @@ final class ViewController: GLKViewController
         {
             return
         }
-        engine!.onCursorDragged(x: Float32(touchPosition.x), y: Float32(touchPosition.y), isAlt: false)
+        engine!.onCursorDragged(Float32(touchPosition.x), Float32(touchPosition.y))
     }
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?)
@@ -89,7 +88,7 @@ final class ViewController: GLKViewController
         {
             return
         }
-        engine!.onCursorUp(x: Float32(touchPosition.x), y: Float32(touchPosition.y), isAlt: false)
+        engine!.onCursorUp(Float32(touchPosition.x), Float32(touchPosition.y))
     }
     
     override var prefersHomeIndicatorAutoHidden: Bool {
@@ -101,7 +100,6 @@ final class ViewController: GLKViewController
     }
     
     private var context: EAGLContext?
-    private var engine: Engine?
     
     @objc fileprivate func willResignActive()
     {
@@ -119,7 +117,7 @@ extension ViewController: GLKViewControllerDelegate
 {
     func glkViewControllerUpdate(_ controller: GLKViewController)
     {
-        engine!.update(deltaTime: self.timeSinceLastUpdate)
+        engine!.update(self.timeSinceLastUpdate)
     }
 }
 

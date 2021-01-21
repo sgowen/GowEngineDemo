@@ -12,12 +12,12 @@
 
 MainEngineController::MainEngineController()
 {
-    // TODO
+    MainEngineState::create();
 }
 
 MainEngineController::~MainEngineController()
 {
-    // TODO
+    MainEngineState::destroy();
 }
 
 EngineState* MainEngineController::getInitialState()
