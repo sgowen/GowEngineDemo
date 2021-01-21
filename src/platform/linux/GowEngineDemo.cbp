@@ -34,10 +34,10 @@
 			<Add option="-fexceptions" />
 			<Add option="-D_GLFW_X11" />
 			<Add directory="../../core" />
-			<Add directory="../../../deps/glfw/include" />
-			<Add directory="../../../deps/GowEngine/src" />
+			<Add directory="../../../deps/GowEngine/deps/glfw/include" />
 			<Add directory="../../../deps/GowEngine/deps/rapidjson/include" />
 			<Add directory="../../../deps/GowEngine/deps/stb" />
+            <Add directory="../../../deps/GowEngine/src" />
 		</Compiler>
 		<Linker>
 			<Add option="-ldl" />
@@ -59,58 +59,58 @@
 		<UnitsGlob directory="../../../deps/GowEngine/src" recursive="0" wildcard="*.hpp" />
 		<UnitsGlob directory="../../../deps/GowEngine/src/linux" recursive="0" wildcard="*.cpp" />
 		<UnitsGlob directory="../../../deps/GowEngine/src/linux" recursive="0" wildcard="*.hpp" />
-		<Unit filename="../../../deps/glfw/src/context.c">
+        <UnitsGlob directory="../../../deps/GowEngine/src/glfw" recursive="0" wildcard="*.cpp" />
+        <UnitsGlob directory="../../../deps/GowEngine/src/glfw" recursive="0" wildcard="*.hpp" />
+		<Unit filename="../../../deps/GowEngine/deps/glfw/src/context.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="../../../deps/glfw/src/egl_context.c">
+		<Unit filename="../../../deps/GowEngine/deps/glfw/src/egl_context.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="../../../deps/glfw/src/glx_context.c">
+		<Unit filename="../../../deps/GowEngine/deps/glfw/src/glx_context.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="../../../deps/glfw/src/init.c">
+		<Unit filename="../../../deps/GowEngine/deps/glfw/src/init.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="../../../deps/glfw/src/input.c">
+		<Unit filename="../../../deps/GowEngine/deps/glfw/src/input.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="../../../deps/glfw/src/linux_joystick.c">
+		<Unit filename="../../../deps/GowEngine/deps/glfw/src/linux_joystick.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="../../../deps/glfw/src/monitor.c">
+		<Unit filename="../../../deps/GowEngine/deps/glfw/src/monitor.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="../../../deps/glfw/src/osmesa_context.c">
+		<Unit filename="../../../deps/GowEngine/deps/glfw/src/osmesa_context.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="../../../deps/glfw/src/posix_thread.c">
+		<Unit filename="../../../deps/GowEngine/deps/glfw/src/posix_thread.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="../../../deps/glfw/src/posix_time.c">
+		<Unit filename="../../../deps/GowEngine/deps/glfw/src/posix_time.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="../../../deps/glfw/src/vulkan.c">
+		<Unit filename="../../../deps/GowEngine/deps/glfw/src/vulkan.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="../../../deps/glfw/src/window.c">
+		<Unit filename="../../../deps/GowEngine/deps/glfw/src/window.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="../../../deps/glfw/src/x11_init.c">
+		<Unit filename="../../../deps/GowEngine/deps/glfw/src/x11_init.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="../../../deps/glfw/src/x11_monitor.c">
+		<Unit filename="../../../deps/GowEngine/deps/glfw/src/x11_monitor.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="../../../deps/glfw/src/x11_window.c">
+		<Unit filename="../../../deps/GowEngine/deps/glfw/src/x11_window.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="../../../deps/glfw/src/xkb_unicode.c">
+		<Unit filename="../../../deps/GowEngine/deps/glfw/src/xkb_unicode.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<UnitsGlob directory="../../core" recursive="0" wildcard="*.cpp" />
 		<UnitsGlob directory="../../core" recursive="0" wildcard="*.hpp" />
-		<UnitsGlob directory="../../core/glfw" recursive="0" wildcard="*.cpp" />
-		<UnitsGlob directory="../../core/glfw" recursive="0" wildcard="*.hpp" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
