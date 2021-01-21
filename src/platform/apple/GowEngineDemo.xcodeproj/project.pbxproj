@@ -171,6 +171,8 @@
 		BBBA472625B9150000C8207D /* AudioEngineHelperFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BBBA471425B914FF00C8207D /* AudioEngineHelperFactory.cpp */; };
 		BBBA474325B92E5C00C8207D /* NullAssetHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BBBA474125B92E5C00C8207D /* NullAssetHandler.cpp */; };
 		BBBA474425B92E5C00C8207D /* NullAssetHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BBBA474125B92E5C00C8207D /* NullAssetHandler.cpp */; };
+		BBBA476725B9CFDA00C8207D /* SoundDescriptor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BBBA476625B9CFD900C8207D /* SoundDescriptor.cpp */; };
+		BBBA476825B9CFDA00C8207D /* SoundDescriptor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BBBA476625B9CFD900C8207D /* SoundDescriptor.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -461,7 +463,7 @@
 		BBBA46C825B913D900C8207D /* OALSuspendHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OALSuspendHandler.m; sourceTree = "<group>"; };
 		BBBA46C925B913D900C8207D /* OALAudioSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OALAudioSession.h; sourceTree = "<group>"; };
 		BBBA470225B9149B00C8207D /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
-		BBBA470625B914FF00C8207D /* SoundDesc.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SoundDesc.hpp; sourceTree = "<group>"; };
+		BBBA470625B914FF00C8207D /* SoundDescriptor.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SoundDescriptor.hpp; sourceTree = "<group>"; };
 		BBBA470725B914FF00C8207D /* NullSoundWrapper.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = NullSoundWrapper.hpp; sourceTree = "<group>"; };
 		BBBA470825B914FF00C8207D /* SoundWrapper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SoundWrapper.cpp; sourceTree = "<group>"; };
 		BBBA470925B914FF00C8207D /* Sound.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Sound.cpp; sourceTree = "<group>"; };
@@ -500,6 +502,8 @@
 		BBBA475C25B9374B00C8207D /* LinuxSoundWrapper.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LinuxSoundWrapper.cpp; sourceTree = "<group>"; };
 		BBBA475D25B9374B00C8207D /* LinuxSound.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinuxSound.hpp; sourceTree = "<group>"; };
 		BBBA475E25B9374B00C8207D /* LinuxSoundWrapper.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinuxSoundWrapper.hpp; sourceTree = "<group>"; };
+		BBBA476125B9C43400C8207D /* GowSTDUtil.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = GowSTDUtil.hpp; sourceTree = "<group>"; };
+		BBBA476625B9CFD900C8207D /* SoundDescriptor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SoundDescriptor.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -754,6 +758,7 @@
 				BBBA452F25B8822C00C8207D /* GamepadEvent.hpp */,
 				BBBA470D25B914FF00C8207D /* GowAudioEngine.cpp */,
 				BBBA470E25B914FF00C8207D /* GowAudioEngine.hpp */,
+				BBBA476125B9C43400C8207D /* GowSTDUtil.hpp */,
 				BB7B07BA25B646BA0021E545 /* InputManager.cpp */,
 				BB7B07AF25B646BA0021E545 /* InputManager.hpp */,
 				BBBA452C25B8822C00C8207D /* KeyboardEvent.hpp */,
@@ -787,7 +792,8 @@
 				BB7B07AE25B646BA0021E545 /* ShaderUniform.hpp */,
 				BBBA470925B914FF00C8207D /* Sound.cpp */,
 				BBBA471225B914FF00C8207D /* Sound.hpp */,
-				BBBA470625B914FF00C8207D /* SoundDesc.hpp */,
+				BBBA476625B9CFD900C8207D /* SoundDescriptor.cpp */,
+				BBBA470625B914FF00C8207D /* SoundDescriptor.hpp */,
 				BBBA470825B914FF00C8207D /* SoundWrapper.cpp */,
 				BBBA470C25B914FF00C8207D /* SoundWrapper.hpp */,
 				BB7B079A25B646BA0021E545 /* SpriteBatcher.cpp */,
@@ -1317,6 +1323,7 @@
 				BB16D1FF25B7623700C340C1 /* LinuxAssetHandler.cpp in Sources */,
 				BBBA46E425B913D900C8207D /* OALSimpleAudio.m in Sources */,
 				BB7B08C925B64A620021E545 /* TextureManager.cpp in Sources */,
+				BBBA476725B9CFDA00C8207D /* SoundDescriptor.cpp in Sources */,
 				BBBA46E225B913D900C8207D /* ALSoundSourcePool.m in Sources */,
 				BBBA471925B9150000C8207D /* Sound.cpp in Sources */,
 				BBBA46F225B913D900C8207D /* OALAction.m in Sources */,
@@ -1423,6 +1430,7 @@
 				BBBA46DD25B913D900C8207D /* ALBuffer.m in Sources */,
 				BB8BCD2C25B68490005F57B8 /* TextureDescriptor.cpp in Sources */,
 				BB8BCD2D25B68490005F57B8 /* TextureLoader.cpp in Sources */,
+				BBBA476825B9CFDA00C8207D /* SoundDescriptor.cpp in Sources */,
 				BB8BCD2E25B68490005F57B8 /* TextureManager.cpp in Sources */,
 				BBBA46DF25B913D900C8207D /* ALCaptureDevice.m in Sources */,
 				BBBA46D725B913D900C8207D /* OpenALManager.m in Sources */,

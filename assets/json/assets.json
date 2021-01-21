@@ -1,4 +1,44 @@
 {
+  "music": {
+    "filePath": "music/music_001.wav"
+  },
+  "sounds": [
+    {
+      "soundId": 1,
+      "filePath": "sounds/sound_001.wav",
+      "numInstances": 4
+    },
+    {
+      "soundId": 2,
+      "filePath": "sounds/sound_002.wav",
+      "numInstances": 2
+    },
+    {
+      "soundId": 3,
+      "filePath": "sounds/sound_003.wav",
+      "numInstances": 2
+    },
+    {
+      "soundId": 4,
+      "filePath": "sounds/sound_004.wav",
+      "numInstances": 2
+    },
+    {
+      "soundId": 5,
+      "filePath": "sounds/sound_005.wav",
+      "numInstances": 2
+    },
+    {
+      "soundId": 6,
+      "filePath": "sounds/sound_006.wav",
+      "numInstances": 2
+    },
+    {
+      "soundId": 7,
+      "filePath": "sounds/sound_007.wav",
+      "numInstances": 2
+    }
+  ],
   "shaders": [
     {
       "name": "shader_001",

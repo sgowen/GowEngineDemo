@@ -83,6 +83,7 @@ int GlfwMain::exec(EngineController* engineController)
         }
     }
 
+    glfwSetWindowIconifyCallback(window, GlfwMain::window_iconify_callback);
     glfwSetJoystickCallback(GlfwMain::joystick_callback);
     glfwSetMouseButtonCallback(window, GlfwMain::mouse_button_callback);
     glfwSetCursorPosCallback(window, GlfwMain::mouse_cursor_pos_callback);
@@ -261,6 +262,18 @@ Engine* GlfwMain::getEngine()
 void GlfwMain::error_callback(int error, const char* description)
 {
     fprintf(stderr, "Error: %s\n", description);
+}
+
+void GlfwMain::window_iconify_callback(GLFWwindow* window, int iconified)
+{
+    if (iconified)
+    {
+        getEngine()->onPause();
+    }
+    else
+    {
+        getEngine()->onResume();
+    }
 }
 
 void GlfwMain::joystick_callback(int jid, int event)

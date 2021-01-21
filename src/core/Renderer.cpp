@@ -67,8 +67,8 @@ void Renderer::render()
     OGL.enableBlending();
     
     {
-        Texture& t = _textureManager.texture("texture_002");
-        TextureDescriptor& td = t._descriptor;
+        auto& t = _textureManager.texture("texture_002");
+        auto& td = t._descriptor;
         _spriteBatcher.begin();
         _spriteBatcher.addSprite(td.textureRegion("forest"), w / 2.0f, h / 2.0f, w, h);
         _spriteBatcher.end(_shaderManager.shader("shader_002"), _matrix, t, white);
@@ -77,8 +77,8 @@ void Renderer::render()
     float heightFactor = 1.334201954397394f;
     
     {
-        Texture& t = _textureManager.texture("texture_003");
-        TextureDescriptor& td = t._descriptor;
+        auto& t = _textureManager.texture("texture_003");
+        auto& td = t._descriptor;
         _spriteBatcher.begin();
         auto& chicken = td.textureRegion("obj_food_chicken");
         auto& watermelon = td.textureRegion("obj_food_watermelon");
@@ -96,8 +96,8 @@ void Renderer::render()
     }
     
     {
-        Texture& t = _textureManager.texture("texture_001");
-        TextureDescriptor& td = t._descriptor;
+        auto& t = _textureManager.texture("texture_001");
+        auto& td = t._descriptor;
         _spriteBatcher.begin();
         auto& tr = td.textureRegion("forest_grass2");
         _spriteBatcher.addSprite(tr, tr._width / 2.0f, tr._height / 2.0f, tr._width, tr._height);
@@ -105,8 +105,8 @@ void Renderer::render()
     }
     
     {
-        Texture& t = _textureManager.texture("texture_001");
-        TextureDescriptor& td = t._descriptor;
+        auto& t = _textureManager.texture("texture_001");
+        auto& td = t._descriptor;
         auto& menu_toys_tab = td.textureRegion("menu_toys_tab");
         auto& menu_food_tab = td.textureRegion("menu_food_tab");
         auto& menu_characters_tab = td.textureRegion("menu_characters_tab");

@@ -10,6 +10,8 @@
 
 #include "Assets.hpp"
 #include "Macros.hpp"
+#include "GowAudioEngine.hpp"
+#include "InputManager.hpp"
 
 #include <stdlib.h>
 #include <assert.h>
@@ -53,6 +55,10 @@ void MainEngineState::createDeviceDependentResources()
 {
     ASSETS.initWithJSONFile("json/assets.json");
     
+    GowAudioEngine::create();
+    GOW_AUDIO->loadFromAssets();
+    GOW_AUDIO->playMusic();
+    
     _renderer.createDeviceDependentResources();
 }
 
@@ -68,22 +74,32 @@ void MainEngineState::releaseDeviceDependentResources()
 
 void MainEngineState::onResume()
 {
-    // Empty
+    GOW_AUDIO->resume();
 }
 
 void MainEngineState::onPause()
 {
-    // Empty
+    GOW_AUDIO->pause();
 }
 
 void MainEngineState::update()
 {
-    // TODO
+    GOW_AUDIO->update();
+    
+    std::vector<CursorEvent*>& cursorEvents = INPUT_MGR.getCursorEvents();
+    for (auto e : cursorEvents)
+    {
+        if (e->_type == CursorEventType_UP)
+        {
+            GOW_AUDIO->playSound(1);
+        }
+    }
 }
 
 void MainEngineState::render()
 {
     _renderer.render();
+    GOW_AUDIO->render();
 }
 
 MainEngineState* MainEngineState::s_instance = NULL;

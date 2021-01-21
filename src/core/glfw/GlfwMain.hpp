@@ -27,6 +27,7 @@ private:
     static Engine* getEngine();
     
     static void error_callback(int error, const char* description);
+    static void window_iconify_callback(GLFWwindow* window, int iconified);
     static void joystick_callback(int jid, int event);
     static void mouse_scroll_callback(GLFWwindow* window, double x, double y);
     static void mouse_button_callback(GLFWwindow* window, int button, int action, int mods);
