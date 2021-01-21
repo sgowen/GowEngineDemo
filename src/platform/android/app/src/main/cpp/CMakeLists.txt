@@ -53,6 +53,7 @@ add_subdirectory(${OBOE_DIR} ./oboe-bin)
 # Specify the path to the Oboe header files and the source.
 include_directories(
         ${OBOE_DIR}/include
+        ${OBOE_DIR}/src/flowgraph
         ${OBOE_DIR}/src
 )
 

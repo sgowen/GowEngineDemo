@@ -722,6 +722,29 @@
 		BBBA4E3125BA036600C8207D /* FifoController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FifoController.h; sourceTree = "<group>"; };
 		BBBA4E3225BA036600C8207D /* FifoController.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FifoController.cpp; sourceTree = "<group>"; };
 		BBBA4E3325BA036600C8207D /* FifoControllerIndirect.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FifoControllerIndirect.cpp; sourceTree = "<group>"; };
+		BBBA4E3425BA1A6F00C8207D /* WavRIFFChunkHeader.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = WavRIFFChunkHeader.hpp; sourceTree = "<group>"; };
+		BBBA4E3525BA1A6F00C8207D /* WavTypes.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = WavTypes.hpp; sourceTree = "<group>"; };
+		BBBA4E3625BA1A6F00C8207D /* SampleBuffer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SampleBuffer.cpp; sourceTree = "<group>"; };
+		BBBA4E3725BA1A6F00C8207D /* OneShotSampleSource.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = OneShotSampleSource.cpp; sourceTree = "<group>"; };
+		BBBA4E3825BA1A6F00C8207D /* SampleBuffer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SampleBuffer.hpp; sourceTree = "<group>"; };
+		BBBA4E3925BA1A6F00C8207D /* WavFmtChunkHeader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = WavFmtChunkHeader.cpp; sourceTree = "<group>"; };
+		BBBA4E3A25BA1A6F00C8207D /* SampleSource.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SampleSource.cpp; sourceTree = "<group>"; };
+		BBBA4E3B25BA1A6F00C8207D /* InputStream.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = InputStream.cpp; sourceTree = "<group>"; };
+		BBBA4E3D25BA1A6F00C8207D /* SimpleMultiPlayer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SimpleMultiPlayer.cpp; sourceTree = "<group>"; };
+		BBBA4E3E25BA1A6F00C8207D /* WavChunkHeader.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = WavChunkHeader.hpp; sourceTree = "<group>"; };
+		BBBA4E3F25BA1A6F00C8207D /* WavFmtChunkHeader.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = WavFmtChunkHeader.hpp; sourceTree = "<group>"; };
+		BBBA4E4025BA1A6F00C8207D /* MemInputStream.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MemInputStream.hpp; sourceTree = "<group>"; };
+		BBBA4E4125BA1A6F00C8207D /* DataSource.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = DataSource.hpp; sourceTree = "<group>"; };
+		BBBA4E4225BA1A6F00C8207D /* WavStreamReader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = WavStreamReader.cpp; sourceTree = "<group>"; };
+		BBBA4E4325BA1A6F00C8207D /* WavRIFFChunkHeader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = WavRIFFChunkHeader.cpp; sourceTree = "<group>"; };
+		BBBA4E4425BA1A6F00C8207D /* WavStreamReader.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = WavStreamReader.hpp; sourceTree = "<group>"; };
+		BBBA4E4525BA1A6F00C8207D /* AudioEncoding.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AudioEncoding.hpp; sourceTree = "<group>"; };
+		BBBA4E4625BA1A6F00C8207D /* MemInputStream.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MemInputStream.cpp; sourceTree = "<group>"; };
+		BBBA4E4725BA1A7000C8207D /* SampleSource.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SampleSource.hpp; sourceTree = "<group>"; };
+		BBBA4E4825BA1A7000C8207D /* OneShotSampleSource.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = OneShotSampleSource.hpp; sourceTree = "<group>"; };
+		BBBA4E4925BA1A7000C8207D /* SimpleMultiPlayer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SimpleMultiPlayer.hpp; sourceTree = "<group>"; };
+		BBBA4E4A25BA1A7000C8207D /* WavChunkHeader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = WavChunkHeader.cpp; sourceTree = "<group>"; };
+		BBBA4E4B25BA1A7000C8207D /* InputStream.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = InputStream.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1062,8 +1085,31 @@
 				BB7B07C425B646BA0021E545 /* AndroidAssetHandler.hpp */,
 				BBBA474E25B932DA00C8207D /* AndroidAudioEngineHelper.cpp */,
 				BBBA475225B932DA00C8207D /* AndroidAudioEngineHelper.hpp */,
+				BBBA4E4525BA1A6F00C8207D /* AudioEncoding.hpp */,
+				BBBA4E4125BA1A6F00C8207D /* DataSource.hpp */,
+				BBBA4E3B25BA1A6F00C8207D /* InputStream.cpp */,
+				BBBA4E4B25BA1A7000C8207D /* InputStream.hpp */,
 				BB7B07C525B646BA0021E545 /* JNIAndroidAssetHandler.cpp */,
 				BB7B07C325B646BA0021E545 /* JNIAndroidAssetHandler.hpp */,
+				BBBA4E4625BA1A6F00C8207D /* MemInputStream.cpp */,
+				BBBA4E4025BA1A6F00C8207D /* MemInputStream.hpp */,
+				BBBA4E3725BA1A6F00C8207D /* OneShotSampleSource.cpp */,
+				BBBA4E4825BA1A7000C8207D /* OneShotSampleSource.hpp */,
+				BBBA4E3625BA1A6F00C8207D /* SampleBuffer.cpp */,
+				BBBA4E3825BA1A6F00C8207D /* SampleBuffer.hpp */,
+				BBBA4E3A25BA1A6F00C8207D /* SampleSource.cpp */,
+				BBBA4E4725BA1A7000C8207D /* SampleSource.hpp */,
+				BBBA4E3D25BA1A6F00C8207D /* SimpleMultiPlayer.cpp */,
+				BBBA4E4925BA1A7000C8207D /* SimpleMultiPlayer.hpp */,
+				BBBA4E4A25BA1A7000C8207D /* WavChunkHeader.cpp */,
+				BBBA4E3E25BA1A6F00C8207D /* WavChunkHeader.hpp */,
+				BBBA4E3925BA1A6F00C8207D /* WavFmtChunkHeader.cpp */,
+				BBBA4E3F25BA1A6F00C8207D /* WavFmtChunkHeader.hpp */,
+				BBBA4E4325BA1A6F00C8207D /* WavRIFFChunkHeader.cpp */,
+				BBBA4E3425BA1A6F00C8207D /* WavRIFFChunkHeader.hpp */,
+				BBBA4E4225BA1A6F00C8207D /* WavStreamReader.cpp */,
+				BBBA4E4425BA1A6F00C8207D /* WavStreamReader.hpp */,
+				BBBA4E3525BA1A6F00C8207D /* WavTypes.hpp */,
 			);
 			path = android;
 			sourceTree = "<group>";

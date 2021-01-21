@@ -176,47 +176,7 @@ int GlfwMain::exec(EngineController* engineController)
 
             for (j = 0; j < button_count; ++j)
             {
-                switch (j)
-                {
-                    case 0:
-                        getEngine()->onGamepadInputButtonX(i, buttons[j]);
-                        break;
-                    case 1:
-                        getEngine()->onGamepadInputButtonA(i, buttons[j]);
-                        break;
-                    case 2:
-                        getEngine()->onGamepadInputButtonB(i, buttons[j]);
-                        break;
-                    case 3:
-                        getEngine()->onGamepadInputButtonY(i, buttons[j]);
-                        break;
-                    case 4:
-                        getEngine()->onGamepadInputBumperLeft(i, buttons[j]);
-                        break;
-                    case 5:
-                        getEngine()->onGamepadInputBumperRight(i, buttons[j]);
-                        break;
-                    case 8:
-                        getEngine()->onGamepadInputButtonSelect(i, buttons[j]);
-                        break;
-                    case 9:
-                        getEngine()->onGamepadInputButtonStart(i, buttons[j]);
-                        break;
-                    case 14:
-                        getEngine()->onGamepadInputDPadUp(i, buttons[j]);
-                        break;
-                    case 15:
-                        getEngine()->onGamepadInputDPadRight(i, buttons[j]);
-                        break;
-                    case 16:
-                        getEngine()->onGamepadInputDPadDown(i, buttons[j]);
-                        break;
-                    case 17:
-                        getEngine()->onGamepadInputDPadLeft(i, buttons[j]);
-                        break;
-                    default:
-                        break;
-                }
+                getEngine()->onGamepadInputButton(i, j, buttons[j]);
             }
         }
 
