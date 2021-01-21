@@ -55,11 +55,11 @@ void MainEngineState::createDeviceDependentResources()
 {
     ASSETS.initWithJSONFile("json/assets.json");
     
+    _renderer.createDeviceDependentResources();
+    
     GowAudioEngine::create();
     GOW_AUDIO->loadFromAssets();
     GOW_AUDIO->playMusic();
-    
-    _renderer.createDeviceDependentResources();
 }
 
 void MainEngineState::onWindowSizeChanged(int screenWidth, int screenHeight, int cursorWidth, int cursorHeight)
@@ -70,6 +70,8 @@ void MainEngineState::onWindowSizeChanged(int screenWidth, int screenHeight, int
 void MainEngineState::releaseDeviceDependentResources()
 {
     _renderer.releaseDeviceDependentResources();
+    
+    GowAudioEngine::destroy();
 }
 
 void MainEngineState::onResume()

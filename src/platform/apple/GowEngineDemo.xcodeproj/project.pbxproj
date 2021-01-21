@@ -482,13 +482,7 @@
 		BBBA471625B914FF00C8207D /* NullAudioEngineHelper.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = NullAudioEngineHelper.hpp; sourceTree = "<group>"; };
 		BBBA474125B92E5C00C8207D /* NullAssetHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NullAssetHandler.cpp; sourceTree = "<group>"; };
 		BBBA474225B92E5C00C8207D /* NullAssetHandler.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = NullAssetHandler.hpp; sourceTree = "<group>"; };
-		BBBA474B25B932DA00C8207D /* OpenSLESSound.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = OpenSLESSound.hpp; sourceTree = "<group>"; };
-		BBBA474C25B932DA00C8207D /* OpenSLESManager.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = OpenSLESManager.hpp; sourceTree = "<group>"; };
-		BBBA474D25B932DA00C8207D /* OpenSLESSoundWrapper.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = OpenSLESSoundWrapper.hpp; sourceTree = "<group>"; };
 		BBBA474E25B932DA00C8207D /* AndroidAudioEngineHelper.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AndroidAudioEngineHelper.cpp; sourceTree = "<group>"; };
-		BBBA474F25B932DA00C8207D /* OpenSLESSoundWrapper.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = OpenSLESSoundWrapper.cpp; sourceTree = "<group>"; };
-		BBBA475025B932DA00C8207D /* OpenSLESSound.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = OpenSLESSound.cpp; sourceTree = "<group>"; };
-		BBBA475125B932DA00C8207D /* OpenSLESManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = OpenSLESManager.cpp; sourceTree = "<group>"; };
 		BBBA475225B932DA00C8207D /* AndroidAudioEngineHelper.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AndroidAudioEngineHelper.hpp; sourceTree = "<group>"; };
 		BBBA475325B9373700C8207D /* DirectXSound.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = DirectXSound.hpp; sourceTree = "<group>"; };
 		BBBA475425B9373800C8207D /* DirectXSound.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DirectXSound.cpp; sourceTree = "<group>"; };
@@ -504,6 +498,230 @@
 		BBBA475E25B9374B00C8207D /* LinuxSoundWrapper.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinuxSoundWrapper.hpp; sourceTree = "<group>"; };
 		BBBA476125B9C43400C8207D /* GowUtil.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = GowUtil.hpp; sourceTree = "<group>"; };
 		BBBA476625B9CFD900C8207D /* SoundDescriptor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SoundDescriptor.cpp; sourceTree = "<group>"; };
+		BBBA477C25BA036200C8207D /* XboxDDSTextureLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XboxDDSTextureLoader.h; sourceTree = "<group>"; };
+		BBBA477D25BA036200C8207D /* VertexTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VertexTypes.h; sourceTree = "<group>"; };
+		BBBA477E25BA036200C8207D /* WICTextureLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WICTextureLoader.h; sourceTree = "<group>"; };
+		BBBA477F25BA036200C8207D /* BufferHelpers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BufferHelpers.h; sourceTree = "<group>"; };
+		BBBA478025BA036200C8207D /* DirectXHelpers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DirectXHelpers.h; sourceTree = "<group>"; };
+		BBBA478125BA036200C8207D /* SimpleMath.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleMath.h; sourceTree = "<group>"; };
+		BBBA478225BA036200C8207D /* CommonStates.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonStates.h; sourceTree = "<group>"; };
+		BBBA478325BA036200C8207D /* Audio.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Audio.h; sourceTree = "<group>"; };
+		BBBA478425BA036200C8207D /* SpriteBatch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpriteBatch.h; sourceTree = "<group>"; };
+		BBBA478525BA036200C8207D /* Mouse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Mouse.h; sourceTree = "<group>"; };
+		BBBA478625BA036200C8207D /* GeometricPrimitive.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GeometricPrimitive.h; sourceTree = "<group>"; };
+		BBBA478725BA036200C8207D /* SpriteFont.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpriteFont.h; sourceTree = "<group>"; };
+		BBBA478825BA036200C8207D /* ScreenGrab.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScreenGrab.h; sourceTree = "<group>"; };
+		BBBA478925BA036200C8207D /* Keyboard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Keyboard.h; sourceTree = "<group>"; };
+		BBBA478A25BA036200C8207D /* Effects.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Effects.h; sourceTree = "<group>"; };
+		BBBA478B25BA036200C8207D /* GraphicsMemory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GraphicsMemory.h; sourceTree = "<group>"; };
+		BBBA478C25BA036200C8207D /* Model.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
+		BBBA478D25BA036200C8207D /* DDSTextureLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDSTextureLoader.h; sourceTree = "<group>"; };
+		BBBA478E25BA036200C8207D /* PostProcess.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PostProcess.h; sourceTree = "<group>"; };
+		BBBA478F25BA036200C8207D /* SimpleMath.inl */ = {isa = PBXFileReference; lastKnownFileType = text; path = SimpleMath.inl; sourceTree = "<group>"; };
+		BBBA479025BA036200C8207D /* PrimitiveBatch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrimitiveBatch.h; sourceTree = "<group>"; };
+		BBBA479125BA036200C8207D /* GamePad.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GamePad.h; sourceTree = "<group>"; };
+		BBBA47AE25BA036200C8207D /* AudioEngine.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AudioEngine.cpp; sourceTree = "<group>"; };
+		BBBA47B125BA036200C8207D /* SoundStreamInstance.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SoundStreamInstance.cpp; sourceTree = "<group>"; };
+		BBBA47B225BA036200C8207D /* SoundCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SoundCommon.h; sourceTree = "<group>"; };
+		BBBA47B325BA036200C8207D /* SoundEffect.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SoundEffect.cpp; sourceTree = "<group>"; };
+		BBBA47B425BA036200C8207D /* DynamicSoundEffectInstance.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DynamicSoundEffectInstance.cpp; sourceTree = "<group>"; };
+		BBBA47B625BA036200C8207D /* WAVFileReader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WAVFileReader.h; sourceTree = "<group>"; };
+		BBBA47B825BA036200C8207D /* WaveBank.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = WaveBank.cpp; sourceTree = "<group>"; };
+		BBBA47BB25BA036200C8207D /* SoundCommon.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SoundCommon.cpp; sourceTree = "<group>"; };
+		BBBA47BD25BA036200C8207D /* WaveBankReader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WaveBankReader.h; sourceTree = "<group>"; };
+		BBBA47C025BA036200C8207D /* SoundEffectInstance.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SoundEffectInstance.cpp; sourceTree = "<group>"; };
+		BBBA47C125BA036200C8207D /* WaveBankReader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = WaveBankReader.cpp; sourceTree = "<group>"; };
+		BBBA47C225BA036200C8207D /* WAVFileReader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = WAVFileReader.cpp; sourceTree = "<group>"; };
+		BBBA47E825BA036200C8207D /* TeapotData.inc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.pascal; path = TeapotData.inc; sourceTree = "<group>"; };
+		BBBA47E925BA036200C8207D /* LoaderHelpers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoaderHelpers.h; sourceTree = "<group>"; };
+		BBBA47EA25BA036200C8207D /* Geometry.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Geometry.cpp; sourceTree = "<group>"; };
+		BBBA47EB25BA036200C8207D /* pch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pch.h; sourceTree = "<group>"; };
+		BBBA47EC25BA036200C8207D /* XboxDDSTextureLoader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = XboxDDSTextureLoader.cpp; sourceTree = "<group>"; };
+		BBBA47ED25BA036200C8207D /* BufferHelpers.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BufferHelpers.cpp; sourceTree = "<group>"; };
+		BBBA47EE25BA036200C8207D /* ScreenGrab.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ScreenGrab.cpp; sourceTree = "<group>"; };
+		BBBA47EF25BA036200C8207D /* DualPostProcess.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DualPostProcess.cpp; sourceTree = "<group>"; };
+		BBBA47F025BA036200C8207D /* DualTextureEffect.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DualTextureEffect.cpp; sourceTree = "<group>"; };
+		BBBA47F125BA036200C8207D /* DirectXHelpers.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DirectXHelpers.cpp; sourceTree = "<group>"; };
+		BBBA47F225BA036200C8207D /* AlignedNew.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlignedNew.h; sourceTree = "<group>"; };
+		BBBA47F325BA036200C8207D /* SharedResourcePool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SharedResourcePool.h; sourceTree = "<group>"; };
+		BBBA47F425BA036200C8207D /* DemandCreate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemandCreate.h; sourceTree = "<group>"; };
+		BBBA47F525BA036200C8207D /* SpriteBatch.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SpriteBatch.cpp; sourceTree = "<group>"; };
+		BBBA47F625BA036200C8207D /* GeometricPrimitive.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GeometricPrimitive.cpp; sourceTree = "<group>"; };
+		BBBA47F725BA036200C8207D /* Mouse.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Mouse.cpp; sourceTree = "<group>"; };
+		BBBA47F825BA036200C8207D /* GraphicsMemory.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GraphicsMemory.cpp; sourceTree = "<group>"; };
+		BBBA47F925BA036200C8207D /* SDKMesh.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDKMesh.h; sourceTree = "<group>"; };
+		BBBA47FA25BA036200C8207D /* GamePad.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GamePad.cpp; sourceTree = "<group>"; };
+		BBBA47FB25BA036200C8207D /* ModelLoadVBO.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ModelLoadVBO.cpp; sourceTree = "<group>"; };
+		BBBA47FC25BA036200C8207D /* vbo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = vbo.h; sourceTree = "<group>"; };
+		BBBA47FD25BA036200C8207D /* Bezier.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bezier.h; sourceTree = "<group>"; };
+		BBBA47FE25BA036200C8207D /* ModelLoadCMO.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ModelLoadCMO.cpp; sourceTree = "<group>"; };
+		BBBA47FF25BA036200C8207D /* SimpleMath.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SimpleMath.cpp; sourceTree = "<group>"; };
+		BBBA480025BA036200C8207D /* ToneMapPostProcess.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ToneMapPostProcess.cpp; sourceTree = "<group>"; };
+		BBBA480125BA036200C8207D /* EffectFactory.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = EffectFactory.cpp; sourceTree = "<group>"; };
+		BBBA480225BA036200C8207D /* PBREffect.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PBREffect.cpp; sourceTree = "<group>"; };
+		BBBA480325BA036200C8207D /* PlatformHelpers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlatformHelpers.h; sourceTree = "<group>"; };
+		BBBA480425BA036200C8207D /* EnvironmentMapEffect.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = EnvironmentMapEffect.cpp; sourceTree = "<group>"; };
+		BBBA480525BA036200C8207D /* EffectCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EffectCommon.h; sourceTree = "<group>"; };
+		BBBA480625BA036200C8207D /* ModelLoadSDKMESH.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ModelLoadSDKMESH.cpp; sourceTree = "<group>"; };
+		BBBA480725BA036200C8207D /* SpriteFont.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SpriteFont.cpp; sourceTree = "<group>"; };
+		BBBA480825BA036200C8207D /* EffectCommon.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = EffectCommon.cpp; sourceTree = "<group>"; };
+		BBBA480925BA036200C8207D /* pch.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = pch.cpp; sourceTree = "<group>"; };
+		BBBA480A25BA036200C8207D /* WICTextureLoader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = WICTextureLoader.cpp; sourceTree = "<group>"; };
+		BBBA480B25BA036200C8207D /* DDS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDS.h; sourceTree = "<group>"; };
+		BBBA480C25BA036200C8207D /* DGSLEffect.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DGSLEffect.cpp; sourceTree = "<group>"; };
+		BBBA480D25BA036200C8207D /* AlphaTestEffect.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AlphaTestEffect.cpp; sourceTree = "<group>"; };
+		BBBA480E25BA036200C8207D /* PBREffectFactory.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PBREffectFactory.cpp; sourceTree = "<group>"; };
+		BBBA480F25BA036200C8207D /* DGSLEffectFactory.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DGSLEffectFactory.cpp; sourceTree = "<group>"; };
+		BBBA481125BA036200C8207D /* AlphaTestEffect.fx */ = {isa = PBXFileReference; lastKnownFileType = text; path = AlphaTestEffect.fx; sourceTree = "<group>"; };
+		BBBA481225BA036200C8207D /* DGSLEffect.fx */ = {isa = PBXFileReference; lastKnownFileType = text; path = DGSLEffect.fx; sourceTree = "<group>"; };
+		BBBA481325BA036200C8207D /* SpriteEffect.fx */ = {isa = PBXFileReference; lastKnownFileType = text; path = SpriteEffect.fx; sourceTree = "<group>"; };
+		BBBA481425BA036200C8207D /* BasicEffect.fx */ = {isa = PBXFileReference; lastKnownFileType = text; path = BasicEffect.fx; sourceTree = "<group>"; };
+		BBBA481525BA036200C8207D /* PostProcess.fx */ = {isa = PBXFileReference; lastKnownFileType = text; path = PostProcess.fx; sourceTree = "<group>"; };
+		BBBA481625BA036200C8207D /* DualTextureEffect.fx */ = {isa = PBXFileReference; lastKnownFileType = text; path = DualTextureEffect.fx; sourceTree = "<group>"; };
+		BBBA481725BA036200C8207D /* PBRCommon.fxh */ = {isa = PBXFileReference; lastKnownFileType = text; path = PBRCommon.fxh; sourceTree = "<group>"; };
+		BBBA481825BA036200C8207D /* EnvironmentMapEffect.fx */ = {isa = PBXFileReference; lastKnownFileType = text; path = EnvironmentMapEffect.fx; sourceTree = "<group>"; };
+		BBBA481925BA036200C8207D /* SkinnedEffect.fx */ = {isa = PBXFileReference; lastKnownFileType = text; path = SkinnedEffect.fx; sourceTree = "<group>"; };
+		BBBA481A25BA036200C8207D /* PixelPacking_Velocity.hlsli */ = {isa = PBXFileReference; lastKnownFileType = text; path = PixelPacking_Velocity.hlsli; sourceTree = "<group>"; };
+		BBBA481B25BA036200C8207D /* DGSLPhong.hlsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = DGSLPhong.hlsl; sourceTree = "<group>"; };
+		BBBA481C25BA036200C8207D /* PBREffect.fx */ = {isa = PBXFileReference; lastKnownFileType = text; path = PBREffect.fx; sourceTree = "<group>"; };
+		BBBA481D25BA036200C8207D /* NormalMapEffect.fx */ = {isa = PBXFileReference; lastKnownFileType = text; path = NormalMapEffect.fx; sourceTree = "<group>"; };
+		BBBA481E25BA036200C8207D /* DGSLUnlit.hlsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = DGSLUnlit.hlsl; sourceTree = "<group>"; };
+		BBBA481F25BA036200C8207D /* DGSLLambert.hlsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = DGSLLambert.hlsl; sourceTree = "<group>"; };
+		BBBA482025BA036200C8207D /* CompileShaders.cmd */ = {isa = PBXFileReference; lastKnownFileType = text; path = CompileShaders.cmd; sourceTree = "<group>"; };
+		BBBA482125BA036200C8207D /* Common.fxh */ = {isa = PBXFileReference; lastKnownFileType = text; path = Common.fxh; sourceTree = "<group>"; };
+		BBBA482225BA036300C8207D /* DebugEffect.fx */ = {isa = PBXFileReference; lastKnownFileType = text; path = DebugEffect.fx; sourceTree = "<group>"; };
+		BBBA482325BA036300C8207D /* Utilities.fxh */ = {isa = PBXFileReference; lastKnownFileType = text; path = Utilities.fxh; sourceTree = "<group>"; };
+		BBBA482425BA036300C8207D /* Lighting.fxh */ = {isa = PBXFileReference; lastKnownFileType = text; path = Lighting.fxh; sourceTree = "<group>"; };
+		BBBA482525BA036300C8207D /* ToneMap.fx */ = {isa = PBXFileReference; lastKnownFileType = text; path = ToneMap.fx; sourceTree = "<group>"; };
+		BBBA482625BA036300C8207D /* Structures.fxh */ = {isa = PBXFileReference; lastKnownFileType = text; path = Structures.fxh; sourceTree = "<group>"; };
+		BBBA482725BA036300C8207D /* Model.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Model.cpp; sourceTree = "<group>"; };
+		BBBA482825BA036300C8207D /* VertexTypes.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = VertexTypes.cpp; sourceTree = "<group>"; };
+		BBBA482925BA036300C8207D /* DDSTextureLoader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DDSTextureLoader.cpp; sourceTree = "<group>"; };
+		BBBA482A25BA036300C8207D /* BasicEffect.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BasicEffect.cpp; sourceTree = "<group>"; };
+		BBBA482B25BA036300C8207D /* PrimitiveBatch.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PrimitiveBatch.cpp; sourceTree = "<group>"; };
+		BBBA482C25BA036300C8207D /* CommonStates.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CommonStates.cpp; sourceTree = "<group>"; };
+		BBBA482D25BA036300C8207D /* DebugEffect.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DebugEffect.cpp; sourceTree = "<group>"; };
+		BBBA482E25BA036300C8207D /* Keyboard.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Keyboard.cpp; sourceTree = "<group>"; };
+		BBBA482F25BA036300C8207D /* BasicPostProcess.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BasicPostProcess.cpp; sourceTree = "<group>"; };
+		BBBA483025BA036300C8207D /* Geometry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Geometry.h; sourceTree = "<group>"; };
+		BBBA483125BA036300C8207D /* SkinnedEffect.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SkinnedEffect.cpp; sourceTree = "<group>"; };
+		BBBA483225BA036300C8207D /* NormalMapEffect.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = NormalMapEffect.cpp; sourceTree = "<group>"; };
+		BBBA483325BA036300C8207D /* BinaryReader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BinaryReader.h; sourceTree = "<group>"; };
+		BBBA483425BA036300C8207D /* BinaryReader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BinaryReader.cpp; sourceTree = "<group>"; };
+		BBBA483D25BA036300C8207D /* LatencyTuner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LatencyTuner.h; sourceTree = "<group>"; };
+		BBBA483E25BA036300C8207D /* Version.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Version.h; sourceTree = "<group>"; };
+		BBBA483F25BA036300C8207D /* Utilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Utilities.h; sourceTree = "<group>"; };
+		BBBA484025BA036300C8207D /* AudioStreamBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioStreamBuilder.h; sourceTree = "<group>"; };
+		BBBA484125BA036300C8207D /* ResultWithValue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ResultWithValue.h; sourceTree = "<group>"; };
+		BBBA484225BA036300C8207D /* AudioStreamBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioStreamBase.h; sourceTree = "<group>"; };
+		BBBA484325BA036300C8207D /* AudioStream.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioStream.h; sourceTree = "<group>"; };
+		BBBA484425BA036300C8207D /* StabilizedCallback.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StabilizedCallback.h; sourceTree = "<group>"; };
+		BBBA484525BA036300C8207D /* AudioStreamCallback.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioStreamCallback.h; sourceTree = "<group>"; };
+		BBBA484625BA036300C8207D /* Oboe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Oboe.h; sourceTree = "<group>"; };
+		BBBA484725BA036300C8207D /* Definitions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Definitions.h; sourceTree = "<group>"; };
+		BBBA4DC825BA036500C8207D /* SourceI24.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SourceI24.cpp; sourceTree = "<group>"; };
+		BBBA4DC925BA036500C8207D /* MonoToMultiConverter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MonoToMultiConverter.cpp; sourceTree = "<group>"; };
+		BBBA4DCA25BA036500C8207D /* MonoToMultiConverter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MonoToMultiConverter.h; sourceTree = "<group>"; };
+		BBBA4DCB25BA036500C8207D /* ChannelCountConverter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ChannelCountConverter.cpp; sourceTree = "<group>"; };
+		BBBA4DCC25BA036500C8207D /* RampLinear.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RampLinear.h; sourceTree = "<group>"; };
+		BBBA4DCD25BA036500C8207D /* FlowGraphNode.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FlowGraphNode.cpp; sourceTree = "<group>"; };
+		BBBA4DCE25BA036500C8207D /* ChannelCountConverter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChannelCountConverter.h; sourceTree = "<group>"; };
+		BBBA4DCF25BA036500C8207D /* SourceI16.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SourceI16.h; sourceTree = "<group>"; };
+		BBBA4DD025BA036500C8207D /* SourceFloat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SourceFloat.h; sourceTree = "<group>"; };
+		BBBA4DD125BA036500C8207D /* ClipToRange.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ClipToRange.cpp; sourceTree = "<group>"; };
+		BBBA4DD225BA036500C8207D /* SourceFloat.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SourceFloat.cpp; sourceTree = "<group>"; };
+		BBBA4DD325BA036500C8207D /* ManyToMultiConverter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ManyToMultiConverter.cpp; sourceTree = "<group>"; };
+		BBBA4DD425BA036500C8207D /* SinkFloat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SinkFloat.h; sourceTree = "<group>"; };
+		BBBA4DD525BA036500C8207D /* SourceI24.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SourceI24.h; sourceTree = "<group>"; };
+		BBBA4DD625BA036500C8207D /* SampleRateConverter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SampleRateConverter.cpp; sourceTree = "<group>"; };
+		BBBA4DD725BA036500C8207D /* SampleRateConverter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SampleRateConverter.h; sourceTree = "<group>"; };
+		BBBA4DD825BA036500C8207D /* RampLinear.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = RampLinear.cpp; sourceTree = "<group>"; };
+		BBBA4DD925BA036500C8207D /* SinkI24.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SinkI24.cpp; sourceTree = "<group>"; };
+		BBBA4DDA25BA036500C8207D /* MultiToMonoConverter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MultiToMonoConverter.cpp; sourceTree = "<group>"; };
+		BBBA4DDC25BA036500C8207D /* PolyphaseResampler.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PolyphaseResampler.cpp; sourceTree = "<group>"; };
+		BBBA4DDD25BA036500C8207D /* MultiChannelResampler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MultiChannelResampler.h; sourceTree = "<group>"; };
+		BBBA4DDE25BA036500C8207D /* SincResamplerStereo.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SincResamplerStereo.cpp; sourceTree = "<group>"; };
+		BBBA4DDF25BA036500C8207D /* PolyphaseResampler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PolyphaseResampler.h; sourceTree = "<group>"; };
+		BBBA4DE025BA036500C8207D /* SincResampler.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SincResampler.cpp; sourceTree = "<group>"; };
+		BBBA4DE125BA036500C8207D /* LinearResampler.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LinearResampler.cpp; sourceTree = "<group>"; };
+		BBBA4DE225BA036500C8207D /* KaiserWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KaiserWindow.h; sourceTree = "<group>"; };
+		BBBA4DE325BA036500C8207D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		BBBA4DE425BA036500C8207D /* SincResampler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SincResampler.h; sourceTree = "<group>"; };
+		BBBA4DE525BA036500C8207D /* IntegerRatio.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = IntegerRatio.cpp; sourceTree = "<group>"; };
+		BBBA4DE625BA036500C8207D /* PolyphaseResamplerStereo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PolyphaseResamplerStereo.h; sourceTree = "<group>"; };
+		BBBA4DE725BA036500C8207D /* HyperbolicCosineWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HyperbolicCosineWindow.h; sourceTree = "<group>"; };
+		BBBA4DE825BA036500C8207D /* MultiChannelResampler.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MultiChannelResampler.cpp; sourceTree = "<group>"; };
+		BBBA4DE925BA036500C8207D /* SincResamplerStereo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SincResamplerStereo.h; sourceTree = "<group>"; };
+		BBBA4DEA25BA036500C8207D /* PolyphaseResamplerMono.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PolyphaseResamplerMono.h; sourceTree = "<group>"; };
+		BBBA4DEB25BA036500C8207D /* PolyphaseResamplerMono.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PolyphaseResamplerMono.cpp; sourceTree = "<group>"; };
+		BBBA4DEC25BA036500C8207D /* PolyphaseResamplerStereo.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PolyphaseResamplerStereo.cpp; sourceTree = "<group>"; };
+		BBBA4DED25BA036500C8207D /* LinearResampler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LinearResampler.h; sourceTree = "<group>"; };
+		BBBA4DEE25BA036500C8207D /* IntegerRatio.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IntegerRatio.h; sourceTree = "<group>"; };
+		BBBA4DEF25BA036500C8207D /* MultiToMonoConverter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MultiToMonoConverter.h; sourceTree = "<group>"; };
+		BBBA4DF025BA036500C8207D /* SinkI16.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SinkI16.cpp; sourceTree = "<group>"; };
+		BBBA4DF125BA036500C8207D /* ClipToRange.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClipToRange.h; sourceTree = "<group>"; };
+		BBBA4DF225BA036500C8207D /* SinkI16.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SinkI16.h; sourceTree = "<group>"; };
+		BBBA4DF325BA036500C8207D /* ManyToMultiConverter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ManyToMultiConverter.h; sourceTree = "<group>"; };
+		BBBA4DF425BA036500C8207D /* FlowGraphNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlowGraphNode.h; sourceTree = "<group>"; };
+		BBBA4DF525BA036500C8207D /* SourceI16.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SourceI16.cpp; sourceTree = "<group>"; };
+		BBBA4DF625BA036500C8207D /* SinkI24.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SinkI24.h; sourceTree = "<group>"; };
+		BBBA4DF725BA036500C8207D /* SinkFloat.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SinkFloat.cpp; sourceTree = "<group>"; };
+		BBBA4DF925BA036500C8207D /* AudioStreamOpenSLES.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioStreamOpenSLES.h; sourceTree = "<group>"; };
+		BBBA4DFA25BA036500C8207D /* AudioStreamOpenSLES.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AudioStreamOpenSLES.cpp; sourceTree = "<group>"; };
+		BBBA4DFB25BA036500C8207D /* AudioStreamBuffered.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioStreamBuffered.h; sourceTree = "<group>"; };
+		BBBA4DFC25BA036500C8207D /* AudioStreamBuffered.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AudioStreamBuffered.cpp; sourceTree = "<group>"; };
+		BBBA4DFD25BA036500C8207D /* OutputMixerOpenSLES.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OutputMixerOpenSLES.h; sourceTree = "<group>"; };
+		BBBA4DFE25BA036500C8207D /* OpenSLESUtilities.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = OpenSLESUtilities.cpp; sourceTree = "<group>"; };
+		BBBA4DFF25BA036500C8207D /* EngineOpenSLES.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EngineOpenSLES.h; sourceTree = "<group>"; };
+		BBBA4E0025BA036500C8207D /* OutputMixerOpenSLES.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = OutputMixerOpenSLES.cpp; sourceTree = "<group>"; };
+		BBBA4E0125BA036500C8207D /* EngineOpenSLES.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = EngineOpenSLES.cpp; sourceTree = "<group>"; };
+		BBBA4E0225BA036500C8207D /* AudioOutputStreamOpenSLES.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AudioOutputStreamOpenSLES.cpp; sourceTree = "<group>"; };
+		BBBA4E0325BA036500C8207D /* AudioInputStreamOpenSLES.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AudioInputStreamOpenSLES.cpp; sourceTree = "<group>"; };
+		BBBA4E0425BA036500C8207D /* AudioOutputStreamOpenSLES.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioOutputStreamOpenSLES.h; sourceTree = "<group>"; };
+		BBBA4E0525BA036500C8207D /* OpenSLESUtilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenSLESUtilities.h; sourceTree = "<group>"; };
+		BBBA4E0625BA036500C8207D /* AudioInputStreamOpenSLES.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioInputStreamOpenSLES.h; sourceTree = "<group>"; };
+		BBBA4E0825BA036500C8207D /* AAudioLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AAudioLoader.h; sourceTree = "<group>"; };
+		BBBA4E0925BA036500C8207D /* AudioStreamAAudio.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioStreamAAudio.h; sourceTree = "<group>"; };
+		BBBA4E0A25BA036500C8207D /* AAudioLoader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AAudioLoader.cpp; sourceTree = "<group>"; };
+		BBBA4E0B25BA036500C8207D /* AudioStreamAAudio.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AudioStreamAAudio.cpp; sourceTree = "<group>"; };
+		BBBA4E0D25BA036500C8207D /* FixedBlockAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FixedBlockAdapter.h; sourceTree = "<group>"; };
+		BBBA4E0E25BA036500C8207D /* AudioSourceCaller.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioSourceCaller.h; sourceTree = "<group>"; };
+		BBBA4E0F25BA036500C8207D /* FixedBlockReader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FixedBlockReader.h; sourceTree = "<group>"; };
+		BBBA4E1025BA036500C8207D /* FilterAudioStream.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FilterAudioStream.h; sourceTree = "<group>"; };
+		BBBA4E1125BA036500C8207D /* SourceFloatCaller.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SourceFloatCaller.h; sourceTree = "<group>"; };
+		BBBA4E1225BA036500C8207D /* DataConversionFlowGraph.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DataConversionFlowGraph.cpp; sourceTree = "<group>"; };
+		BBBA4E1325BA036500C8207D /* AudioStreamBuilder.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AudioStreamBuilder.cpp; sourceTree = "<group>"; };
+		BBBA4E1425BA036500C8207D /* FixedBlockReader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FixedBlockReader.cpp; sourceTree = "<group>"; };
+		BBBA4E1525BA036500C8207D /* DataConversionFlowGraph.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataConversionFlowGraph.h; sourceTree = "<group>"; };
+		BBBA4E1625BA036500C8207D /* SourceI16Caller.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SourceI16Caller.h; sourceTree = "<group>"; };
+		BBBA4E1725BA036500C8207D /* Version.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Version.cpp; sourceTree = "<group>"; };
+		BBBA4E1825BA036500C8207D /* AudioClock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioClock.h; sourceTree = "<group>"; };
+		BBBA4E1925BA036500C8207D /* MonotonicCounter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MonotonicCounter.h; sourceTree = "<group>"; };
+		BBBA4E1A25BA036500C8207D /* FilterAudioStream.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FilterAudioStream.cpp; sourceTree = "<group>"; };
+		BBBA4E1B25BA036500C8207D /* SourceFloatCaller.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SourceFloatCaller.cpp; sourceTree = "<group>"; };
+		BBBA4E1C25BA036500C8207D /* Trace.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Trace.cpp; sourceTree = "<group>"; };
+		BBBA4E1D25BA036500C8207D /* StabilizedCallback.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = StabilizedCallback.cpp; sourceTree = "<group>"; };
+		BBBA4E1E25BA036500C8207D /* AudioStream.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AudioStream.cpp; sourceTree = "<group>"; };
+		BBBA4E1F25BA036500C8207D /* FixedBlockWriter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FixedBlockWriter.cpp; sourceTree = "<group>"; };
+		BBBA4E2025BA036500C8207D /* Utilities.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Utilities.cpp; sourceTree = "<group>"; };
+		BBBA4E2125BA036500C8207D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		BBBA4E2225BA036500C8207D /* FixedBlockAdapter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FixedBlockAdapter.cpp; sourceTree = "<group>"; };
+		BBBA4E2325BA036600C8207D /* AudioSourceCaller.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AudioSourceCaller.cpp; sourceTree = "<group>"; };
+		BBBA4E2425BA036600C8207D /* QuirksManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = QuirksManager.cpp; sourceTree = "<group>"; };
+		BBBA4E2525BA036600C8207D /* Trace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Trace.h; sourceTree = "<group>"; };
+		BBBA4E2625BA036600C8207D /* FixedBlockWriter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FixedBlockWriter.h; sourceTree = "<group>"; };
+		BBBA4E2725BA036600C8207D /* QuirksManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuirksManager.h; sourceTree = "<group>"; };
+		BBBA4E2825BA036600C8207D /* OboeDebug.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OboeDebug.h; sourceTree = "<group>"; };
+		BBBA4E2925BA036600C8207D /* SourceI16Caller.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SourceI16Caller.cpp; sourceTree = "<group>"; };
+		BBBA4E2A25BA036600C8207D /* LatencyTuner.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LatencyTuner.cpp; sourceTree = "<group>"; };
+		BBBA4E2C25BA036600C8207D /* FifoControllerBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FifoControllerBase.h; sourceTree = "<group>"; };
+		BBBA4E2D25BA036600C8207D /* FifoBuffer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FifoBuffer.h; sourceTree = "<group>"; };
+		BBBA4E2E25BA036600C8207D /* FifoControllerIndirect.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FifoControllerIndirect.h; sourceTree = "<group>"; };
+		BBBA4E2F25BA036600C8207D /* FifoControllerBase.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FifoControllerBase.cpp; sourceTree = "<group>"; };
+		BBBA4E3025BA036600C8207D /* FifoBuffer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FifoBuffer.cpp; sourceTree = "<group>"; };
+		BBBA4E3125BA036600C8207D /* FifoController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FifoController.h; sourceTree = "<group>"; };
+		BBBA4E3225BA036600C8207D /* FifoController.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FifoController.cpp; sourceTree = "<group>"; };
+		BBBA4E3325BA036600C8207D /* FifoControllerIndirect.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FifoControllerIndirect.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -624,6 +842,8 @@
 		BB7B047E25B646B90021E545 /* deps */ = {
 			isa = PBXGroup;
 			children = (
+				BBBA477525BA036200C8207D /* DirectXTK */,
+				BBBA483525BA036300C8207D /* oboe */,
 				BBBA454425B89DF700C8207D /* ObjectAL-for-iPhone */,
 				BB7B062B25B646BA0021E545 /* rapidjson */,
 				BB7B047F25B646B90021E545 /* stb */,
@@ -844,12 +1064,6 @@
 				BBBA475225B932DA00C8207D /* AndroidAudioEngineHelper.hpp */,
 				BB7B07C525B646BA0021E545 /* JNIAndroidAssetHandler.cpp */,
 				BB7B07C325B646BA0021E545 /* JNIAndroidAssetHandler.hpp */,
-				BBBA475125B932DA00C8207D /* OpenSLESManager.cpp */,
-				BBBA474C25B932DA00C8207D /* OpenSLESManager.hpp */,
-				BBBA475025B932DA00C8207D /* OpenSLESSound.cpp */,
-				BBBA474B25B932DA00C8207D /* OpenSLESSound.hpp */,
-				BBBA474F25B932DA00C8207D /* OpenSLESSoundWrapper.cpp */,
-				BBBA474D25B932DA00C8207D /* OpenSLESSoundWrapper.hpp */,
 			);
 			path = android;
 			sourceTree = "<group>";
@@ -1165,6 +1379,348 @@
 				BBBA46C825B913D900C8207D /* OALSuspendHandler.m */,
 			);
 			path = Session;
+			sourceTree = "<group>";
+		};
+		BBBA477525BA036200C8207D /* DirectXTK */ = {
+			isa = PBXGroup;
+			children = (
+				BBBA477B25BA036200C8207D /* Inc */,
+				BBBA47AD25BA036200C8207D /* Audio */,
+				BBBA47E725BA036200C8207D /* Src */,
+			);
+			path = DirectXTK;
+			sourceTree = "<group>";
+		};
+		BBBA477B25BA036200C8207D /* Inc */ = {
+			isa = PBXGroup;
+			children = (
+				BBBA478325BA036200C8207D /* Audio.h */,
+				BBBA477F25BA036200C8207D /* BufferHelpers.h */,
+				BBBA478225BA036200C8207D /* CommonStates.h */,
+				BBBA478D25BA036200C8207D /* DDSTextureLoader.h */,
+				BBBA478025BA036200C8207D /* DirectXHelpers.h */,
+				BBBA478A25BA036200C8207D /* Effects.h */,
+				BBBA479125BA036200C8207D /* GamePad.h */,
+				BBBA478625BA036200C8207D /* GeometricPrimitive.h */,
+				BBBA478B25BA036200C8207D /* GraphicsMemory.h */,
+				BBBA478925BA036200C8207D /* Keyboard.h */,
+				BBBA478C25BA036200C8207D /* Model.h */,
+				BBBA478525BA036200C8207D /* Mouse.h */,
+				BBBA478E25BA036200C8207D /* PostProcess.h */,
+				BBBA479025BA036200C8207D /* PrimitiveBatch.h */,
+				BBBA478825BA036200C8207D /* ScreenGrab.h */,
+				BBBA478125BA036200C8207D /* SimpleMath.h */,
+				BBBA478F25BA036200C8207D /* SimpleMath.inl */,
+				BBBA478425BA036200C8207D /* SpriteBatch.h */,
+				BBBA478725BA036200C8207D /* SpriteFont.h */,
+				BBBA477D25BA036200C8207D /* VertexTypes.h */,
+				BBBA477E25BA036200C8207D /* WICTextureLoader.h */,
+				BBBA477C25BA036200C8207D /* XboxDDSTextureLoader.h */,
+			);
+			path = Inc;
+			sourceTree = "<group>";
+		};
+		BBBA47AD25BA036200C8207D /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				BBBA47AE25BA036200C8207D /* AudioEngine.cpp */,
+				BBBA47B425BA036200C8207D /* DynamicSoundEffectInstance.cpp */,
+				BBBA47BB25BA036200C8207D /* SoundCommon.cpp */,
+				BBBA47B225BA036200C8207D /* SoundCommon.h */,
+				BBBA47B325BA036200C8207D /* SoundEffect.cpp */,
+				BBBA47C025BA036200C8207D /* SoundEffectInstance.cpp */,
+				BBBA47B125BA036200C8207D /* SoundStreamInstance.cpp */,
+				BBBA47B825BA036200C8207D /* WaveBank.cpp */,
+				BBBA47C125BA036200C8207D /* WaveBankReader.cpp */,
+				BBBA47BD25BA036200C8207D /* WaveBankReader.h */,
+				BBBA47C225BA036200C8207D /* WAVFileReader.cpp */,
+				BBBA47B625BA036200C8207D /* WAVFileReader.h */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		BBBA47E725BA036200C8207D /* Src */ = {
+			isa = PBXGroup;
+			children = (
+				BBBA47F225BA036200C8207D /* AlignedNew.h */,
+				BBBA480D25BA036200C8207D /* AlphaTestEffect.cpp */,
+				BBBA482A25BA036300C8207D /* BasicEffect.cpp */,
+				BBBA482F25BA036300C8207D /* BasicPostProcess.cpp */,
+				BBBA47FD25BA036200C8207D /* Bezier.h */,
+				BBBA483425BA036300C8207D /* BinaryReader.cpp */,
+				BBBA483325BA036300C8207D /* BinaryReader.h */,
+				BBBA47ED25BA036200C8207D /* BufferHelpers.cpp */,
+				BBBA482C25BA036300C8207D /* CommonStates.cpp */,
+				BBBA480B25BA036200C8207D /* DDS.h */,
+				BBBA482925BA036300C8207D /* DDSTextureLoader.cpp */,
+				BBBA482D25BA036300C8207D /* DebugEffect.cpp */,
+				BBBA47F425BA036200C8207D /* DemandCreate.h */,
+				BBBA480C25BA036200C8207D /* DGSLEffect.cpp */,
+				BBBA480F25BA036200C8207D /* DGSLEffectFactory.cpp */,
+				BBBA47F125BA036200C8207D /* DirectXHelpers.cpp */,
+				BBBA47EF25BA036200C8207D /* DualPostProcess.cpp */,
+				BBBA47F025BA036200C8207D /* DualTextureEffect.cpp */,
+				BBBA480825BA036200C8207D /* EffectCommon.cpp */,
+				BBBA480525BA036200C8207D /* EffectCommon.h */,
+				BBBA480125BA036200C8207D /* EffectFactory.cpp */,
+				BBBA480425BA036200C8207D /* EnvironmentMapEffect.cpp */,
+				BBBA47FA25BA036200C8207D /* GamePad.cpp */,
+				BBBA47F625BA036200C8207D /* GeometricPrimitive.cpp */,
+				BBBA47EA25BA036200C8207D /* Geometry.cpp */,
+				BBBA483025BA036300C8207D /* Geometry.h */,
+				BBBA47F825BA036200C8207D /* GraphicsMemory.cpp */,
+				BBBA482E25BA036300C8207D /* Keyboard.cpp */,
+				BBBA47E925BA036200C8207D /* LoaderHelpers.h */,
+				BBBA482725BA036300C8207D /* Model.cpp */,
+				BBBA47FE25BA036200C8207D /* ModelLoadCMO.cpp */,
+				BBBA480625BA036200C8207D /* ModelLoadSDKMESH.cpp */,
+				BBBA47FB25BA036200C8207D /* ModelLoadVBO.cpp */,
+				BBBA47F725BA036200C8207D /* Mouse.cpp */,
+				BBBA483225BA036300C8207D /* NormalMapEffect.cpp */,
+				BBBA480225BA036200C8207D /* PBREffect.cpp */,
+				BBBA480E25BA036200C8207D /* PBREffectFactory.cpp */,
+				BBBA480925BA036200C8207D /* pch.cpp */,
+				BBBA47EB25BA036200C8207D /* pch.h */,
+				BBBA480325BA036200C8207D /* PlatformHelpers.h */,
+				BBBA482B25BA036300C8207D /* PrimitiveBatch.cpp */,
+				BBBA47EE25BA036200C8207D /* ScreenGrab.cpp */,
+				BBBA47F925BA036200C8207D /* SDKMesh.h */,
+				BBBA481025BA036200C8207D /* Shaders */,
+				BBBA47F325BA036200C8207D /* SharedResourcePool.h */,
+				BBBA47FF25BA036200C8207D /* SimpleMath.cpp */,
+				BBBA483125BA036300C8207D /* SkinnedEffect.cpp */,
+				BBBA47F525BA036200C8207D /* SpriteBatch.cpp */,
+				BBBA480725BA036200C8207D /* SpriteFont.cpp */,
+				BBBA47E825BA036200C8207D /* TeapotData.inc */,
+				BBBA480025BA036200C8207D /* ToneMapPostProcess.cpp */,
+				BBBA47FC25BA036200C8207D /* vbo.h */,
+				BBBA482825BA036300C8207D /* VertexTypes.cpp */,
+				BBBA480A25BA036200C8207D /* WICTextureLoader.cpp */,
+				BBBA47EC25BA036200C8207D /* XboxDDSTextureLoader.cpp */,
+			);
+			path = Src;
+			sourceTree = "<group>";
+		};
+		BBBA481025BA036200C8207D /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				BBBA481125BA036200C8207D /* AlphaTestEffect.fx */,
+				BBBA481225BA036200C8207D /* DGSLEffect.fx */,
+				BBBA481325BA036200C8207D /* SpriteEffect.fx */,
+				BBBA481425BA036200C8207D /* BasicEffect.fx */,
+				BBBA481525BA036200C8207D /* PostProcess.fx */,
+				BBBA481625BA036200C8207D /* DualTextureEffect.fx */,
+				BBBA481725BA036200C8207D /* PBRCommon.fxh */,
+				BBBA481825BA036200C8207D /* EnvironmentMapEffect.fx */,
+				BBBA481925BA036200C8207D /* SkinnedEffect.fx */,
+				BBBA481A25BA036200C8207D /* PixelPacking_Velocity.hlsli */,
+				BBBA481B25BA036200C8207D /* DGSLPhong.hlsl */,
+				BBBA481C25BA036200C8207D /* PBREffect.fx */,
+				BBBA481D25BA036200C8207D /* NormalMapEffect.fx */,
+				BBBA481E25BA036200C8207D /* DGSLUnlit.hlsl */,
+				BBBA481F25BA036200C8207D /* DGSLLambert.hlsl */,
+				BBBA482025BA036200C8207D /* CompileShaders.cmd */,
+				BBBA482125BA036200C8207D /* Common.fxh */,
+				BBBA482225BA036300C8207D /* DebugEffect.fx */,
+				BBBA482325BA036300C8207D /* Utilities.fxh */,
+				BBBA482425BA036300C8207D /* Lighting.fxh */,
+				BBBA482525BA036300C8207D /* ToneMap.fx */,
+				BBBA482625BA036300C8207D /* Structures.fxh */,
+			);
+			path = Shaders;
+			sourceTree = "<group>";
+		};
+		BBBA483525BA036300C8207D /* oboe */ = {
+			isa = PBXGroup;
+			children = (
+				BBBA483B25BA036300C8207D /* include */,
+				BBBA4DC625BA036500C8207D /* src */,
+			);
+			path = oboe;
+			sourceTree = "<group>";
+		};
+		BBBA483B25BA036300C8207D /* include */ = {
+			isa = PBXGroup;
+			children = (
+				BBBA483C25BA036300C8207D /* oboe */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		BBBA483C25BA036300C8207D /* oboe */ = {
+			isa = PBXGroup;
+			children = (
+				BBBA484325BA036300C8207D /* AudioStream.h */,
+				BBBA484225BA036300C8207D /* AudioStreamBase.h */,
+				BBBA484025BA036300C8207D /* AudioStreamBuilder.h */,
+				BBBA484525BA036300C8207D /* AudioStreamCallback.h */,
+				BBBA484725BA036300C8207D /* Definitions.h */,
+				BBBA483D25BA036300C8207D /* LatencyTuner.h */,
+				BBBA484625BA036300C8207D /* Oboe.h */,
+				BBBA484125BA036300C8207D /* ResultWithValue.h */,
+				BBBA484425BA036300C8207D /* StabilizedCallback.h */,
+				BBBA483F25BA036300C8207D /* Utilities.h */,
+				BBBA483E25BA036300C8207D /* Version.h */,
+			);
+			path = oboe;
+			sourceTree = "<group>";
+		};
+		BBBA4DC625BA036500C8207D /* src */ = {
+			isa = PBXGroup;
+			children = (
+				BBBA4E0725BA036500C8207D /* aaudio */,
+				BBBA4E0C25BA036500C8207D /* common */,
+				BBBA4E2B25BA036600C8207D /* fifo */,
+				BBBA4DC725BA036500C8207D /* flowgraph */,
+				BBBA4DF825BA036500C8207D /* opensles */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		BBBA4DC725BA036500C8207D /* flowgraph */ = {
+			isa = PBXGroup;
+			children = (
+				BBBA4DCB25BA036500C8207D /* ChannelCountConverter.cpp */,
+				BBBA4DCE25BA036500C8207D /* ChannelCountConverter.h */,
+				BBBA4DD125BA036500C8207D /* ClipToRange.cpp */,
+				BBBA4DF125BA036500C8207D /* ClipToRange.h */,
+				BBBA4DCD25BA036500C8207D /* FlowGraphNode.cpp */,
+				BBBA4DF425BA036500C8207D /* FlowGraphNode.h */,
+				BBBA4DD325BA036500C8207D /* ManyToMultiConverter.cpp */,
+				BBBA4DF325BA036500C8207D /* ManyToMultiConverter.h */,
+				BBBA4DC925BA036500C8207D /* MonoToMultiConverter.cpp */,
+				BBBA4DCA25BA036500C8207D /* MonoToMultiConverter.h */,
+				BBBA4DDA25BA036500C8207D /* MultiToMonoConverter.cpp */,
+				BBBA4DEF25BA036500C8207D /* MultiToMonoConverter.h */,
+				BBBA4DD825BA036500C8207D /* RampLinear.cpp */,
+				BBBA4DCC25BA036500C8207D /* RampLinear.h */,
+				BBBA4DDB25BA036500C8207D /* resampler */,
+				BBBA4DD625BA036500C8207D /* SampleRateConverter.cpp */,
+				BBBA4DD725BA036500C8207D /* SampleRateConverter.h */,
+				BBBA4DF725BA036500C8207D /* SinkFloat.cpp */,
+				BBBA4DD425BA036500C8207D /* SinkFloat.h */,
+				BBBA4DF025BA036500C8207D /* SinkI16.cpp */,
+				BBBA4DF225BA036500C8207D /* SinkI16.h */,
+				BBBA4DD925BA036500C8207D /* SinkI24.cpp */,
+				BBBA4DF625BA036500C8207D /* SinkI24.h */,
+				BBBA4DD225BA036500C8207D /* SourceFloat.cpp */,
+				BBBA4DD025BA036500C8207D /* SourceFloat.h */,
+				BBBA4DF525BA036500C8207D /* SourceI16.cpp */,
+				BBBA4DCF25BA036500C8207D /* SourceI16.h */,
+				BBBA4DC825BA036500C8207D /* SourceI24.cpp */,
+				BBBA4DD525BA036500C8207D /* SourceI24.h */,
+			);
+			path = flowgraph;
+			sourceTree = "<group>";
+		};
+		BBBA4DDB25BA036500C8207D /* resampler */ = {
+			isa = PBXGroup;
+			children = (
+				BBBA4DDC25BA036500C8207D /* PolyphaseResampler.cpp */,
+				BBBA4DDD25BA036500C8207D /* MultiChannelResampler.h */,
+				BBBA4DDE25BA036500C8207D /* SincResamplerStereo.cpp */,
+				BBBA4DDF25BA036500C8207D /* PolyphaseResampler.h */,
+				BBBA4DE025BA036500C8207D /* SincResampler.cpp */,
+				BBBA4DE125BA036500C8207D /* LinearResampler.cpp */,
+				BBBA4DE225BA036500C8207D /* KaiserWindow.h */,
+				BBBA4DE325BA036500C8207D /* README.md */,
+				BBBA4DE425BA036500C8207D /* SincResampler.h */,
+				BBBA4DE525BA036500C8207D /* IntegerRatio.cpp */,
+				BBBA4DE625BA036500C8207D /* PolyphaseResamplerStereo.h */,
+				BBBA4DE725BA036500C8207D /* HyperbolicCosineWindow.h */,
+				BBBA4DE825BA036500C8207D /* MultiChannelResampler.cpp */,
+				BBBA4DE925BA036500C8207D /* SincResamplerStereo.h */,
+				BBBA4DEA25BA036500C8207D /* PolyphaseResamplerMono.h */,
+				BBBA4DEB25BA036500C8207D /* PolyphaseResamplerMono.cpp */,
+				BBBA4DEC25BA036500C8207D /* PolyphaseResamplerStereo.cpp */,
+				BBBA4DED25BA036500C8207D /* LinearResampler.h */,
+				BBBA4DEE25BA036500C8207D /* IntegerRatio.h */,
+			);
+			path = resampler;
+			sourceTree = "<group>";
+		};
+		BBBA4DF825BA036500C8207D /* opensles */ = {
+			isa = PBXGroup;
+			children = (
+				BBBA4E0325BA036500C8207D /* AudioInputStreamOpenSLES.cpp */,
+				BBBA4E0625BA036500C8207D /* AudioInputStreamOpenSLES.h */,
+				BBBA4E0225BA036500C8207D /* AudioOutputStreamOpenSLES.cpp */,
+				BBBA4E0425BA036500C8207D /* AudioOutputStreamOpenSLES.h */,
+				BBBA4DFC25BA036500C8207D /* AudioStreamBuffered.cpp */,
+				BBBA4DFB25BA036500C8207D /* AudioStreamBuffered.h */,
+				BBBA4DFA25BA036500C8207D /* AudioStreamOpenSLES.cpp */,
+				BBBA4DF925BA036500C8207D /* AudioStreamOpenSLES.h */,
+				BBBA4E0125BA036500C8207D /* EngineOpenSLES.cpp */,
+				BBBA4DFF25BA036500C8207D /* EngineOpenSLES.h */,
+				BBBA4DFE25BA036500C8207D /* OpenSLESUtilities.cpp */,
+				BBBA4E0525BA036500C8207D /* OpenSLESUtilities.h */,
+				BBBA4E0025BA036500C8207D /* OutputMixerOpenSLES.cpp */,
+				BBBA4DFD25BA036500C8207D /* OutputMixerOpenSLES.h */,
+			);
+			path = opensles;
+			sourceTree = "<group>";
+		};
+		BBBA4E0725BA036500C8207D /* aaudio */ = {
+			isa = PBXGroup;
+			children = (
+				BBBA4E0A25BA036500C8207D /* AAudioLoader.cpp */,
+				BBBA4E0825BA036500C8207D /* AAudioLoader.h */,
+				BBBA4E0B25BA036500C8207D /* AudioStreamAAudio.cpp */,
+				BBBA4E0925BA036500C8207D /* AudioStreamAAudio.h */,
+			);
+			path = aaudio;
+			sourceTree = "<group>";
+		};
+		BBBA4E0C25BA036500C8207D /* common */ = {
+			isa = PBXGroup;
+			children = (
+				BBBA4E1825BA036500C8207D /* AudioClock.h */,
+				BBBA4E2325BA036600C8207D /* AudioSourceCaller.cpp */,
+				BBBA4E0E25BA036500C8207D /* AudioSourceCaller.h */,
+				BBBA4E1E25BA036500C8207D /* AudioStream.cpp */,
+				BBBA4E1325BA036500C8207D /* AudioStreamBuilder.cpp */,
+				BBBA4E1225BA036500C8207D /* DataConversionFlowGraph.cpp */,
+				BBBA4E1525BA036500C8207D /* DataConversionFlowGraph.h */,
+				BBBA4E1A25BA036500C8207D /* FilterAudioStream.cpp */,
+				BBBA4E1025BA036500C8207D /* FilterAudioStream.h */,
+				BBBA4E2225BA036500C8207D /* FixedBlockAdapter.cpp */,
+				BBBA4E0D25BA036500C8207D /* FixedBlockAdapter.h */,
+				BBBA4E1425BA036500C8207D /* FixedBlockReader.cpp */,
+				BBBA4E0F25BA036500C8207D /* FixedBlockReader.h */,
+				BBBA4E1F25BA036500C8207D /* FixedBlockWriter.cpp */,
+				BBBA4E2625BA036600C8207D /* FixedBlockWriter.h */,
+				BBBA4E2A25BA036600C8207D /* LatencyTuner.cpp */,
+				BBBA4E1925BA036500C8207D /* MonotonicCounter.h */,
+				BBBA4E2825BA036600C8207D /* OboeDebug.h */,
+				BBBA4E2425BA036600C8207D /* QuirksManager.cpp */,
+				BBBA4E2725BA036600C8207D /* QuirksManager.h */,
+				BBBA4E2125BA036500C8207D /* README.md */,
+				BBBA4E1B25BA036500C8207D /* SourceFloatCaller.cpp */,
+				BBBA4E1125BA036500C8207D /* SourceFloatCaller.h */,
+				BBBA4E2925BA036600C8207D /* SourceI16Caller.cpp */,
+				BBBA4E1625BA036500C8207D /* SourceI16Caller.h */,
+				BBBA4E1D25BA036500C8207D /* StabilizedCallback.cpp */,
+				BBBA4E1C25BA036500C8207D /* Trace.cpp */,
+				BBBA4E2525BA036600C8207D /* Trace.h */,
+				BBBA4E2025BA036500C8207D /* Utilities.cpp */,
+				BBBA4E1725BA036500C8207D /* Version.cpp */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		BBBA4E2B25BA036600C8207D /* fifo */ = {
+			isa = PBXGroup;
+			children = (
+				BBBA4E3025BA036600C8207D /* FifoBuffer.cpp */,
+				BBBA4E2D25BA036600C8207D /* FifoBuffer.h */,
+				BBBA4E3225BA036600C8207D /* FifoController.cpp */,
+				BBBA4E3125BA036600C8207D /* FifoController.h */,
+				BBBA4E2F25BA036600C8207D /* FifoControllerBase.cpp */,
+				BBBA4E2C25BA036600C8207D /* FifoControllerBase.h */,
+				BBBA4E3325BA036600C8207D /* FifoControllerIndirect.cpp */,
+				BBBA4E2E25BA036600C8207D /* FifoControllerIndirect.h */,
+			);
+			path = fifo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
