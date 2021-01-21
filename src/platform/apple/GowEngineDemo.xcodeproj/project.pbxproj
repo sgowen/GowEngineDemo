@@ -502,7 +502,7 @@
 		BBBA475C25B9374B00C8207D /* LinuxSoundWrapper.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LinuxSoundWrapper.cpp; sourceTree = "<group>"; };
 		BBBA475D25B9374B00C8207D /* LinuxSound.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinuxSound.hpp; sourceTree = "<group>"; };
 		BBBA475E25B9374B00C8207D /* LinuxSoundWrapper.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinuxSoundWrapper.hpp; sourceTree = "<group>"; };
-		BBBA476125B9C43400C8207D /* GowSTDUtil.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = GowSTDUtil.hpp; sourceTree = "<group>"; };
+		BBBA476125B9C43400C8207D /* GowUtil.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = GowUtil.hpp; sourceTree = "<group>"; };
 		BBBA476625B9CFD900C8207D /* SoundDescriptor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SoundDescriptor.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -758,7 +758,7 @@
 				BBBA452F25B8822C00C8207D /* GamepadEvent.hpp */,
 				BBBA470D25B914FF00C8207D /* GowAudioEngine.cpp */,
 				BBBA470E25B914FF00C8207D /* GowAudioEngine.hpp */,
-				BBBA476125B9C43400C8207D /* GowSTDUtil.hpp */,
+				BBBA476125B9C43400C8207D /* GowUtil.hpp */,
 				BB7B07BA25B646BA0021E545 /* InputManager.cpp */,
 				BB7B07AF25B646BA0021E545 /* InputManager.hpp */,
 				BBBA452C25B8822C00C8207D /* KeyboardEvent.hpp */,
