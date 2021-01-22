@@ -12,5 +12,5 @@
 int main(void)
 {
     MainEngineController controller;
-    return GlfwMain::getInstance().exec(&controller);
+    return GlfwMain::getInstance().exec(&controller, "GowEngineDemo-macOS");
 }

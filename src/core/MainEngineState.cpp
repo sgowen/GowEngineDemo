@@ -69,9 +69,11 @@ void MainEngineState::onWindowSizeChanged(int screenWidth, int screenHeight, int
 
 void MainEngineState::releaseDeviceDependentResources()
 {
+    GowAudioEngine::destroy();
+    
     _renderer.releaseDeviceDependentResources();
     
-    GowAudioEngine::destroy();
+    ASSETS.clear();
 }
 
 void MainEngineState::onResume()

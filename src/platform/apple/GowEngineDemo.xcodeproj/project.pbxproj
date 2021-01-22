@@ -42,22 +42,6 @@
 		BB7B08C925B64A620021E545 /* TextureManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB7B07C625B646BA0021E545 /* TextureManager.cpp */; };
 		BB7B08CA25B64A620021E545 /* Vector2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB7B07A725B646BA0021E545 /* Vector2.cpp */; };
 		BB7B08D225B64CF20021E545 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB7B08D125B64CF20021E545 /* OpenGL.framework */; };
-		BB7B08D525B64DFB0021E545 /* context.c in Sources */ = {isa = PBXBuildFile; fileRef = BB7B087D25B646BB0021E545 /* context.c */; };
-		BB7B08D625B64DFB0021E545 /* init.c in Sources */ = {isa = PBXBuildFile; fileRef = BB7B085F25B646BB0021E545 /* init.c */; };
-		BB7B08D725B64DFB0021E545 /* input.c in Sources */ = {isa = PBXBuildFile; fileRef = BB7B087125B646BB0021E545 /* input.c */; };
-		BB7B08D825B64DFB0021E545 /* monitor.c in Sources */ = {isa = PBXBuildFile; fileRef = BB7B085225B646BB0021E545 /* monitor.c */; };
-		BB7B08D925B64DFB0021E545 /* vulkan.c in Sources */ = {isa = PBXBuildFile; fileRef = BB7B086E25B646BB0021E545 /* vulkan.c */; };
-		BB7B08DA25B64DFB0021E545 /* window.c in Sources */ = {isa = PBXBuildFile; fileRef = BB7B088925B646BB0021E545 /* window.c */; };
-		BB7B08DC25B64E320021E545 /* cocoa_init.m in Sources */ = {isa = PBXBuildFile; fileRef = BB7B085325B646BB0021E545 /* cocoa_init.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		BB7B08DD25B64E320021E545 /* cocoa_joystick.m in Sources */ = {isa = PBXBuildFile; fileRef = BB7B085025B646BB0021E545 /* cocoa_joystick.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		BB7B08DE25B64E320021E545 /* cocoa_monitor.m in Sources */ = {isa = PBXBuildFile; fileRef = BB7B088825B646BB0021E545 /* cocoa_monitor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		BB7B08DF25B64E320021E545 /* cocoa_time.c in Sources */ = {isa = PBXBuildFile; fileRef = BB7B087E25B646BB0021E545 /* cocoa_time.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		BB7B08E025B64E320021E545 /* cocoa_window.m in Sources */ = {isa = PBXBuildFile; fileRef = BB7B087A25B646BB0021E545 /* cocoa_window.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		BB7B08E125B64E320021E545 /* egl_context.c in Sources */ = {isa = PBXBuildFile; fileRef = BB7B087B25B646BB0021E545 /* egl_context.c */; };
-		BB7B08E225B64E320021E545 /* nsgl_context.m in Sources */ = {isa = PBXBuildFile; fileRef = BB7B087F25B646BB0021E545 /* nsgl_context.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		BB7B08E325B64E320021E545 /* osmesa_context.c in Sources */ = {isa = PBXBuildFile; fileRef = BB7B086B25B646BB0021E545 /* osmesa_context.c */; };
-		BB7B08E425B64E320021E545 /* posix_thread.c in Sources */ = {isa = PBXBuildFile; fileRef = BB7B087225B646BB0021E545 /* posix_thread.c */; };
-		BB7B090C25B651F20021E545 /* GlfwMain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB7B090B25B651F20021E545 /* GlfwMain.cpp */; };
 		BB7B091225B652D80021E545 /* EngineController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB7B090E25B652D80021E545 /* EngineController.cpp */; };
 		BB7B091325B652D80021E545 /* EngineState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB7B091025B652D80021E545 /* EngineState.cpp */; };
 		BB7B091925B659280021E545 /* MainEngineController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB7B091825B659280021E545 /* MainEngineController.cpp */; };
@@ -173,6 +157,28 @@
 		BBBA474425B92E5C00C8207D /* NullAssetHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BBBA474125B92E5C00C8207D /* NullAssetHandler.cpp */; };
 		BBBA476725B9CFDA00C8207D /* SoundDescriptor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BBBA476625B9CFD900C8207D /* SoundDescriptor.cpp */; };
 		BBBA476825B9CFDA00C8207D /* SoundDescriptor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BBBA476625B9CFD900C8207D /* SoundDescriptor.cpp */; };
+		BBBA55D525BA43B300C8207D /* GlfwMain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BBBA55D425BA43B300C8207D /* GlfwMain.cpp */; };
+		BBBA55D625BA43B300C8207D /* GlfwMain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BBBA55D425BA43B300C8207D /* GlfwMain.cpp */; };
+		BBBA56D825BA453A00C8207D /* cocoa_joystick.m in Sources */ = {isa = PBXBuildFile; fileRef = BBBA564C25BA453900C8207D /* cocoa_joystick.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		BBBA56DA25BA453A00C8207D /* monitor.c in Sources */ = {isa = PBXBuildFile; fileRef = BBBA564E25BA453900C8207D /* monitor.c */; };
+		BBBA56DB25BA453A00C8207D /* cocoa_init.m in Sources */ = {isa = PBXBuildFile; fileRef = BBBA564F25BA453900C8207D /* cocoa_init.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		BBBA56DD25BA453A00C8207D /* CMakeLists.txt in Resources */ = {isa = PBXBuildFile; fileRef = BBBA565325BA453A00C8207D /* CMakeLists.txt */; };
+		BBBA56E225BA453A00C8207D /* init.c in Sources */ = {isa = PBXBuildFile; fileRef = BBBA565B25BA453A00C8207D /* init.c */; };
+		BBBA56E625BA453A00C8207D /* mappings.h.in in Resources */ = {isa = PBXBuildFile; fileRef = BBBA566125BA453A00C8207D /* mappings.h.in */; };
+		BBBA56E925BA453A00C8207D /* osmesa_context.c in Sources */ = {isa = PBXBuildFile; fileRef = BBBA566725BA453A00C8207D /* osmesa_context.c */; };
+		BBBA56EB25BA453A00C8207D /* glfw.rc.in in Resources */ = {isa = PBXBuildFile; fileRef = BBBA566925BA453A00C8207D /* glfw.rc.in */; };
+		BBBA56EC25BA453A00C8207D /* vulkan.c in Sources */ = {isa = PBXBuildFile; fileRef = BBBA566A25BA453A00C8207D /* vulkan.c */; };
+		BBBA56EE25BA453A00C8207D /* input.c in Sources */ = {isa = PBXBuildFile; fileRef = BBBA566D25BA453A00C8207D /* input.c */; };
+		BBBA56EF25BA453A00C8207D /* posix_thread.c in Sources */ = {isa = PBXBuildFile; fileRef = BBBA566E25BA453A00C8207D /* posix_thread.c */; };
+		BBBA56F025BA453A00C8207D /* glfw_config.h.in in Resources */ = {isa = PBXBuildFile; fileRef = BBBA566F25BA453A00C8207D /* glfw_config.h.in */; };
+		BBBA56F325BA453A00C8207D /* cocoa_window.m in Sources */ = {isa = PBXBuildFile; fileRef = BBBA567625BA453A00C8207D /* cocoa_window.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		BBBA56F425BA453A00C8207D /* egl_context.c in Sources */ = {isa = PBXBuildFile; fileRef = BBBA567725BA453A00C8207D /* egl_context.c */; };
+		BBBA56F625BA453A00C8207D /* context.c in Sources */ = {isa = PBXBuildFile; fileRef = BBBA567925BA453A00C8207D /* context.c */; };
+		BBBA56F725BA453A00C8207D /* cocoa_time.c in Sources */ = {isa = PBXBuildFile; fileRef = BBBA567A25BA453A00C8207D /* cocoa_time.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		BBBA56F825BA453A00C8207D /* nsgl_context.m in Sources */ = {isa = PBXBuildFile; fileRef = BBBA567B25BA453A00C8207D /* nsgl_context.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		BBBA56F925BA453A00C8207D /* xkb_unicode.c in Sources */ = {isa = PBXBuildFile; fileRef = BBBA567D25BA453A00C8207D /* xkb_unicode.c */; };
+		BBBA56FE25BA453A00C8207D /* cocoa_monitor.m in Sources */ = {isa = PBXBuildFile; fileRef = BBBA568425BA453A00C8207D /* cocoa_monitor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		BBBA56FF25BA453A00C8207D /* window.c in Sources */ = {isa = PBXBuildFile; fileRef = BBBA568525BA453A00C8207D /* window.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -288,88 +294,7 @@
 		BB7B07DB25B646BA0021E545 /* StaticPool.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = StaticPool.hpp; sourceTree = "<group>"; };
 		BB7B07DC25B646BA0021E545 /* ScreenRenderer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ScreenRenderer.cpp; sourceTree = "<group>"; };
 		BB7B07DD25B646BA0021E545 /* Vector2.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Vector2.hpp; sourceTree = "<group>"; };
-		BB7B07F125B646BA0021E545 /* glfw3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = glfw3.h; sourceTree = "<group>"; };
-		BB7B07F225B646BA0021E545 /* glfw3native.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = glfw3native.h; sourceTree = "<group>"; };
-		BB7B083725B646BB0021E545 /* nuklear_glfw_gl2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = nuklear_glfw_gl2.h; sourceTree = "<group>"; };
-		BB7B083825B646BB0021E545 /* linmath.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = linmath.h; sourceTree = "<group>"; };
-		BB7B083925B646BB0021E545 /* stb_image_write.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = stb_image_write.h; sourceTree = "<group>"; };
-		BB7B083A25B646BB0021E545 /* glad_vulkan.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = glad_vulkan.c; sourceTree = "<group>"; };
-		BB7B083B25B646BB0021E545 /* tinycthread.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = tinycthread.c; sourceTree = "<group>"; };
-		BB7B083C25B646BB0021E545 /* nuklear.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = nuklear.h; sourceTree = "<group>"; };
-		BB7B083D25B646BB0021E545 /* getopt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = getopt.h; sourceTree = "<group>"; };
-		BB7B083F25B646BB0021E545 /* dinput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = dinput.h; sourceTree = "<group>"; };
-		BB7B084025B646BB0021E545 /* _mingw_dxhelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = _mingw_dxhelper.h; sourceTree = "<group>"; };
-		BB7B084125B646BB0021E545 /* xinput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = xinput.h; sourceTree = "<group>"; };
-		BB7B084325B646BB0021E545 /* vulkan.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = vulkan.h; sourceTree = "<group>"; };
-		BB7B084425B646BB0021E545 /* vk_platform.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = vk_platform.h; sourceTree = "<group>"; };
-		BB7B084525B646BB0021E545 /* gl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gl.h; sourceTree = "<group>"; };
-		BB7B084625B646BB0021E545 /* khrplatform.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = khrplatform.h; sourceTree = "<group>"; };
-		BB7B084725B646BB0021E545 /* glad_gl.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = glad_gl.c; sourceTree = "<group>"; };
-		BB7B084825B646BB0021E545 /* tinycthread.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tinycthread.h; sourceTree = "<group>"; };
-		BB7B084925B646BB0021E545 /* getopt.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = getopt.c; sourceTree = "<group>"; };
-		BB7B084B25B646BB0021E545 /* stdint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = stdint.h; sourceTree = "<group>"; };
-		BB7B084F25B646BB0021E545 /* posix_thread.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = posix_thread.h; sourceTree = "<group>"; };
-		BB7B085025B646BB0021E545 /* cocoa_joystick.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = cocoa_joystick.m; sourceTree = "<group>"; };
-		BB7B085125B646BB0021E545 /* posix_time.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = posix_time.c; sourceTree = "<group>"; };
-		BB7B085225B646BB0021E545 /* monitor.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = monitor.c; sourceTree = "<group>"; };
-		BB7B085325B646BB0021E545 /* cocoa_init.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = cocoa_init.m; sourceTree = "<group>"; };
-		BB7B085425B646BB0021E545 /* internal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = internal.h; sourceTree = "<group>"; };
-		BB7B085525B646BB0021E545 /* null_platform.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = null_platform.h; sourceTree = "<group>"; };
-		BB7B085625B646BB0021E545 /* null_init.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = null_init.c; sourceTree = "<group>"; };
-		BB7B085725B646BB0021E545 /* CMakeLists.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
-		BB7B085825B646BB0021E545 /* cocoa_platform.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cocoa_platform.h; sourceTree = "<group>"; };
-		BB7B085925B646BB0021E545 /* win32_thread.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = win32_thread.c; sourceTree = "<group>"; };
-		BB7B085A25B646BB0021E545 /* egl_context.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = egl_context.h; sourceTree = "<group>"; };
-		BB7B085B25B646BB0021E545 /* wgl_context.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = wgl_context.c; sourceTree = "<group>"; };
-		BB7B085C25B646BB0021E545 /* null_joystick.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = null_joystick.c; sourceTree = "<group>"; };
-		BB7B085D25B646BB0021E545 /* xkb_unicode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = xkb_unicode.h; sourceTree = "<group>"; };
-		BB7B085E25B646BB0021E545 /* wl_monitor.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = wl_monitor.c; sourceTree = "<group>"; };
-		BB7B085F25B646BB0021E545 /* init.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = init.c; sourceTree = "<group>"; };
-		BB7B086025B646BB0021E545 /* x11_platform.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = x11_platform.h; sourceTree = "<group>"; };
-		BB7B086125B646BB0021E545 /* win32_init.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = win32_init.c; sourceTree = "<group>"; };
-		BB7B086225B646BB0021E545 /* nsgl_context.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = nsgl_context.h; sourceTree = "<group>"; };
-		BB7B086325B646BB0021E545 /* wl_window.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = wl_window.c; sourceTree = "<group>"; };
-		BB7B086425B646BB0021E545 /* x11_init.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = x11_init.c; sourceTree = "<group>"; };
-		BB7B086525B646BB0021E545 /* mappings.h.in */ = {isa = PBXFileReference; lastKnownFileType = text; path = mappings.h.in; sourceTree = "<group>"; };
-		BB7B086625B646BB0021E545 /* win32_joystick.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = win32_joystick.h; sourceTree = "<group>"; };
-		BB7B086725B646BB0021E545 /* linux_joystick.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = linux_joystick.h; sourceTree = "<group>"; };
-		BB7B086825B646BB0021E545 /* win32_monitor.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = win32_monitor.c; sourceTree = "<group>"; };
-		BB7B086925B646BB0021E545 /* wl_init.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = wl_init.c; sourceTree = "<group>"; };
-		BB7B086A25B646BB0021E545 /* glx_context.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = glx_context.h; sourceTree = "<group>"; };
-		BB7B086B25B646BB0021E545 /* osmesa_context.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = osmesa_context.c; sourceTree = "<group>"; };
-		BB7B086C25B646BB0021E545 /* x11_window.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = x11_window.c; sourceTree = "<group>"; };
-		BB7B086D25B646BB0021E545 /* glfw.rc.in */ = {isa = PBXFileReference; lastKnownFileType = text; path = glfw.rc.in; sourceTree = "<group>"; };
-		BB7B086E25B646BB0021E545 /* vulkan.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = vulkan.c; sourceTree = "<group>"; };
-		BB7B086F25B646BB0021E545 /* null_monitor.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = null_monitor.c; sourceTree = "<group>"; };
-		BB7B087025B646BB0021E545 /* posix_time.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = posix_time.h; sourceTree = "<group>"; };
-		BB7B087125B646BB0021E545 /* input.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = input.c; sourceTree = "<group>"; };
-		BB7B087225B646BB0021E545 /* posix_thread.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = posix_thread.c; sourceTree = "<group>"; };
-		BB7B087325B646BB0021E545 /* glfw_config.h.in */ = {isa = PBXFileReference; lastKnownFileType = text; path = glfw_config.h.in; sourceTree = "<group>"; };
-		BB7B087425B646BB0021E545 /* mappings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mappings.h; sourceTree = "<group>"; };
-		BB7B087525B646BB0021E545 /* win32_time.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = win32_time.c; sourceTree = "<group>"; };
-		BB7B087625B646BB0021E545 /* cocoa_joystick.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cocoa_joystick.h; sourceTree = "<group>"; };
-		BB7B087725B646BB0021E545 /* null_window.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = null_window.c; sourceTree = "<group>"; };
-		BB7B087825B646BB0021E545 /* wgl_context.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = wgl_context.h; sourceTree = "<group>"; };
-		BB7B087925B646BB0021E545 /* null_joystick.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = null_joystick.h; sourceTree = "<group>"; };
-		BB7B087A25B646BB0021E545 /* cocoa_window.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = cocoa_window.m; sourceTree = "<group>"; };
-		BB7B087B25B646BB0021E545 /* egl_context.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = egl_context.c; sourceTree = "<group>"; };
-		BB7B087C25B646BB0021E545 /* win32_joystick.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = win32_joystick.c; sourceTree = "<group>"; };
-		BB7B087D25B646BB0021E545 /* context.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = context.c; sourceTree = "<group>"; };
-		BB7B087E25B646BB0021E545 /* cocoa_time.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = cocoa_time.c; sourceTree = "<group>"; };
-		BB7B087F25B646BB0021E545 /* nsgl_context.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = nsgl_context.m; sourceTree = "<group>"; };
-		BB7B088025B646BB0021E545 /* wl_platform.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = wl_platform.h; sourceTree = "<group>"; };
-		BB7B088125B646BB0021E545 /* xkb_unicode.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = xkb_unicode.c; sourceTree = "<group>"; };
-		BB7B088225B646BB0021E545 /* win32_window.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = win32_window.c; sourceTree = "<group>"; };
-		BB7B088325B646BB0021E545 /* x11_monitor.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = x11_monitor.c; sourceTree = "<group>"; };
-		BB7B088425B646BB0021E545 /* win32_platform.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = win32_platform.h; sourceTree = "<group>"; };
-		BB7B088525B646BB0021E545 /* glx_context.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = glx_context.c; sourceTree = "<group>"; };
-		BB7B088625B646BB0021E545 /* osmesa_context.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = osmesa_context.h; sourceTree = "<group>"; };
-		BB7B088725B646BB0021E545 /* linux_joystick.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = linux_joystick.c; sourceTree = "<group>"; };
-		BB7B088825B646BB0021E545 /* cocoa_monitor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = cocoa_monitor.m; sourceTree = "<group>"; };
-		BB7B088925B646BB0021E545 /* window.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = window.c; sourceTree = "<group>"; };
 		BB7B08D125B64CF20021E545 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
-		BB7B090A25B651F20021E545 /* GlfwMain.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = GlfwMain.hpp; sourceTree = "<group>"; };
-		BB7B090B25B651F20021E545 /* GlfwMain.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GlfwMain.cpp; sourceTree = "<group>"; };
 		BB7B090E25B652D80021E545 /* EngineController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EngineController.cpp; sourceTree = "<group>"; };
 		BB7B090F25B652D80021E545 /* EngineController.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = EngineController.hpp; sourceTree = "<group>"; };
 		BB7B091025B652D80021E545 /* EngineState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EngineState.cpp; sourceTree = "<group>"; };
@@ -745,6 +670,84 @@
 		BBBA4E4925BA1A7000C8207D /* SimpleMultiPlayer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SimpleMultiPlayer.hpp; sourceTree = "<group>"; };
 		BBBA4E4A25BA1A7000C8207D /* WavChunkHeader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = WavChunkHeader.cpp; sourceTree = "<group>"; };
 		BBBA4E4B25BA1A7000C8207D /* InputStream.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = InputStream.hpp; sourceTree = "<group>"; };
+		BBBA4E4E25BA3E8800C8207D /* AndroidSoundWrapper.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AndroidSoundWrapper.cpp; sourceTree = "<group>"; };
+		BBBA4E4F25BA3E8800C8207D /* AndroidSoundWrapper.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AndroidSoundWrapper.hpp; sourceTree = "<group>"; };
+		BBBA4E5025BA3E8800C8207D /* AndroidSound.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AndroidSound.cpp; sourceTree = "<group>"; };
+		BBBA4E5125BA3E8800C8207D /* AndroidSound.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AndroidSound.hpp; sourceTree = "<group>"; };
+		BBBA4E6A25BA404F00C8207D /* GowEngineDemo.vcxproj.filters */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = GowEngineDemo.vcxproj.filters; sourceTree = "<group>"; };
+		BBBA4E6C25BA404F00C8207D /* GowEngineDemo.sln */ = {isa = PBXFileReference; lastKnownFileType = text; path = GowEngineDemo.sln; sourceTree = "<group>"; };
+		BBBA4EE925BA405000C8207D /* GowEngineDemo.vcxproj */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = GowEngineDemo.vcxproj; sourceTree = "<group>"; };
+		BBBA4EF325BA405000C8207D /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		BBBA4FAF25BA405000C8207D /* GowEngineDemo.cbp */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = GowEngineDemo.cbp; sourceTree = "<group>"; };
+		BBBA4FCD25BA405000C8207D /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		BBBA51AC25BA405100C8207D /* build.gradle */ = {isa = PBXFileReference; lastKnownFileType = text; path = build.gradle; sourceTree = "<group>"; };
+		BBBA556925BA405300C8207D /* MainActivity.kt */ = {isa = PBXFileReference; lastKnownFileType = text; path = MainActivity.kt; sourceTree = "<group>"; };
+		BBBA556A25BA405300C8207D /* Engine.kt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Engine.kt; sourceTree = "<group>"; };
+		BBBA556C25BA405300C8207D /* CMakeLists.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
+		BBBA556D25BA405300C8207D /* JNIEngine.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = JNIEngine.cpp; sourceTree = "<group>"; };
+		BBBA55D325BA43B300C8207D /* GlfwMain.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = GlfwMain.hpp; sourceTree = "<group>"; };
+		BBBA55D425BA43B300C8207D /* GlfwMain.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GlfwMain.cpp; sourceTree = "<group>"; };
+		BBBA55ED25BA453900C8207D /* glfw3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glfw3.h; sourceTree = "<group>"; };
+		BBBA55EE25BA453900C8207D /* glfw3native.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glfw3native.h; sourceTree = "<group>"; };
+		BBBA564B25BA453900C8207D /* posix_thread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = posix_thread.h; sourceTree = "<group>"; };
+		BBBA564C25BA453900C8207D /* cocoa_joystick.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cocoa_joystick.m; sourceTree = "<group>"; };
+		BBBA564D25BA453900C8207D /* posix_time.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = posix_time.c; sourceTree = "<group>"; };
+		BBBA564E25BA453900C8207D /* monitor.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = monitor.c; sourceTree = "<group>"; };
+		BBBA564F25BA453900C8207D /* cocoa_init.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cocoa_init.m; sourceTree = "<group>"; };
+		BBBA565025BA453900C8207D /* internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = internal.h; sourceTree = "<group>"; };
+		BBBA565125BA453900C8207D /* null_platform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = null_platform.h; sourceTree = "<group>"; };
+		BBBA565225BA453900C8207D /* null_init.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = null_init.c; sourceTree = "<group>"; };
+		BBBA565325BA453A00C8207D /* CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
+		BBBA565425BA453A00C8207D /* cocoa_platform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cocoa_platform.h; sourceTree = "<group>"; };
+		BBBA565525BA453A00C8207D /* win32_thread.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = win32_thread.c; sourceTree = "<group>"; };
+		BBBA565625BA453A00C8207D /* egl_context.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = egl_context.h; sourceTree = "<group>"; };
+		BBBA565725BA453A00C8207D /* wgl_context.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = wgl_context.c; sourceTree = "<group>"; };
+		BBBA565825BA453A00C8207D /* null_joystick.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = null_joystick.c; sourceTree = "<group>"; };
+		BBBA565925BA453A00C8207D /* xkb_unicode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xkb_unicode.h; sourceTree = "<group>"; };
+		BBBA565A25BA453A00C8207D /* wl_monitor.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = wl_monitor.c; sourceTree = "<group>"; };
+		BBBA565B25BA453A00C8207D /* init.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = init.c; sourceTree = "<group>"; };
+		BBBA565C25BA453A00C8207D /* x11_platform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = x11_platform.h; sourceTree = "<group>"; };
+		BBBA565D25BA453A00C8207D /* win32_init.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = win32_init.c; sourceTree = "<group>"; };
+		BBBA565E25BA453A00C8207D /* nsgl_context.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = nsgl_context.h; sourceTree = "<group>"; };
+		BBBA565F25BA453A00C8207D /* wl_window.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = wl_window.c; sourceTree = "<group>"; };
+		BBBA566025BA453A00C8207D /* x11_init.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = x11_init.c; sourceTree = "<group>"; };
+		BBBA566125BA453A00C8207D /* mappings.h.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mappings.h.in; sourceTree = "<group>"; };
+		BBBA566225BA453A00C8207D /* win32_joystick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = win32_joystick.h; sourceTree = "<group>"; };
+		BBBA566325BA453A00C8207D /* linux_joystick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = linux_joystick.h; sourceTree = "<group>"; };
+		BBBA566425BA453A00C8207D /* win32_monitor.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = win32_monitor.c; sourceTree = "<group>"; };
+		BBBA566525BA453A00C8207D /* wl_init.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = wl_init.c; sourceTree = "<group>"; };
+		BBBA566625BA453A00C8207D /* glx_context.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glx_context.h; sourceTree = "<group>"; };
+		BBBA566725BA453A00C8207D /* osmesa_context.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = osmesa_context.c; sourceTree = "<group>"; };
+		BBBA566825BA453A00C8207D /* x11_window.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = x11_window.c; sourceTree = "<group>"; };
+		BBBA566925BA453A00C8207D /* glfw.rc.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = glfw.rc.in; sourceTree = "<group>"; };
+		BBBA566A25BA453A00C8207D /* vulkan.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = vulkan.c; sourceTree = "<group>"; };
+		BBBA566B25BA453A00C8207D /* null_monitor.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = null_monitor.c; sourceTree = "<group>"; };
+		BBBA566C25BA453A00C8207D /* posix_time.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = posix_time.h; sourceTree = "<group>"; };
+		BBBA566D25BA453A00C8207D /* input.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = input.c; sourceTree = "<group>"; };
+		BBBA566E25BA453A00C8207D /* posix_thread.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = posix_thread.c; sourceTree = "<group>"; };
+		BBBA566F25BA453A00C8207D /* glfw_config.h.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = glfw_config.h.in; sourceTree = "<group>"; };
+		BBBA567025BA453A00C8207D /* mappings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mappings.h; sourceTree = "<group>"; };
+		BBBA567125BA453A00C8207D /* win32_time.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = win32_time.c; sourceTree = "<group>"; };
+		BBBA567225BA453A00C8207D /* cocoa_joystick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cocoa_joystick.h; sourceTree = "<group>"; };
+		BBBA567325BA453A00C8207D /* null_window.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = null_window.c; sourceTree = "<group>"; };
+		BBBA567425BA453A00C8207D /* wgl_context.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wgl_context.h; sourceTree = "<group>"; };
+		BBBA567525BA453A00C8207D /* null_joystick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = null_joystick.h; sourceTree = "<group>"; };
+		BBBA567625BA453A00C8207D /* cocoa_window.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cocoa_window.m; sourceTree = "<group>"; };
+		BBBA567725BA453A00C8207D /* egl_context.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = egl_context.c; sourceTree = "<group>"; };
+		BBBA567825BA453A00C8207D /* win32_joystick.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = win32_joystick.c; sourceTree = "<group>"; };
+		BBBA567925BA453A00C8207D /* context.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = context.c; sourceTree = "<group>"; };
+		BBBA567A25BA453A00C8207D /* cocoa_time.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cocoa_time.c; sourceTree = "<group>"; };
+		BBBA567B25BA453A00C8207D /* nsgl_context.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = nsgl_context.m; sourceTree = "<group>"; };
+		BBBA567C25BA453A00C8207D /* wl_platform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wl_platform.h; sourceTree = "<group>"; };
+		BBBA567D25BA453A00C8207D /* xkb_unicode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = xkb_unicode.c; sourceTree = "<group>"; };
+		BBBA567E25BA453A00C8207D /* win32_window.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = win32_window.c; sourceTree = "<group>"; };
+		BBBA567F25BA453A00C8207D /* x11_monitor.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = x11_monitor.c; sourceTree = "<group>"; };
+		BBBA568025BA453A00C8207D /* win32_platform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = win32_platform.h; sourceTree = "<group>"; };
+		BBBA568125BA453A00C8207D /* glx_context.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = glx_context.c; sourceTree = "<group>"; };
+		BBBA568225BA453A00C8207D /* osmesa_context.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = osmesa_context.h; sourceTree = "<group>"; };
+		BBBA568325BA453A00C8207D /* linux_joystick.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = linux_joystick.c; sourceTree = "<group>"; };
+		BBBA568425BA453A00C8207D /* cocoa_monitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cocoa_monitor.m; sourceTree = "<group>"; };
+		BBBA568525BA453A00C8207D /* window.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = window.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -813,13 +816,16 @@
 		BB7B045425B644E00021E545 = {
 			isa = PBXGroup;
 			children = (
+				BBBA4FCE25BA405000C8207D /* android */,
 				BB16D15225B74CC100C340C1 /* assets */,
 				BB7B090825B651F20021E545 /* core */,
 				BB7B047925B646B90021E545 /* deps */,
 				BB7B08D025B64CF20021E545 /* Frameworks */,
 				BB8BCCE825B682E8005F57B8 /* iOS */,
+				BBBA4F4625BA405000C8207D /* linux */,
 				BB7B045F25B644E00021E545 /* macOS */,
 				BB7B045E25B644E00021E545 /* Products */,
+				BBBA4E5225BA404F00C8207D /* windows */,
 			);
 			sourceTree = "<group>";
 		};
@@ -845,7 +851,6 @@
 		BB7B047925B646B90021E545 /* deps */ = {
 			isa = PBXGroup;
 			children = (
-				BB7B07DF25B646BA0021E545 /* glfw */,
 				BB7B047A25B646B90021E545 /* GowEngine */,
 			);
 			name = deps;
@@ -866,8 +871,9 @@
 			isa = PBXGroup;
 			children = (
 				BBBA477525BA036200C8207D /* DirectXTK */,
-				BBBA483525BA036300C8207D /* oboe */,
+				BBBA55DB25BA453900C8207D /* glfw */,
 				BBBA454425B89DF700C8207D /* ObjectAL-for-iPhone */,
+				BBBA483525BA036300C8207D /* oboe */,
 				BB7B062B25B646BA0021E545 /* rapidjson */,
 				BB7B047F25B646B90021E545 /* stb */,
 			);
@@ -999,6 +1005,7 @@
 				BB7B07A825B646BA0021E545 /* FPSUtil.hpp */,
 				BB7B07BB25B646BA0021E545 /* Framebuffer.hpp */,
 				BBBA452F25B8822C00C8207D /* GamepadEvent.hpp */,
+				BBBA55D225BA43B300C8207D /* glfw */,
 				BBBA470D25B914FF00C8207D /* GowAudioEngine.cpp */,
 				BBBA470E25B914FF00C8207D /* GowAudioEngine.hpp */,
 				BBBA476125B9C43400C8207D /* GowUtil.hpp */,
@@ -1085,6 +1092,10 @@
 				BB7B07C425B646BA0021E545 /* AndroidAssetHandler.hpp */,
 				BBBA474E25B932DA00C8207D /* AndroidAudioEngineHelper.cpp */,
 				BBBA475225B932DA00C8207D /* AndroidAudioEngineHelper.hpp */,
+				BBBA4E5025BA3E8800C8207D /* AndroidSound.cpp */,
+				BBBA4E5125BA3E8800C8207D /* AndroidSound.hpp */,
+				BBBA4E4E25BA3E8800C8207D /* AndroidSoundWrapper.cpp */,
+				BBBA4E4F25BA3E8800C8207D /* AndroidSoundWrapper.hpp */,
 				BBBA4E4525BA1A6F00C8207D /* AudioEncoding.hpp */,
 				BBBA4E4125BA1A6F00C8207D /* DataSource.hpp */,
 				BBBA4E3B25BA1A6F00C8207D /* InputStream.cpp */,
@@ -1114,148 +1125,6 @@
 			path = android;
 			sourceTree = "<group>";
 		};
-		BB7B07DF25B646BA0021E545 /* glfw */ = {
-			isa = PBXGroup;
-			children = (
-				BB7B07EF25B646BA0021E545 /* include */,
-				BB7B083625B646BB0021E545 /* deps */,
-				BB7B084E25B646BB0021E545 /* src */,
-			);
-			path = glfw;
-			sourceTree = "<group>";
-		};
-		BB7B07EF25B646BA0021E545 /* include */ = {
-			isa = PBXGroup;
-			children = (
-				BB7B07F025B646BA0021E545 /* GLFW */,
-			);
-			path = include;
-			sourceTree = "<group>";
-		};
-		BB7B07F025B646BA0021E545 /* GLFW */ = {
-			isa = PBXGroup;
-			children = (
-				BB7B07F125B646BA0021E545 /* glfw3.h */,
-				BB7B07F225B646BA0021E545 /* glfw3native.h */,
-			);
-			path = GLFW;
-			sourceTree = "<group>";
-		};
-		BB7B083625B646BB0021E545 /* deps */ = {
-			isa = PBXGroup;
-			children = (
-				BB7B084925B646BB0021E545 /* getopt.c */,
-				BB7B083D25B646BB0021E545 /* getopt.h */,
-				BB7B084225B646BB0021E545 /* glad */,
-				BB7B084725B646BB0021E545 /* glad_gl.c */,
-				BB7B083A25B646BB0021E545 /* glad_vulkan.c */,
-				BB7B083825B646BB0021E545 /* linmath.h */,
-				BB7B083E25B646BB0021E545 /* mingw */,
-				BB7B083725B646BB0021E545 /* nuklear_glfw_gl2.h */,
-				BB7B083C25B646BB0021E545 /* nuklear.h */,
-				BB7B083925B646BB0021E545 /* stb_image_write.h */,
-				BB7B083B25B646BB0021E545 /* tinycthread.c */,
-				BB7B084825B646BB0021E545 /* tinycthread.h */,
-				BB7B084A25B646BB0021E545 /* vs2008 */,
-			);
-			path = deps;
-			sourceTree = "<group>";
-		};
-		BB7B083E25B646BB0021E545 /* mingw */ = {
-			isa = PBXGroup;
-			children = (
-				BB7B084025B646BB0021E545 /* _mingw_dxhelper.h */,
-				BB7B083F25B646BB0021E545 /* dinput.h */,
-				BB7B084125B646BB0021E545 /* xinput.h */,
-			);
-			path = mingw;
-			sourceTree = "<group>";
-		};
-		BB7B084225B646BB0021E545 /* glad */ = {
-			isa = PBXGroup;
-			children = (
-				BB7B084525B646BB0021E545 /* gl.h */,
-				BB7B084625B646BB0021E545 /* khrplatform.h */,
-				BB7B084425B646BB0021E545 /* vk_platform.h */,
-				BB7B084325B646BB0021E545 /* vulkan.h */,
-			);
-			path = glad;
-			sourceTree = "<group>";
-		};
-		BB7B084A25B646BB0021E545 /* vs2008 */ = {
-			isa = PBXGroup;
-			children = (
-				BB7B084B25B646BB0021E545 /* stdint.h */,
-			);
-			path = vs2008;
-			sourceTree = "<group>";
-		};
-		BB7B084E25B646BB0021E545 /* src */ = {
-			isa = PBXGroup;
-			children = (
-				BB7B085725B646BB0021E545 /* CMakeLists.txt */,
-				BB7B085325B646BB0021E545 /* cocoa_init.m */,
-				BB7B087625B646BB0021E545 /* cocoa_joystick.h */,
-				BB7B085025B646BB0021E545 /* cocoa_joystick.m */,
-				BB7B088825B646BB0021E545 /* cocoa_monitor.m */,
-				BB7B085825B646BB0021E545 /* cocoa_platform.h */,
-				BB7B087E25B646BB0021E545 /* cocoa_time.c */,
-				BB7B087A25B646BB0021E545 /* cocoa_window.m */,
-				BB7B087D25B646BB0021E545 /* context.c */,
-				BB7B087B25B646BB0021E545 /* egl_context.c */,
-				BB7B085A25B646BB0021E545 /* egl_context.h */,
-				BB7B087325B646BB0021E545 /* glfw_config.h.in */,
-				BB7B086D25B646BB0021E545 /* glfw.rc.in */,
-				BB7B088525B646BB0021E545 /* glx_context.c */,
-				BB7B086A25B646BB0021E545 /* glx_context.h */,
-				BB7B085F25B646BB0021E545 /* init.c */,
-				BB7B087125B646BB0021E545 /* input.c */,
-				BB7B085425B646BB0021E545 /* internal.h */,
-				BB7B088725B646BB0021E545 /* linux_joystick.c */,
-				BB7B086725B646BB0021E545 /* linux_joystick.h */,
-				BB7B087425B646BB0021E545 /* mappings.h */,
-				BB7B086525B646BB0021E545 /* mappings.h.in */,
-				BB7B085225B646BB0021E545 /* monitor.c */,
-				BB7B086225B646BB0021E545 /* nsgl_context.h */,
-				BB7B087F25B646BB0021E545 /* nsgl_context.m */,
-				BB7B085625B646BB0021E545 /* null_init.c */,
-				BB7B085C25B646BB0021E545 /* null_joystick.c */,
-				BB7B087925B646BB0021E545 /* null_joystick.h */,
-				BB7B086F25B646BB0021E545 /* null_monitor.c */,
-				BB7B085525B646BB0021E545 /* null_platform.h */,
-				BB7B087725B646BB0021E545 /* null_window.c */,
-				BB7B086B25B646BB0021E545 /* osmesa_context.c */,
-				BB7B088625B646BB0021E545 /* osmesa_context.h */,
-				BB7B087225B646BB0021E545 /* posix_thread.c */,
-				BB7B084F25B646BB0021E545 /* posix_thread.h */,
-				BB7B085125B646BB0021E545 /* posix_time.c */,
-				BB7B087025B646BB0021E545 /* posix_time.h */,
-				BB7B086E25B646BB0021E545 /* vulkan.c */,
-				BB7B085B25B646BB0021E545 /* wgl_context.c */,
-				BB7B087825B646BB0021E545 /* wgl_context.h */,
-				BB7B086125B646BB0021E545 /* win32_init.c */,
-				BB7B087C25B646BB0021E545 /* win32_joystick.c */,
-				BB7B086625B646BB0021E545 /* win32_joystick.h */,
-				BB7B086825B646BB0021E545 /* win32_monitor.c */,
-				BB7B088425B646BB0021E545 /* win32_platform.h */,
-				BB7B085925B646BB0021E545 /* win32_thread.c */,
-				BB7B087525B646BB0021E545 /* win32_time.c */,
-				BB7B088225B646BB0021E545 /* win32_window.c */,
-				BB7B088925B646BB0021E545 /* window.c */,
-				BB7B086925B646BB0021E545 /* wl_init.c */,
-				BB7B085E25B646BB0021E545 /* wl_monitor.c */,
-				BB7B088025B646BB0021E545 /* wl_platform.h */,
-				BB7B086325B646BB0021E545 /* wl_window.c */,
-				BB7B086425B646BB0021E545 /* x11_init.c */,
-				BB7B088325B646BB0021E545 /* x11_monitor.c */,
-				BB7B086025B646BB0021E545 /* x11_platform.h */,
-				BB7B086C25B646BB0021E545 /* x11_window.c */,
-				BB7B088125B646BB0021E545 /* xkb_unicode.c */,
-				BB7B085D25B646BB0021E545 /* xkb_unicode.h */,
-			);
-			path = src;
-			sourceTree = "<group>";
-		};
 		BB7B08D025B64CF20021E545 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -1268,7 +1137,6 @@
 		BB7B090825B651F20021E545 /* core */ = {
 			isa = PBXGroup;
 			children = (
-				BB7B090925B651F20021E545 /* glfw */,
 				BB7B091825B659280021E545 /* MainEngineController.cpp */,
 				BB7B091725B659280021E545 /* MainEngineController.hpp */,
 				BB7B091C25B659E70021E545 /* MainEngineState.cpp */,
@@ -1278,15 +1146,6 @@
 			);
 			name = core;
 			path = ../../core;
-			sourceTree = "<group>";
-		};
-		BB7B090925B651F20021E545 /* glfw */ = {
-			isa = PBXGroup;
-			children = (
-				BB7B090B25B651F20021E545 /* GlfwMain.cpp */,
-				BB7B090A25B651F20021E545 /* GlfwMain.hpp */,
-			);
-			path = glfw;
 			sourceTree = "<group>";
 		};
 		BB8BCCE825B682E8005F57B8 /* iOS */ = {
@@ -1769,6 +1628,206 @@
 			path = fifo;
 			sourceTree = "<group>";
 		};
+		BBBA4E5225BA404F00C8207D /* windows */ = {
+			isa = PBXGroup;
+			children = (
+				BBBA4E6C25BA404F00C8207D /* GowEngineDemo.sln */,
+				BBBA4EE925BA405000C8207D /* GowEngineDemo.vcxproj */,
+				BBBA4E6A25BA404F00C8207D /* GowEngineDemo.vcxproj.filters */,
+				BBBA4EF325BA405000C8207D /* main.cpp */,
+			);
+			name = windows;
+			path = ../windows;
+			sourceTree = "<group>";
+		};
+		BBBA4F4625BA405000C8207D /* linux */ = {
+			isa = PBXGroup;
+			children = (
+				BBBA4FAF25BA405000C8207D /* GowEngineDemo.cbp */,
+				BBBA4FCD25BA405000C8207D /* main.cpp */,
+			);
+			name = linux;
+			path = ../linux;
+			sourceTree = "<group>";
+		};
+		BBBA4FCE25BA405000C8207D /* android */ = {
+			isa = PBXGroup;
+			children = (
+				BBBA4FCF25BA405000C8207D /* app */,
+			);
+			name = android;
+			path = ../android;
+			sourceTree = "<group>";
+		};
+		BBBA4FCF25BA405000C8207D /* app */ = {
+			isa = PBXGroup;
+			children = (
+				BBBA51AC25BA405100C8207D /* build.gradle */,
+				BBBA554525BA405300C8207D /* src */,
+			);
+			path = app;
+			sourceTree = "<group>";
+		};
+		BBBA554525BA405300C8207D /* src */ = {
+			isa = PBXGroup;
+			children = (
+				BBBA554625BA405300C8207D /* main */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		BBBA554625BA405300C8207D /* main */ = {
+			isa = PBXGroup;
+			children = (
+				BBBA556525BA405300C8207D /* java */,
+				BBBA556B25BA405300C8207D /* cpp */,
+			);
+			path = main;
+			sourceTree = "<group>";
+		};
+		BBBA556525BA405300C8207D /* java */ = {
+			isa = PBXGroup;
+			children = (
+				BBBA556625BA405300C8207D /* com */,
+			);
+			path = java;
+			sourceTree = "<group>";
+		};
+		BBBA556625BA405300C8207D /* com */ = {
+			isa = PBXGroup;
+			children = (
+				BBBA556725BA405300C8207D /* sgowen */,
+			);
+			path = com;
+			sourceTree = "<group>";
+		};
+		BBBA556725BA405300C8207D /* sgowen */ = {
+			isa = PBXGroup;
+			children = (
+				BBBA556825BA405300C8207D /* gowenginedemo */,
+			);
+			path = sgowen;
+			sourceTree = "<group>";
+		};
+		BBBA556825BA405300C8207D /* gowenginedemo */ = {
+			isa = PBXGroup;
+			children = (
+				BBBA556A25BA405300C8207D /* Engine.kt */,
+				BBBA556925BA405300C8207D /* MainActivity.kt */,
+			);
+			path = gowenginedemo;
+			sourceTree = "<group>";
+		};
+		BBBA556B25BA405300C8207D /* cpp */ = {
+			isa = PBXGroup;
+			children = (
+				BBBA556C25BA405300C8207D /* CMakeLists.txt */,
+				BBBA556D25BA405300C8207D /* JNIEngine.cpp */,
+			);
+			path = cpp;
+			sourceTree = "<group>";
+		};
+		BBBA55D225BA43B300C8207D /* glfw */ = {
+			isa = PBXGroup;
+			children = (
+				BBBA55D425BA43B300C8207D /* GlfwMain.cpp */,
+				BBBA55D325BA43B300C8207D /* GlfwMain.hpp */,
+			);
+			path = glfw;
+			sourceTree = "<group>";
+		};
+		BBBA55DB25BA453900C8207D /* glfw */ = {
+			isa = PBXGroup;
+			children = (
+				BBBA55EB25BA453900C8207D /* include */,
+				BBBA564A25BA453900C8207D /* src */,
+			);
+			path = glfw;
+			sourceTree = "<group>";
+		};
+		BBBA55EB25BA453900C8207D /* include */ = {
+			isa = PBXGroup;
+			children = (
+				BBBA55EC25BA453900C8207D /* GLFW */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		BBBA55EC25BA453900C8207D /* GLFW */ = {
+			isa = PBXGroup;
+			children = (
+				BBBA55ED25BA453900C8207D /* glfw3.h */,
+				BBBA55EE25BA453900C8207D /* glfw3native.h */,
+			);
+			path = GLFW;
+			sourceTree = "<group>";
+		};
+		BBBA564A25BA453900C8207D /* src */ = {
+			isa = PBXGroup;
+			children = (
+				BBBA565325BA453A00C8207D /* CMakeLists.txt */,
+				BBBA564F25BA453900C8207D /* cocoa_init.m */,
+				BBBA567225BA453A00C8207D /* cocoa_joystick.h */,
+				BBBA564C25BA453900C8207D /* cocoa_joystick.m */,
+				BBBA568425BA453A00C8207D /* cocoa_monitor.m */,
+				BBBA565425BA453A00C8207D /* cocoa_platform.h */,
+				BBBA567A25BA453A00C8207D /* cocoa_time.c */,
+				BBBA567625BA453A00C8207D /* cocoa_window.m */,
+				BBBA567925BA453A00C8207D /* context.c */,
+				BBBA567725BA453A00C8207D /* egl_context.c */,
+				BBBA565625BA453A00C8207D /* egl_context.h */,
+				BBBA566F25BA453A00C8207D /* glfw_config.h.in */,
+				BBBA566925BA453A00C8207D /* glfw.rc.in */,
+				BBBA568125BA453A00C8207D /* glx_context.c */,
+				BBBA566625BA453A00C8207D /* glx_context.h */,
+				BBBA565B25BA453A00C8207D /* init.c */,
+				BBBA566D25BA453A00C8207D /* input.c */,
+				BBBA565025BA453900C8207D /* internal.h */,
+				BBBA568325BA453A00C8207D /* linux_joystick.c */,
+				BBBA566325BA453A00C8207D /* linux_joystick.h */,
+				BBBA567025BA453A00C8207D /* mappings.h */,
+				BBBA566125BA453A00C8207D /* mappings.h.in */,
+				BBBA564E25BA453900C8207D /* monitor.c */,
+				BBBA565E25BA453A00C8207D /* nsgl_context.h */,
+				BBBA567B25BA453A00C8207D /* nsgl_context.m */,
+				BBBA565225BA453900C8207D /* null_init.c */,
+				BBBA565825BA453A00C8207D /* null_joystick.c */,
+				BBBA567525BA453A00C8207D /* null_joystick.h */,
+				BBBA566B25BA453A00C8207D /* null_monitor.c */,
+				BBBA565125BA453900C8207D /* null_platform.h */,
+				BBBA567325BA453A00C8207D /* null_window.c */,
+				BBBA566725BA453A00C8207D /* osmesa_context.c */,
+				BBBA568225BA453A00C8207D /* osmesa_context.h */,
+				BBBA566E25BA453A00C8207D /* posix_thread.c */,
+				BBBA564B25BA453900C8207D /* posix_thread.h */,
+				BBBA564D25BA453900C8207D /* posix_time.c */,
+				BBBA566C25BA453A00C8207D /* posix_time.h */,
+				BBBA566A25BA453A00C8207D /* vulkan.c */,
+				BBBA565725BA453A00C8207D /* wgl_context.c */,
+				BBBA567425BA453A00C8207D /* wgl_context.h */,
+				BBBA565D25BA453A00C8207D /* win32_init.c */,
+				BBBA567825BA453A00C8207D /* win32_joystick.c */,
+				BBBA566225BA453A00C8207D /* win32_joystick.h */,
+				BBBA566425BA453A00C8207D /* win32_monitor.c */,
+				BBBA568025BA453A00C8207D /* win32_platform.h */,
+				BBBA565525BA453A00C8207D /* win32_thread.c */,
+				BBBA567125BA453A00C8207D /* win32_time.c */,
+				BBBA567E25BA453A00C8207D /* win32_window.c */,
+				BBBA568525BA453A00C8207D /* window.c */,
+				BBBA566525BA453A00C8207D /* wl_init.c */,
+				BBBA565A25BA453A00C8207D /* wl_monitor.c */,
+				BBBA567C25BA453A00C8207D /* wl_platform.h */,
+				BBBA565F25BA453A00C8207D /* wl_window.c */,
+				BBBA566025BA453A00C8207D /* x11_init.c */,
+				BBBA567F25BA453A00C8207D /* x11_monitor.c */,
+				BBBA565C25BA453A00C8207D /* x11_platform.h */,
+				BBBA566825BA453A00C8207D /* x11_window.c */,
+				BBBA567D25BA453A00C8207D /* xkb_unicode.c */,
+				BBBA565925BA453A00C8207D /* xkb_unicode.h */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1850,9 +1909,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB7B046525B644E10021E545 /* Assets.xcassets in Resources */,
+				BBBA56DD25BA453A00C8207D /* CMakeLists.txt in Resources */,
 				BB16D1EB25B74CD100C340C1 /* textures in Resources */,
+				BBBA56F025BA453A00C8207D /* glfw_config.h.in in Resources */,
 				BB16D1ED25B74CD100C340C1 /* sounds in Resources */,
+				BBBA56EB25BA453A00C8207D /* glfw.rc.in in Resources */,
 				BB16D1E725B74CD100C340C1 /* json in Resources */,
+				BBBA56E625BA453A00C8207D /* mappings.h.in in Resources */,
 				BB16D1E925B74CD100C340C1 /* music in Resources */,
 				BB16D1E525B74CD100C340C1 /* shaders in Resources */,
 			);
@@ -1879,10 +1942,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBBA56E925BA453A00C8207D /* osmesa_context.c in Sources */,
 				BBBA467C25B9121600C8207D /* AppleSoundWrapper.cpp in Sources */,
 				BB7B047525B6455F0021E545 /* main.cpp in Sources */,
 				BBBA46F025B913D900C8207D /* OALActionManager.m in Sources */,
 				BB7B08B125B64A620021E545 /* Animation.cpp in Sources */,
+				BBBA56EC25BA453A00C8207D /* vulkan.c in Sources */,
 				BB7B08B225B64A620021E545 /* AppleAssetHandler.cpp in Sources */,
 				BB7B08B325B64A620021E545 /* NSAppleAssetHandler.mm in Sources */,
 				BBBA46E825B913D900C8207D /* NSMutableDictionary+WeakReferences.m in Sources */,
@@ -1890,18 +1955,25 @@
 				BBBA46EA25B913D900C8207D /* NSMutableArray+WeakReferences.m in Sources */,
 				BBBA46CC25B913D900C8207D /* OALAudioTrack.m in Sources */,
 				BBBA465A25B8D3DF00C8207D /* Renderer.cpp in Sources */,
+				BBBA56D825BA453A00C8207D /* cocoa_joystick.m in Sources */,
+				BBBA55D525BA43B300C8207D /* GlfwMain.cpp in Sources */,
 				BB7B08B425B64A620021E545 /* AssetHandler.cpp in Sources */,
 				BBBA46D425B913D900C8207D /* ALChannelSource.m in Sources */,
+				BBBA56FF25BA453A00C8207D /* window.c in Sources */,
 				BBBA472325B9150000C8207D /* NullAudioEngineHelper.cpp in Sources */,
 				BB7B08B525B64A620021E545 /* AssetHandlerFactory.cpp in Sources */,
+				BBBA56F325BA453A00C8207D /* cocoa_window.m in Sources */,
 				BB7B08B625B64A620021E545 /* Assets.cpp in Sources */,
 				BBBA46D225B913D900C8207D /* ALListener.m in Sources */,
+				BBBA56FE25BA453A00C8207D /* cocoa_monitor.m in Sources */,
 				BB7B091325B652D80021E545 /* EngineState.cpp in Sources */,
 				BBBA474325B92E5C00C8207D /* NullAssetHandler.cpp in Sources */,
 				BB7B08B725B64A620021E545 /* CursorConverter.cpp in Sources */,
 				BB7B08B825B64A620021E545 /* InputManager.cpp in Sources */,
+				BBBA56F625BA453A00C8207D /* context.c in Sources */,
 				BB7B08BA25B64A620021E545 /* Engine.cpp in Sources */,
 				BB7B08BC25B64A620021E545 /* FPSUtil.cpp in Sources */,
+				BBBA56F725BA453A00C8207D /* cocoa_time.c in Sources */,
 				BBBA467E25B9121600C8207D /* ObjectALWrapper.mm in Sources */,
 				BBBA46EE25B913D900C8207D /* mach_timing.c in Sources */,
 				BBBA46EC25B913D900C8207D /* OALTools.m in Sources */,
@@ -1915,12 +1987,17 @@
 				BB7B08C425B64A620021E545 /* ShaderLoader.cpp in Sources */,
 				BBBA46CA25B913D900C8207D /* OALAudioTracks.m in Sources */,
 				BB7B08C525B64A620021E545 /* ShaderManager.cpp in Sources */,
+				BBBA56EF25BA453A00C8207D /* posix_thread.c in Sources */,
+				BBBA56F925BA453A00C8207D /* xkb_unicode.c in Sources */,
 				BB7B08C625B64A620021E545 /* SpriteBatcher.cpp in Sources */,
+				BBBA56EE25BA453A00C8207D /* input.c in Sources */,
 				BB7B08C725B64A620021E545 /* TextureDescriptor.cpp in Sources */,
 				BBBA46FC25B913D900C8207D /* OALSuspendHandler.m in Sources */,
 				BB7B08C825B64A620021E545 /* TextureLoader.cpp in Sources */,
 				BBBA471B25B9150000C8207D /* AudioEngineHelper.cpp in Sources */,
 				BBBA46E025B913D900C8207D /* ALContext.m in Sources */,
+				BBBA56E225BA453A00C8207D /* init.c in Sources */,
+				BBBA56F425BA453A00C8207D /* egl_context.c in Sources */,
 				BBBA468025B9121600C8207D /* AppleSound.cpp in Sources */,
 				BB16D1FF25B7623700C340C1 /* LinuxAssetHandler.cpp in Sources */,
 				BBBA46E425B913D900C8207D /* OALSimpleAudio.m in Sources */,
@@ -1928,39 +2005,26 @@
 				BBBA476725B9CFDA00C8207D /* SoundDescriptor.cpp in Sources */,
 				BBBA46E225B913D900C8207D /* ALSoundSourcePool.m in Sources */,
 				BBBA471925B9150000C8207D /* Sound.cpp in Sources */,
+				BBBA56F825BA453A00C8207D /* nsgl_context.m in Sources */,
 				BBBA46F225B913D900C8207D /* OALAction.m in Sources */,
 				BBBA46D825B913D900C8207D /* ALSource.m in Sources */,
 				BB7B08CA25B64A620021E545 /* Vector2.cpp in Sources */,
 				BBBA46FA25B913D900C8207D /* OALAudioSession.m in Sources */,
-				BB7B08D525B64DFB0021E545 /* context.c in Sources */,
-				BB7B08D625B64DFB0021E545 /* init.c in Sources */,
 				BBBA472525B9150000C8207D /* AudioEngineHelperFactory.cpp in Sources */,
-				BB7B08D725B64DFB0021E545 /* input.c in Sources */,
-				BB7B08D825B64DFB0021E545 /* monitor.c in Sources */,
 				BBBA46F625B913D900C8207D /* OALAudioActions.m in Sources */,
-				BB7B08D925B64DFB0021E545 /* vulkan.c in Sources */,
 				BBBA46DC25B913D900C8207D /* ALBuffer.m in Sources */,
-				BB7B08DA25B64DFB0021E545 /* window.c in Sources */,
-				BB7B08DC25B64E320021E545 /* cocoa_init.m in Sources */,
 				BBBA472125B9150000C8207D /* NullSound.cpp in Sources */,
 				BBBA46DE25B913D900C8207D /* ALCaptureDevice.m in Sources */,
-				BB7B08DD25B64E320021E545 /* cocoa_joystick.m in Sources */,
-				BB7B08DE25B64E320021E545 /* cocoa_monitor.m in Sources */,
-				BB7B08DF25B64E320021E545 /* cocoa_time.c in Sources */,
-				BB7B090C25B651F20021E545 /* GlfwMain.cpp in Sources */,
 				BBBA46F425B913D900C8207D /* OALUtilityActions.m in Sources */,
 				BB7B091D25B659E70021E545 /* MainEngineState.cpp in Sources */,
-				BB7B08E025B64E320021E545 /* cocoa_window.m in Sources */,
 				BBBA471F25B9150000C8207D /* NullSoundWrapper.cpp in Sources */,
 				BBBA46DA25B913D900C8207D /* ALWrapper.m in Sources */,
-				BB7B08E125B64E320021E545 /* egl_context.c in Sources */,
+				BBBA56DA25BA453A00C8207D /* monitor.c in Sources */,
 				BBBA467A25B9121600C8207D /* AppleAudioEngineHelper.cpp in Sources */,
-				BB7B08E225B64E320021E545 /* nsgl_context.m in Sources */,
 				BBBA471725B9150000C8207D /* SoundWrapper.cpp in Sources */,
-				BB7B08E325B64E320021E545 /* osmesa_context.c in Sources */,
-				BB7B08E425B64E320021E545 /* posix_thread.c in Sources */,
 				BBBA46D625B913D900C8207D /* OpenALManager.m in Sources */,
 				BBBA46E625B913D900C8207D /* OALAudioFile.m in Sources */,
+				BBBA56DB25BA453A00C8207D /* cocoa_init.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2002,6 +2066,7 @@
 				BBBA472025B9150000C8207D /* NullSoundWrapper.cpp in Sources */,
 				BBBA46E725B913D900C8207D /* OALAudioFile.m in Sources */,
 				BB16D20225B7623C00C340C1 /* LinuxAssetHandler.cpp in Sources */,
+				BBBA55D625BA43B300C8207D /* GlfwMain.cpp in Sources */,
 				BBBA471E25B9150000C8207D /* GowAudioEngine.cpp in Sources */,
 				BB8BCD1B25B68490005F57B8 /* InputManager.cpp in Sources */,
 				BB8BCD1D25B68490005F57B8 /* Engine.cpp in Sources */,
@@ -2186,12 +2251,12 @@
 					GL_SILENCE_DEPRECATION,
 				);
 				HEADER_SEARCH_PATHS = (
-					"\"$(SRCROOT)/../../../deps/glfw/include\"",
+					"\"$(SRCROOT)/../../../deps/GowEngine/deps/glfw/include\"",
+					"\"$(SRCROOT)/../../../deps/GowEngine/deps/ObjectAL-for-iPhone/ObjectAL/ObjectAL\"",
 					"\"$(SRCROOT)/../../../deps/GowEngine/deps/rapidjson/include\"",
 					"\"$(SRCROOT)/../../../deps/GowEngine/deps/stb\"",
 					"\"$(SRCROOT)/../../../deps/GowEngine/src\"",
 					"\"$(SRCROOT)/../../core\"",
-					"\"$(SRCROOT)/../../../deps/GowEngine/deps/ObjectAL-for-iPhone/ObjectAL/ObjectAL\"",
 				);
 				INFOPLIST_FILE = macOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -2223,12 +2288,12 @@
 					GL_SILENCE_DEPRECATION,
 				);
 				HEADER_SEARCH_PATHS = (
-					"\"$(SRCROOT)/../../../deps/glfw/include\"",
+					"\"$(SRCROOT)/../../../deps/GowEngine/deps/glfw/include\"",
+					"\"$(SRCROOT)/../../../deps/GowEngine/deps/ObjectAL-for-iPhone/ObjectAL/ObjectAL\"",
 					"\"$(SRCROOT)/../../../deps/GowEngine/deps/rapidjson/include\"",
 					"\"$(SRCROOT)/../../../deps/GowEngine/deps/stb\"",
 					"\"$(SRCROOT)/../../../deps/GowEngine/src\"",
 					"\"$(SRCROOT)/../../core\"",
-					"\"$(SRCROOT)/../../../deps/GowEngine/deps/ObjectAL-for-iPhone/ObjectAL/ObjectAL\"",
 				);
 				INFOPLIST_FILE = macOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -2258,11 +2323,11 @@
 					GLES_SILENCE_DEPRECATION,
 				);
 				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/../../../deps/GowEngine/deps/ObjectAL-for-iPhone/ObjectAL/ObjectAL\"",
 					"\"$(SRCROOT)/../../../deps/GowEngine/deps/rapidjson/include\"",
 					"\"$(SRCROOT)/../../../deps/GowEngine/deps/stb\"",
 					"\"$(SRCROOT)/../../../deps/GowEngine/src\"",
 					"\"$(SRCROOT)/../../core\"",
-					"\"$(SRCROOT)/../../../deps/GowEngine/deps/ObjectAL-for-iPhone/ObjectAL/ObjectAL\"",
 				);
 				INFOPLIST_FILE = iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
@@ -2291,11 +2356,11 @@
 				DEVELOPMENT_TEAM = 83V22B9TY9;
 				GCC_PREPROCESSOR_DEFINITIONS = GLES_SILENCE_DEPRECATION;
 				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/../../../deps/GowEngine/deps/ObjectAL-for-iPhone/ObjectAL/ObjectAL\"",
 					"\"$(SRCROOT)/../../../deps/GowEngine/deps/rapidjson/include\"",
 					"\"$(SRCROOT)/../../../deps/GowEngine/deps/stb\"",
 					"\"$(SRCROOT)/../../../deps/GowEngine/src\"",
 					"\"$(SRCROOT)/../../core\"",
-					"\"$(SRCROOT)/../../../deps/GowEngine/deps/ObjectAL-for-iPhone/ObjectAL/ObjectAL\"",
 				);
 				INFOPLIST_FILE = iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
