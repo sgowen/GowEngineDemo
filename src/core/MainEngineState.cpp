@@ -38,17 +38,17 @@ void MainEngineState::destroy()
 
 void MainEngineState::enter(Engine* engine)
 {
-    // TODO
+    // Empty
 }
 
 void MainEngineState::execute(Engine* engine)
 {
-    // TODO
+    // Empty
 }
 
 void MainEngineState::exit(Engine* engine)
 {
-    // TODO
+    // Empty
 }
 
 void MainEngineState::createDeviceDependentResources()
@@ -88,8 +88,6 @@ void MainEngineState::onPause()
 
 void MainEngineState::update()
 {
-    GOW_AUDIO->update();
-    
     std::vector<CursorEvent*>& cursorEvents = INPUT_MGR.getCursorEvents();
     for (auto e : cursorEvents)
     {
@@ -111,10 +109,10 @@ MainEngineState* MainEngineState::s_instance = NULL;
 MainEngineState::MainEngineState() : EngineState(),
 _renderer()
 {
-    // TODO
+    // Empty
 }
 
 MainEngineState::~MainEngineState()
 {
-    // TODO
+    // Empty
 }

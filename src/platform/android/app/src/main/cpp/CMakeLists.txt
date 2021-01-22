@@ -14,10 +14,13 @@ set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} -O3")
 set(engine_source_dir ${CMAKE_CURRENT_SOURCE_DIR}/../../../../../../../deps/GowEngine/src)
 set(core_source_dir ${CMAKE_CURRENT_SOURCE_DIR}/../../../../../../core)
 
+file(GLOB_RECURSE BOX2D_CPP_FILES "${engine_source_dir}/../deps/box2d/src/*.cpp")
 file(GLOB ENGINE_CPP_FILES "${engine_source_dir}/*.cpp")
 file(GLOB ENGINE_ANDROID_CPP_FILES "${engine_source_dir}/android/*.cpp")
 file(GLOB CORE_CPP_FILES "${core_source_dir}/*.cpp")
 
+include_directories(${engine_source_dir}/../deps/box2d/include)
+include_directories(${engine_source_dir}/../deps/box2d/src)
 include_directories(${engine_source_dir}/../deps/rapidjson/include)
 include_directories(${engine_source_dir}/../deps/stb)
 include_directories(${engine_source_dir})
@@ -35,6 +38,7 @@ add_library( # Sets the name of the library.
              # Sets the library as a shared library.
              SHARED
 
+             ${BOX2D_CPP_FILES}
              ${ENGINE_CPP_FILES}
              ${ENGINE_ANDROID_CPP_FILES}
              ${CORE_CPP_FILES}

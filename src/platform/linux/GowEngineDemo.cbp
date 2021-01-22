@@ -33,17 +33,21 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 			<Add option="-D_GLFW_X11" />
-			<Add directory="../../core" />
+			<Add directory="../../../deps/GowEngine/deps/box2d/include" />
+			<Add directory="../../../deps/GowEngine/deps/box2d/src" />
 			<Add directory="../../../deps/GowEngine/deps/glfw/include" />
 			<Add directory="../../../deps/GowEngine/deps/rapidjson/include" />
 			<Add directory="../../../deps/GowEngine/deps/stb" />
-            <Add directory="../../../deps/GowEngine/src" />
+			<Add directory="../../../deps/GowEngine/src" />
+			<Add directory="../../core" />
 		</Compiler>
 		<Linker>
 			<Add option="-ldl" />
 			<Add option="-lpthread" />
 			<Add option="-lGLEW" />
 			<Add option="-lGL" />
+			<Add option="-lopenal" />
+			<Add option="-lalut" />
 		</Linker>
 		<ExtraCommands>
 			<Add before="if [ -d $(PROJECT_DIR)/json ]; then rm -Rf $(PROJECT_DIR)/json; fi" />
@@ -59,8 +63,64 @@
 		<UnitsGlob directory="../../../deps/GowEngine/src" recursive="0" wildcard="*.hpp" />
 		<UnitsGlob directory="../../../deps/GowEngine/src/linux" recursive="0" wildcard="*.cpp" />
 		<UnitsGlob directory="../../../deps/GowEngine/src/linux" recursive="0" wildcard="*.hpp" />
-        <UnitsGlob directory="../../../deps/GowEngine/src/glfw" recursive="0" wildcard="*.cpp" />
-        <UnitsGlob directory="../../../deps/GowEngine/src/glfw" recursive="0" wildcard="*.hpp" />
+		<UnitsGlob directory="../../../deps/GowEngine/src/glfw" recursive="0" wildcard="*.cpp" />
+		<UnitsGlob directory="../../../deps/GowEngine/src/glfw" recursive="0" wildcard="*.hpp" />
+		<UnitsGlob directory="../../core" recursive="0" wildcard="*.cpp" />
+		<UnitsGlob directory="../../core" recursive="0" wildcard="*.hpp" />
+		<Unit filename="../../../deps/GowEngine/deps/box2d/src/collision/b2_broad_phase.cpp" />
+		<Unit filename="../../../deps/GowEngine/deps/box2d/src/collision/b2_chain_shape.cpp" />
+		<Unit filename="../../../deps/GowEngine/deps/box2d/src/collision/b2_circle_shape.cpp" />
+		<Unit filename="../../../deps/GowEngine/deps/box2d/src/collision/b2_collide_circle.cpp" />
+		<Unit filename="../../../deps/GowEngine/deps/box2d/src/collision/b2_collide_edge.cpp" />
+		<Unit filename="../../../deps/GowEngine/deps/box2d/src/collision/b2_collide_polygon.cpp" />
+		<Unit filename="../../../deps/GowEngine/deps/box2d/src/collision/b2_collision.cpp" />
+		<Unit filename="../../../deps/GowEngine/deps/box2d/src/collision/b2_distance.cpp" />
+		<Unit filename="../../../deps/GowEngine/deps/box2d/src/collision/b2_dynamic_tree.cpp" />
+		<Unit filename="../../../deps/GowEngine/deps/box2d/src/collision/b2_edge_shape.cpp" />
+		<Unit filename="../../../deps/GowEngine/deps/box2d/src/collision/b2_polygon_shape.cpp" />
+		<Unit filename="../../../deps/GowEngine/deps/box2d/src/collision/b2_time_of_impact.cpp" />
+		<Unit filename="../../../deps/GowEngine/deps/box2d/src/common/b2_block_allocator.cpp" />
+		<Unit filename="../../../deps/GowEngine/deps/box2d/src/common/b2_draw.cpp" />
+		<Unit filename="../../../deps/GowEngine/deps/box2d/src/common/b2_math.cpp" />
+		<Unit filename="../../../deps/GowEngine/deps/box2d/src/common/b2_settings.cpp" />
+		<Unit filename="../../../deps/GowEngine/deps/box2d/src/common/b2_stack_allocator.cpp" />
+		<Unit filename="../../../deps/GowEngine/deps/box2d/src/common/b2_timer.cpp" />
+		<Unit filename="../../../deps/GowEngine/deps/box2d/src/dynamics/b2_body.cpp" />
+		<Unit filename="../../../deps/GowEngine/deps/box2d/src/dynamics/b2_chain_circle_contact.cpp" />
+		<Unit filename="../../../deps/GowEngine/deps/box2d/src/dynamics/b2_chain_circle_contact.h" />
+		<Unit filename="../../../deps/GowEngine/deps/box2d/src/dynamics/b2_chain_polygon_contact.cpp" />
+		<Unit filename="../../../deps/GowEngine/deps/box2d/src/dynamics/b2_chain_polygon_contact.h" />
+		<Unit filename="../../../deps/GowEngine/deps/box2d/src/dynamics/b2_circle_contact.cpp" />
+		<Unit filename="../../../deps/GowEngine/deps/box2d/src/dynamics/b2_circle_contact.h" />
+		<Unit filename="../../../deps/GowEngine/deps/box2d/src/dynamics/b2_contact.cpp" />
+		<Unit filename="../../../deps/GowEngine/deps/box2d/src/dynamics/b2_contact_manager.cpp" />
+		<Unit filename="../../../deps/GowEngine/deps/box2d/src/dynamics/b2_contact_solver.cpp" />
+		<Unit filename="../../../deps/GowEngine/deps/box2d/src/dynamics/b2_contact_solver.h" />
+		<Unit filename="../../../deps/GowEngine/deps/box2d/src/dynamics/b2_distance_joint.cpp" />
+		<Unit filename="../../../deps/GowEngine/deps/box2d/src/dynamics/b2_edge_circle_contact.cpp" />
+		<Unit filename="../../../deps/GowEngine/deps/box2d/src/dynamics/b2_edge_circle_contact.h" />
+		<Unit filename="../../../deps/GowEngine/deps/box2d/src/dynamics/b2_edge_polygon_contact.cpp" />
+		<Unit filename="../../../deps/GowEngine/deps/box2d/src/dynamics/b2_edge_polygon_contact.h" />
+		<Unit filename="../../../deps/GowEngine/deps/box2d/src/dynamics/b2_fixture.cpp" />
+		<Unit filename="../../../deps/GowEngine/deps/box2d/src/dynamics/b2_friction_joint.cpp" />
+		<Unit filename="../../../deps/GowEngine/deps/box2d/src/dynamics/b2_gear_joint.cpp" />
+		<Unit filename="../../../deps/GowEngine/deps/box2d/src/dynamics/b2_island.cpp" />
+		<Unit filename="../../../deps/GowEngine/deps/box2d/src/dynamics/b2_island.h" />
+		<Unit filename="../../../deps/GowEngine/deps/box2d/src/dynamics/b2_joint.cpp" />
+		<Unit filename="../../../deps/GowEngine/deps/box2d/src/dynamics/b2_motor_joint.cpp" />
+		<Unit filename="../../../deps/GowEngine/deps/box2d/src/dynamics/b2_mouse_joint.cpp" />
+		<Unit filename="../../../deps/GowEngine/deps/box2d/src/dynamics/b2_polygon_circle_contact.cpp" />
+		<Unit filename="../../../deps/GowEngine/deps/box2d/src/dynamics/b2_polygon_circle_contact.h" />
+		<Unit filename="../../../deps/GowEngine/deps/box2d/src/dynamics/b2_polygon_contact.cpp" />
+		<Unit filename="../../../deps/GowEngine/deps/box2d/src/dynamics/b2_polygon_contact.h" />
+		<Unit filename="../../../deps/GowEngine/deps/box2d/src/dynamics/b2_prismatic_joint.cpp" />
+		<Unit filename="../../../deps/GowEngine/deps/box2d/src/dynamics/b2_pulley_joint.cpp" />
+		<Unit filename="../../../deps/GowEngine/deps/box2d/src/dynamics/b2_revolute_joint.cpp" />
+		<Unit filename="../../../deps/GowEngine/deps/box2d/src/dynamics/b2_weld_joint.cpp" />
+		<Unit filename="../../../deps/GowEngine/deps/box2d/src/dynamics/b2_wheel_joint.cpp" />
+		<Unit filename="../../../deps/GowEngine/deps/box2d/src/dynamics/b2_world.cpp" />
+		<Unit filename="../../../deps/GowEngine/deps/box2d/src/dynamics/b2_world_callbacks.cpp" />
+		<Unit filename="../../../deps/GowEngine/deps/box2d/src/rope/b2_rope.cpp" />
 		<Unit filename="../../../deps/GowEngine/deps/glfw/src/context.c">
 			<Option compilerVar="CC" />
 		</Unit>
@@ -109,8 +169,6 @@
 		<Unit filename="../../../deps/GowEngine/deps/glfw/src/xkb_unicode.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<UnitsGlob directory="../../core" recursive="0" wildcard="*.cpp" />
-		<UnitsGlob directory="../../core" recursive="0" wildcard="*.hpp" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />

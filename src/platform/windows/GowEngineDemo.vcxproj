@@ -88,7 +88,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_GLFW_WIN32;WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>../../core;../../../deps/GowEngine/deps/DirectXTK/Inc;../../../deps/GowEngine/deps/DirectXTK/Src;../../../deps/GowEngine/deps/glfw/include;../../../deps/GowEngine/deps/glfw/deps;../../../deps/GowEngine/src;../../../deps/GowEngine/deps/rapidjson/include;../../../deps/GowEngine/deps/stb;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../../../deps/GowEngine/deps/box2d/include;../../../deps/GowEngine/deps/box2d/src;../../../deps/GowEngine/deps/DirectXTK/Inc;../../../deps/GowEngine/deps/DirectXTK/Src;../../../deps/GowEngine/deps/glfw/include;../../../deps/GowEngine/deps/glfw/deps;../../../deps/GowEngine/src;../../../deps/GowEngine/deps/rapidjson/include;../../../deps/GowEngine/deps/stb;../../core;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -108,7 +108,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_GLFW_WIN32;WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>../../core;../../../deps/GowEngine/deps/DirectXTK/Inc;../../../deps/GowEngine/deps/DirectXTK/Src;../../../deps/GowEngine/deps/glfw/include;../../../deps/GowEngine/deps/glfw/deps;../../../deps/GowEngine/src;../../../deps/GowEngine/deps/rapidjson/include;../../../deps/GowEngine/deps/stb;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../../../deps/GowEngine/deps/box2d/include;../../../deps/GowEngine/deps/box2d/src;../../../deps/GowEngine/deps/DirectXTK/Inc;../../../deps/GowEngine/deps/DirectXTK/Src;../../../deps/GowEngine/deps/glfw/include;../../../deps/GowEngine/deps/glfw/deps;../../../deps/GowEngine/src;../../../deps/GowEngine/deps/rapidjson/include;../../../deps/GowEngine/deps/stb;../../core;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -128,7 +128,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_GLFW_WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>../../core;../../../deps/GowEngine/deps/DirectXTK/Inc;../../../deps/GowEngine/deps/DirectXTK/Src;../../../deps/GowEngine/deps/glfw/include;../../../deps/GowEngine/deps/glfw/deps;../../../deps/GowEngine/src;../../../deps/GowEngine/deps/rapidjson/include;../../../deps/GowEngine/deps/stb;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../../../deps/GowEngine/deps/box2d/include;../../../deps/GowEngine/deps/box2d/src;../../../deps/GowEngine/deps/DirectXTK/Inc;../../../deps/GowEngine/deps/DirectXTK/Src;../../../deps/GowEngine/deps/glfw/include;../../../deps/GowEngine/deps/glfw/deps;../../../deps/GowEngine/src;../../../deps/GowEngine/deps/rapidjson/include;../../../deps/GowEngine/deps/stb;../../core;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -148,7 +148,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_GLFW_WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>../../core;../../../deps/GowEngine/deps/DirectXTK/Inc;../../../deps/GowEngine/deps/DirectXTK/Src;../../../deps/GowEngine/deps/glfw/include;../../../deps/GowEngine/deps/glfw/deps;../../../deps/GowEngine/src;../../../deps/GowEngine/deps/rapidjson/include;../../../deps/GowEngine/deps/stb;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../../../deps/GowEngine/deps/box2d/include;../../../deps/GowEngine/deps/box2d/src;../../../deps/GowEngine/deps/DirectXTK/Inc;../../../deps/GowEngine/deps/DirectXTK/Src;../../../deps/GowEngine/deps/glfw/include;../../../deps/GowEngine/deps/glfw/deps;../../../deps/GowEngine/src;../../../deps/GowEngine/deps/rapidjson/include;../../../deps/GowEngine/deps/stb;../../core;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -179,6 +179,10 @@
     <ClCompile Include="..\..\..\deps\GowEngine\deps\glfw\src\win32_time.c" />
     <ClCompile Include="..\..\..\deps\GowEngine\deps\glfw\src\win32_window.c" />
     <ClCompile Include="..\..\..\deps\GowEngine\deps\glfw\src\window.c" />
+    <ClCompile Include="..\..\..\deps\GowEngine\deps\box2d\src\collision\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\deps\box2d\src\common\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\deps\box2d\src\dynamics\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\deps\box2d\src\rope\*.cpp" />
     <ClCompile Include="..\..\..\deps\GowEngine\deps\DirectXTK\Audio\AudioEngine.cpp" />
     <ClCompile Include="..\..\..\deps\GowEngine\deps\DirectXTK\Audio\DynamicSoundEffectInstance.cpp" />
     <ClCompile Include="..\..\..\deps\GowEngine\deps\DirectXTK\Audio\SoundCommon.cpp" />

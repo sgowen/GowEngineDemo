@@ -11,7 +11,6 @@
 #include "OpenGLWrapper.hpp"
 #include "Macros.hpp"
 #include "Color.hpp"
-#include "MathUtil.hpp"
 
 Renderer::Renderer() :
 _textureManager(),
