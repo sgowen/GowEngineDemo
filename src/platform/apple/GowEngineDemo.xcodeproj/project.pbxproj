@@ -744,7 +744,6 @@
 		BBBA4E3825BA1A6F00C8207D /* SampleBuffer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SampleBuffer.hpp; sourceTree = "<group>"; };
 		BBBA4E3925BA1A6F00C8207D /* WavFmtChunkHeader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = WavFmtChunkHeader.cpp; sourceTree = "<group>"; };
 		BBBA4E3A25BA1A6F00C8207D /* SampleSource.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SampleSource.cpp; sourceTree = "<group>"; };
-		BBBA4E3B25BA1A6F00C8207D /* InputStream.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = InputStream.cpp; sourceTree = "<group>"; };
 		BBBA4E3D25BA1A6F00C8207D /* SimpleMultiPlayer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SimpleMultiPlayer.cpp; sourceTree = "<group>"; };
 		BBBA4E3E25BA1A6F00C8207D /* WavChunkHeader.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = WavChunkHeader.hpp; sourceTree = "<group>"; };
 		BBBA4E3F25BA1A6F00C8207D /* WavFmtChunkHeader.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = WavFmtChunkHeader.hpp; sourceTree = "<group>"; };
@@ -1445,7 +1444,6 @@
 				BBBA4E4E25BA3E8800C8207D /* AndroidSoundWrapper.cpp */,
 				BBBA4E4F25BA3E8800C8207D /* AndroidSoundWrapper.hpp */,
 				BBBA4E4125BA1A6F00C8207D /* DataSource.hpp */,
-				BBBA4E3B25BA1A6F00C8207D /* InputStream.cpp */,
 				BBBA4E4B25BA1A7000C8207D /* InputStream.hpp */,
 				BB7B07C525B646BA0021E545 /* JNIAndroidAssetHandler.cpp */,
 				BB7B07C325B646BA0021E545 /* JNIAndroidAssetHandler.hpp */,
