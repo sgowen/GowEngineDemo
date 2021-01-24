@@ -14,13 +14,12 @@
 @implementation NSEngine
 {
 @private
-    MainEngineController* _controller;
+    MainEngineController _controller;
     Engine* _engine;
 }
 
 - (NSEngine*)init
 {
-    _controller = new MainEngineController();
     _engine = new Engine(_controller);
     return self;
 }
@@ -28,7 +27,6 @@
 - (void)dealloc
 {
     delete _engine;
-    delete _controller;
 }
 
 - (void)createDeviceDependentResources

@@ -8,6 +8,8 @@
 
 #include "MainEngineState.hpp"
 
+#include "Renderer.hpp"
+
 #include "Assets.hpp"
 #include "Macros.hpp"
 #include "GowAudioEngine.hpp"
@@ -55,7 +57,7 @@ void MainEngineState::createDeviceDependentResources()
 {
     ASSETS.initWithJSONFile("json/assets.json");
     
-    _renderer.createDeviceDependentResources();
+    _renderer->createDeviceDependentResources();
     
     GowAudioEngine::create();
     GOW_AUDIO->loadFromAssets();
@@ -64,14 +66,14 @@ void MainEngineState::createDeviceDependentResources()
 
 void MainEngineState::onWindowSizeChanged(int screenWidth, int screenHeight, int cursorWidth, int cursorHeight)
 {
-    _renderer.onWindowSizeChanged(screenWidth, screenHeight);
+    _renderer->onWindowSizeChanged(screenWidth, screenHeight);
 }
 
 void MainEngineState::releaseDeviceDependentResources()
 {
     GowAudioEngine::destroy();
     
-    _renderer.releaseDeviceDependentResources();
+    _renderer->releaseDeviceDependentResources();
     
     ASSETS.clear();
 }
@@ -100,19 +102,19 @@ void MainEngineState::update()
 
 void MainEngineState::render()
 {
-    _renderer.render();
+    _renderer->render();
     GOW_AUDIO->render();
 }
 
 MainEngineState* MainEngineState::s_instance = NULL;
 
 MainEngineState::MainEngineState() : EngineState(),
-_renderer()
+_renderer(new Renderer())
 {
     // Empty
 }
 
 MainEngineState::~MainEngineState()
 {
-    // Empty
+    delete _renderer;
 }

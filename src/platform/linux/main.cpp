@@ -12,5 +12,5 @@
 int main(void)
 {
     MainEngineController controller;
-    return GlfwMain::getInstance().exec(&controller, "GowEngineDemo-linux");
+    return GlfwMain::exec(controller, "GowEngineDemo-linux");
 }

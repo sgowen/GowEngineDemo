@@ -5,7 +5,7 @@
 #include "android/JNIAndroidAssetHandler.hpp"
 
 Engine* _engine = NULL;
-MainEngineController* _mainEngineController = NULL;
+MainEngineController _mainEngineController;
 
 extern "C"
 JNIEXPORT jobject JNICALL
@@ -107,7 +107,6 @@ Java_com_sgowen_gowenginedemo_Engine_init(JNIEnv *env, jobject thiz)
 {
     if (_engine == NULL)
     {
-        _mainEngineController = new MainEngineController();
         _engine = new Engine(_mainEngineController);
     }
 
