@@ -85,11 +85,80 @@
           "type": "vec2"
         }
       ]
+    },
+    {
+      "name": "shader_003",
+      "vertexShaderFilePath": "shaders/shader_003.vsh",
+      "fragmentShaderFilePath": "shaders/shader_003.fsh",
+      "uniforms": [
+        {
+          "name": "u_Matrix",
+          "type": "mat4"
+        },
+        {
+          "name": "u_Color",
+          "type": "vec4"
+        }
+      ],
+      "attributes": [
+        {
+          "name": "a_Position",
+          "type": "vec2"
+        }
+      ]
+    },
+    {
+      "name": "shader_004",
+      "vertexShaderFilePath": "shaders/shader_004.vsh",
+      "fragmentShaderFilePath": "shaders/shader_004.fsh",
+      "uniforms": [
+        {
+          "name": "u_Matrix",
+          "type": "mat4"
+        },
+        {
+          "name": "u_LightPositions",
+          "type": "vec4",
+          "count": 12
+        },
+        {
+          "name": "u_LightColors",
+          "type": "vec4",
+          "count": 12
+        },
+        {
+          "name": "u_AmbientColor",
+          "type": "vec4"
+        },
+        {
+          "name": "u_Falloff",
+          "type": "vec4"
+        },
+        {
+          "name": "u_NumLights",
+          "type": "ivec4"
+        },
+        {
+          "name": "u_Texture",
+          "type": "sampler2D"
+        },
+        {
+          "name": "u_NormalMap",
+          "type": "sampler2D"
+        }
+      ],
+      "attributes": [
+        {
+          "name": "a_Position",
+          "type": "vec2"
+        }
+      ]
     }
   ],
   "textures": [
     {
       "name": "texture_001",
+      "normalMapName": "normal_map_001",
       "filePath": "textures/texture_001.png",
       "mappings": {
         "btn_forest": {
@@ -131,7 +200,12 @@
       }
     },
     {
+      "name": "normal_map_001",
+      "filePath": "textures/normal_map_001.png"
+    },
+    {
       "name": "texture_002",
+      "normalMapName": "normal_map_002",
       "filePath": "textures/texture_002.png",
       "mappings": {
         "forest": {
@@ -143,7 +217,12 @@
       }
     },
     {
+      "name": "normal_map_002",
+      "filePath": "textures/normal_map_002.png"
+    },
+    {
       "name": "texture_003",
+      "normalMapName": "normal_map_003",
       "filePath": "textures/texture_003.png",
       "mappings": {
         "baby_triceratops": {
@@ -193,6 +272,10 @@
           "numFrames": 4
         }
       }
-    }
+    },
+    {
+      "name": "normal_map_003",
+      "filePath": "textures/normal_map_003.png"
+    },
   ]
 }
