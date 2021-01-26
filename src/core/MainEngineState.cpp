@@ -14,6 +14,7 @@
 #include "Macros.hpp"
 #include "GowAudioEngine.hpp"
 #include "InputManager.hpp"
+#include "GameConfig.hpp"
 
 #include <stdlib.h>
 #include <assert.h>
@@ -55,6 +56,7 @@ void MainEngineState::exit(Engine* engine)
 
 void MainEngineState::createDeviceDependentResources()
 {
+    GAME_CONFIG.init();
     ASSETS.initWithJSONFile("json/assets.json");
     
     _renderer->createDeviceDependentResources();

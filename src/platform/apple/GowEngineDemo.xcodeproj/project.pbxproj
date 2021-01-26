@@ -341,6 +341,12 @@
 		BBBA5B9B25BE1E3400C8207D /* LineBatcher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BBBA5B9225BE1E3400C8207D /* LineBatcher.cpp */; };
 		BBBA5B9C25BE1E3400C8207D /* LightRenderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BBBA5B9325BE1E3400C8207D /* LightRenderer.cpp */; };
 		BBBA5B9D25BE1E3400C8207D /* LightRenderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BBBA5B9325BE1E3400C8207D /* LightRenderer.cpp */; };
+		BBBA5BB025C0AC5B00C8207D /* Config.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BBBA5BAE25C0AC5B00C8207D /* Config.cpp */; };
+		BBBA5BB125C0AC5B00C8207D /* Config.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BBBA5BAE25C0AC5B00C8207D /* Config.cpp */; };
+		BBBA5BC025C0B10200C8207D /* World.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BBBA5BB525C0B10200C8207D /* World.cpp */; };
+		BBBA5BC125C0B10200C8207D /* World.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BBBA5BB525C0B10200C8207D /* World.cpp */; };
+		BBBA5BCC25C0B17E00C8207D /* GameConfig.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BBBA5BCB25C0B17E00C8207D /* GameConfig.cpp */; };
+		BBBA5BCD25C0B17E00C8207D /* GameConfig.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BBBA5BCB25C0B17E00C8207D /* GameConfig.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -1012,6 +1018,12 @@
 		BBBA5B9125BE1E3400C8207D /* CircleBatcher.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CircleBatcher.cpp; sourceTree = "<group>"; };
 		BBBA5B9225BE1E3400C8207D /* LineBatcher.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LineBatcher.cpp; sourceTree = "<group>"; };
 		BBBA5B9325BE1E3400C8207D /* LightRenderer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LightRenderer.cpp; sourceTree = "<group>"; };
+		BBBA5BAE25C0AC5B00C8207D /* Config.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Config.cpp; sourceTree = "<group>"; };
+		BBBA5BAF25C0AC5B00C8207D /* Config.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Config.hpp; sourceTree = "<group>"; };
+		BBBA5BB525C0B10200C8207D /* World.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = World.cpp; sourceTree = "<group>"; };
+		BBBA5BB625C0B10200C8207D /* World.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = World.hpp; sourceTree = "<group>"; };
+		BBBA5BCA25C0B17E00C8207D /* GameConfig.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = GameConfig.hpp; sourceTree = "<group>"; };
+		BBBA5BCB25C0B17E00C8207D /* GameConfig.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameConfig.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1264,6 +1276,8 @@
 				BBBA575325BB175900C8207D /* ClientProxy.cpp */,
 				BBBA574025BB175800C8207D /* ClientProxy.hpp */,
 				BB7B07C925B646BA0021E545 /* Color.hpp */,
+				BBBA5BAE25C0AC5B00C8207D /* Config.cpp */,
+				BBBA5BAF25C0AC5B00C8207D /* Config.hpp */,
 				BB7B07BC25B646BA0021E545 /* Constants.hpp */,
 				BB7B079925B646BA0021E545 /* CursorConverter.cpp */,
 				BB7B07CD25B646BA0021E545 /* CursorConverter.hpp */,
@@ -1488,12 +1502,16 @@
 		BB7B090825B651F20021E545 /* core */ = {
 			isa = PBXGroup;
 			children = (
+				BBBA5BCB25C0B17E00C8207D /* GameConfig.cpp */,
+				BBBA5BCA25C0B17E00C8207D /* GameConfig.hpp */,
 				BB7B091825B659280021E545 /* MainEngineController.cpp */,
 				BB7B091725B659280021E545 /* MainEngineController.hpp */,
 				BB7B091C25B659E70021E545 /* MainEngineState.cpp */,
 				BB7B091B25B659E70021E545 /* MainEngineState.hpp */,
 				BBBA465925B8D3DF00C8207D /* Renderer.cpp */,
 				BBBA465825B8D3DF00C8207D /* Renderer.hpp */,
+				BBBA5BB525C0B10200C8207D /* World.cpp */,
+				BBBA5BB625C0B10200C8207D /* World.hpp */,
 			);
 			name = core;
 			path = ../../core;
@@ -2467,6 +2485,8 @@
 				BB7B08C825B64A620021E545 /* TextureLoader.cpp in Sources */,
 				BBBA578125BB175A00C8207D /* AckRange.cpp in Sources */,
 				BBBA5ABA25BB5D1A00C8207D /* b2_contact_solver.cpp in Sources */,
+				BBBA5BC025C0B10200C8207D /* World.cpp in Sources */,
+				BBBA5BCC25C0B17E00C8207D /* GameConfig.cpp in Sources */,
 				BBBA57FC25BB58CA00C8207D /* EntityNetworkController.cpp in Sources */,
 				BBBA46E025B913D900C8207D /* ALContext.m in Sources */,
 				BBBA56E225BA453A00C8207D /* init.c in Sources */,
@@ -2518,6 +2538,7 @@
 				BBBA57F825BB58CA00C8207D /* EntityIDManager.cpp in Sources */,
 				BBBA5AC625BB5D1A00C8207D /* b2_polygon_contact.cpp in Sources */,
 				BBBA5ACA25BB5D1A00C8207D /* b2_edge_circle_contact.cpp in Sources */,
+				BBBA5BB025C0AC5B00C8207D /* Config.cpp in Sources */,
 				BBBA5B0425BB5D1A00C8207D /* b2_time_of_impact.cpp in Sources */,
 				BBBA471725B9150000C8207D /* SoundWrapper.cpp in Sources */,
 				BBBA46D625B913D900C8207D /* OpenALManager.m in Sources */,
@@ -2567,8 +2588,10 @@
 				BBBA5AEB25BB5D1A00C8207D /* b2_stack_allocator.cpp in Sources */,
 				BB8BCD1525B68490005F57B8 /* Animation.cpp in Sources */,
 				BB8BCD1625B68490005F57B8 /* AppleAssetHandler.cpp in Sources */,
+				BBBA5BB125C0AC5B00C8207D /* Config.cpp in Sources */,
 				BBBA5AD125BB5D1A00C8207D /* b2_wheel_joint.cpp in Sources */,
 				BBBA46D325B913D900C8207D /* ALListener.m in Sources */,
+				BBBA5BC125C0B10200C8207D /* World.cpp in Sources */,
 				BBBA5AFB25BB5D1A00C8207D /* b2_broad_phase.cpp in Sources */,
 				BBBA577A25BB175A00C8207D /* ReplicationManagerServer.cpp in Sources */,
 				BBBA5AC925BB5D1A00C8207D /* b2_edge_polygon_contact.cpp in Sources */,
@@ -2664,6 +2687,7 @@
 				BB8BCD2A25B68490005F57B8 /* ShaderManager.cpp in Sources */,
 				BBBA57A425BB175A00C8207D /* MemoryBitStreamUtil.cpp in Sources */,
 				BBBA57FD25BB58CA00C8207D /* EntityNetworkController.cpp in Sources */,
+				BBBA5BCD25C0B17E00C8207D /* GameConfig.cpp in Sources */,
 				BBBA5AE725BB5D1A00C8207D /* b2_timer.cpp in Sources */,
 				BBBA5AB525BB5D1A00C8207D /* b2_body.cpp in Sources */,
 				BBBA5B9725BE1E3400C8207D /* PolygonBatcher.cpp in Sources */,
