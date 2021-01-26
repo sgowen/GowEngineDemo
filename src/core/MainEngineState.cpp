@@ -8,7 +8,7 @@
 
 #include "MainEngineState.hpp"
 
-#include "Renderer.hpp"
+#include "MainRenderer.hpp"
 
 #include "Assets.hpp"
 #include "Macros.hpp"
@@ -111,7 +111,7 @@ void MainEngineState::render()
 MainEngineState* MainEngineState::s_instance = NULL;
 
 MainEngineState::MainEngineState() : EngineState(),
-_renderer(new Renderer())
+_renderer(new MainRenderer())
 {
     // Empty
 }

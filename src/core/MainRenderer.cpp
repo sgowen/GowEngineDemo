@@ -1,18 +1,18 @@
 //
-//  Renderer.cpp
+//  MainRenderer.cpp
 //  GowEngineDemo
 //
 //  Created by Stephen Gowen on 4/23/20.
 //  Copyright © 2021 Stephen Gowen. All rights reserved.
 //
 
-#include "Renderer.hpp"
+#include "MainRenderer.hpp"
 
 #include "OpenGLWrapper.hpp"
 #include "Macros.hpp"
 #include "Color.hpp"
 
-Renderer::Renderer() :
+MainRenderer::MainRenderer() :
 _textureManager(),
 _shaderManager(),
 _spriteBatcher(64),
@@ -22,12 +22,12 @@ _framebuffer(2048, 1535)
     // Empty
 }
 
-Renderer::~Renderer()
+MainRenderer::~MainRenderer()
 {
     // Empty
 }
 
-void Renderer::createDeviceDependentResources()
+void MainRenderer::createDeviceDependentResources()
 {
     _textureManager.createDeviceDependentResources();
     _shaderManager.createDeviceDependentResources();
@@ -37,12 +37,12 @@ void Renderer::createDeviceDependentResources()
     OGL.loadFramebuffer(_framebuffer, GL_LINEAR, GL_LINEAR);
 }
 
-void Renderer::onWindowSizeChanged(int screenWidth, int screenHeight)
+void MainRenderer::onWindowSizeChanged(int screenWidth, int screenHeight)
 {
     _screenRenderer.onWindowSizeChanged(screenWidth, screenHeight);
 }
 
-void Renderer::releaseDeviceDependentResources()
+void MainRenderer::releaseDeviceDependentResources()
 {
     _textureManager.releaseDeviceDependentResources();
     _shaderManager.releaseDeviceDependentResources();
@@ -52,7 +52,7 @@ void Renderer::releaseDeviceDependentResources()
     OGL.unloadFramebuffer(_framebuffer);
 }
 
-void Renderer::render()
+void MainRenderer::render()
 {
     Color white(COLOR_WHITE);
     float w = _framebuffer._width;

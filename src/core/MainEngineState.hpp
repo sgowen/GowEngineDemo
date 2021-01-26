@@ -10,7 +10,7 @@
 
 #include "EngineState.hpp"
 
-class Renderer;
+class MainRenderer;
 
 class MainEngineState : public EngineState
 {
@@ -34,7 +34,7 @@ public:
 private:
     static MainEngineState* s_instance;
     
-    Renderer* _renderer;
+    MainRenderer* _renderer;
     
     MainEngineState();
     ~MainEngineState();

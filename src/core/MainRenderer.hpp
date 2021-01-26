@@ -1,5 +1,5 @@
 //
-//  Renderer.hpp
+//  MainRenderer.hpp
 //  GowEngineDemo
 //
 //  Created by Stephen Gowen on 4/23/20.
@@ -15,11 +15,11 @@
 #include "Framebuffer.hpp"
 #include "ShaderInput.hpp"
 
-class Renderer
+class MainRenderer
 {
 public:
-    Renderer();
-    ~Renderer();
+    MainRenderer();
+    ~MainRenderer();
     
     void createDeviceDependentResources();
     void onWindowSizeChanged(int screenWidth, int screenHeight);

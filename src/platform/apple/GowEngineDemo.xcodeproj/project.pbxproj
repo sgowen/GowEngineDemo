@@ -70,8 +70,8 @@
 		BB8BCD2E25B68490005F57B8 /* TextureManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB7B07C625B646BA0021E545 /* TextureManager.cpp */; };
 		BB8BCD2F25B68490005F57B8 /* Vector2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB7B07A725B646BA0021E545 /* Vector2.cpp */; };
 		BB8BCD3325B6849A005F57B8 /* NSAppleAssetHandler.mm in Sources */ = {isa = PBXBuildFile; fileRef = BB7B079525B646BA0021E545 /* NSAppleAssetHandler.mm */; };
-		BBBA465A25B8D3DF00C8207D /* Renderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BBBA465925B8D3DF00C8207D /* Renderer.cpp */; };
-		BBBA465B25B8D3DF00C8207D /* Renderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BBBA465925B8D3DF00C8207D /* Renderer.cpp */; };
+		BBBA465A25B8D3DF00C8207D /* MainRenderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BBBA465925B8D3DF00C8207D /* MainRenderer.cpp */; };
+		BBBA465B25B8D3DF00C8207D /* MainRenderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BBBA465925B8D3DF00C8207D /* MainRenderer.cpp */; };
 		BBBA467A25B9121600C8207D /* AppleAudioEngineHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BBBA467225B9121600C8207D /* AppleAudioEngineHelper.cpp */; };
 		BBBA467B25B9121600C8207D /* AppleAudioEngineHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BBBA467225B9121600C8207D /* AppleAudioEngineHelper.cpp */; };
 		BBBA467C25B9121600C8207D /* AppleSoundWrapper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BBBA467525B9121600C8207D /* AppleSoundWrapper.cpp */; };
@@ -482,8 +482,8 @@
 		BBBA452C25B8822C00C8207D /* KeyboardEvent.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = KeyboardEvent.hpp; sourceTree = "<group>"; };
 		BBBA452F25B8822C00C8207D /* GamepadEvent.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = GamepadEvent.hpp; sourceTree = "<group>"; };
 		BBBA453225B8822C00C8207D /* KeyboardLookup.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = KeyboardLookup.hpp; sourceTree = "<group>"; };
-		BBBA465825B8D3DF00C8207D /* Renderer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Renderer.hpp; sourceTree = "<group>"; };
-		BBBA465925B8D3DF00C8207D /* Renderer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Renderer.cpp; sourceTree = "<group>"; };
+		BBBA465825B8D3DF00C8207D /* MainRenderer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MainRenderer.hpp; sourceTree = "<group>"; };
+		BBBA465925B8D3DF00C8207D /* MainRenderer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MainRenderer.cpp; sourceTree = "<group>"; };
 		BBBA467225B9121600C8207D /* AppleAudioEngineHelper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AppleAudioEngineHelper.cpp; sourceTree = "<group>"; };
 		BBBA467325B9121600C8207D /* AppleAudioEngineHelper.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = AppleAudioEngineHelper.hpp; sourceTree = "<group>"; };
 		BBBA467425B9121600C8207D /* AppleSound.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = AppleSound.hpp; sourceTree = "<group>"; };
@@ -1508,8 +1508,8 @@
 				BB7B091725B659280021E545 /* MainEngineController.hpp */,
 				BB7B091C25B659E70021E545 /* MainEngineState.cpp */,
 				BB7B091B25B659E70021E545 /* MainEngineState.hpp */,
-				BBBA465925B8D3DF00C8207D /* Renderer.cpp */,
-				BBBA465825B8D3DF00C8207D /* Renderer.hpp */,
+				BBBA465925B8D3DF00C8207D /* MainRenderer.cpp */,
+				BBBA465825B8D3DF00C8207D /* MainRenderer.hpp */,
 				BBBA5BB525C0B10200C8207D /* World.cpp */,
 				BBBA5BB625C0B10200C8207D /* World.hpp */,
 			);
@@ -2409,7 +2409,7 @@
 				BBBA5AEE25BB5D1A00C8207D /* b2_math.cpp in Sources */,
 				BBBA46CC25B913D900C8207D /* OALAudioTrack.m in Sources */,
 				BBBA57D425BB566100C8207D /* InstanceManager.cpp in Sources */,
-				BBBA465A25B8D3DF00C8207D /* Renderer.cpp in Sources */,
+				BBBA465A25B8D3DF00C8207D /* MainRenderer.cpp in Sources */,
 				BBBA56D825BA453A00C8207D /* cocoa_joystick.m in Sources */,
 				BBBA55D525BA43B300C8207D /* GlfwMain.cpp in Sources */,
 				BBBA5AB625BB5D1A00C8207D /* b2_contact.cpp in Sources */,
@@ -2603,7 +2603,7 @@
 				BBBA5AFF25BB5D1A00C8207D /* b2_polygon_shape.cpp in Sources */,
 				BBBA579025BB175A00C8207D /* Move.cpp in Sources */,
 				BBBA57A025BB175A00C8207D /* SocketAddress.cpp in Sources */,
-				BBBA465B25B8D3DF00C8207D /* Renderer.cpp in Sources */,
+				BBBA465B25B8D3DF00C8207D /* MainRenderer.cpp in Sources */,
 				BBBA57AE25BB175A00C8207D /* ReplicationManagerClient.cpp in Sources */,
 				BBBA5AF325BB5D1A00C8207D /* b2_circle_shape.cpp in Sources */,
 				BBBA5ADF25BB5D1A00C8207D /* b2_fixture.cpp in Sources */,
