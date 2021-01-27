@@ -725,6 +725,7 @@
       "filePath": "textures/normal_map_009.png"
     },
     {
+      "name": "texture_010",
       "textureName": "textures/texture_010.png",
       "mipMap": false
     }
