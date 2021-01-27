@@ -26,9 +26,13 @@ MainRenderer::MainRenderer() :
 _textureManager(),
 _shaderManager(),
 _spriteBatcher(128),
+_circleBatcher(128),
+_lineBatcher(128),
+_fillPolygonBatcher(128, true),
+_boundsPolygonBatcher(128, false),
 _screenRenderer(),
-_framebuffer(2048, 1535),
-_font(0, 0, 16, 64, 75, 1024, 1024)
+_font(0, 0, 16, 64, 75, 1024, 1024),
+_framebuffer(2048, 1535)
 {
     // Empty
 }
@@ -43,6 +47,10 @@ void MainRenderer::createDeviceDependentResources()
     _textureManager.createDeviceDependentResources();
     _shaderManager.createDeviceDependentResources();
     _spriteBatcher.createDeviceDependentResources();
+    _circleBatcher.createDeviceDependentResources();
+    _lineBatcher.createDeviceDependentResources();
+    _fillPolygonBatcher.createDeviceDependentResources();
+    _boundsPolygonBatcher.createDeviceDependentResources();
     _screenRenderer.createDeviceDependentResources();
     
     OGL.loadFramebuffer(_framebuffer, GL_LINEAR, GL_LINEAR);
@@ -58,6 +66,10 @@ void MainRenderer::releaseDeviceDependentResources()
     _textureManager.releaseDeviceDependentResources();
     _shaderManager.releaseDeviceDependentResources();
     _spriteBatcher.releaseDeviceDependentResources();
+    _circleBatcher.releaseDeviceDependentResources();
+    _lineBatcher.releaseDeviceDependentResources();
+    _fillPolygonBatcher.releaseDeviceDependentResources();
+    _boundsPolygonBatcher.releaseDeviceDependentResources();
     _screenRenderer.releaseDeviceDependentResources();
     
     OGL.unloadFramebuffer(_framebuffer);
@@ -75,8 +87,32 @@ void MainRenderer::render(MainEngineState& mes)
     OGL.clearFramebuffer(COLOR_BLACK);
     OGL.enableBlending();
     
-    _spriteBatcher.begin();
+    // TEMP BEGIN geometry testing
+    Color r(COLOR_RED);
+    _lineBatcher.begin();
+    _lineBatcher.addLine(5, 5, 15, 15);
+    _lineBatcher.addLine(25, 25, 18, 21);
+    _lineBatcher.end(_shaderManager.shader("shader_003"), _matrix, r);
     
+    Color g(COLOR_GREEN);
+    _circleBatcher.begin();
+    _circleBatcher.addCircle(8, 32, 3);
+    _circleBatcher.addPartialCircle(6, 18, 2, 90);
+    _circleBatcher.end(_shaderManager.shader("shader_003"), _matrix, g);
+    
+    Color b(COLOR_BLUE);
+    _fillPolygonBatcher.begin();
+    _fillPolygonBatcher.addRectangle(40, 20, 46, 24);
+    _fillPolygonBatcher.addTriangle(42, 4, 46, 10, 50, 4);
+    _fillPolygonBatcher.end(_shaderManager.shader("shader_003"), _matrix, b);
+    
+    _boundsPolygonBatcher.begin();
+    _boundsPolygonBatcher.addRectangle(48, 24, 56, 28);
+    _boundsPolygonBatcher.addTriangle(3, 2, 6, 4, 9, 2);
+    _boundsPolygonBatcher.end(_shaderManager.shader("shader_003"), _matrix, b);
+    // TEMP END geometry testing
+    
+    _spriteBatcher.begin();
     switch (mes._state)
     {
         case MESS_Default:
@@ -91,9 +127,7 @@ void MainRenderer::render(MainEngineState& mes)
         default:
             break;
     }
-    
-    Texture& t = _textureManager.texture("texture_010");
-    _spriteBatcher.end(_shaderManager.shader("shader_002"), _matrix, t, white);
+    _spriteBatcher.end(_shaderManager.shader("shader_002"), _matrix, _textureManager.texture("texture_010"), white);
 
     _screenRenderer.render(_shaderManager.shader("shader_001"), _framebuffer);
 }

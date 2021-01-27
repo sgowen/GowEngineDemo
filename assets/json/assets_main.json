@@ -45,6 +45,27 @@
           "type": "vec2"
         }
       ]
+    },
+    {
+      "name": "shader_003",
+      "vertexShaderFilePath": "shaders/shader_003.vsh",
+      "fragmentShaderFilePath": "shaders/shader_003.fsh",
+      "uniforms": [
+        {
+          "name": "u_Matrix",
+          "type": "mat4"
+        },
+        {
+          "name": "u_Color",
+          "type": "vec4"
+        }
+      ],
+      "attributes": [
+        {
+          "name": "a_Position",
+          "type": "vec2"
+        }
+      ]
     }
   ],
   "textures": [

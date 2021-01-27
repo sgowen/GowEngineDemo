@@ -13,6 +13,9 @@
 #include "TextureManager.hpp"
 #include "ShaderManager.hpp"
 #include "SpriteBatcher.hpp"
+#include "CircleBatcher.hpp"
+#include "LineBatcher.hpp"
+#include "PolygonBatcher.hpp"
 #include "ScreenRenderer.hpp"
 #include "Framebuffer.hpp"
 #include "Font.hpp"
@@ -35,9 +38,13 @@ private:
     TextureManager _textureManager;
     ShaderManager _shaderManager;
     SpriteBatcher _spriteBatcher;
+    CircleBatcher _circleBatcher;
+    LineBatcher _lineBatcher;
+    PolygonBatcher _fillPolygonBatcher;
+    PolygonBatcher _boundsPolygonBatcher;
     ScreenRenderer _screenRenderer;
-    Framebuffer _framebuffer;
     Font _font;
+    Framebuffer _framebuffer;
     mat4 _matrix;
     
     void renderMainMenu();
