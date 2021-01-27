@@ -16,14 +16,14 @@
 #include "EntityLayoutMapper.hpp"
 #include "EntityNetworkController.hpp"
 #include "InstanceManager.hpp"
-#include "GameConfig.hpp"
+#include "MainConfig.hpp"
 #include "Timing.hpp"
 #include "StringUtil.hpp"
 #include "GowUtil.hpp"
 
 World::World(uint32_t flags) :
 _flags(flags),
-_world(new b2World(b2Vec2(0.0f, GAME_CONFIG._gravity))),
+_world(new b2World(b2Vec2(0.0f, MAIN_CFG._gravity))),
 _entityContactListener(new EntityContactListener()),
 _entityContactFilter(new EntityContactFilter()),
 _entityIDManager(static_cast<EntityIDManager*>(INSTANCE_MGR.get(_flags & WorldFlag_Studio ? INSTANCE_ENTITY_ID_MANAGER_STUDIO : _flags & WorldFlag_Server ? INSTANCE_ENTITY_ID_MANAGER_SERVER : INSTANCE_ENTITY_ID_MANAGER_CLIENT))),

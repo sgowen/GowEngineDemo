@@ -1,5 +1,5 @@
 //
-//  GameConfig.hpp
+//  MainConfig.hpp
 //  GowEngineDemo
 //
 //  Created by Stephen Gowen on 1/5/18.
@@ -8,12 +8,12 @@
 
 #pragma once
 
-#define GAME_CONFIG GameConfig::getInstance()
+#define MAIN_CFG MainConfig::getInstance()
 
-class GameConfig
+class MainConfig
 {
 public:
-    static GameConfig& getInstance();
+    static MainConfig& getInstance();
     
     int _serverPort;
     int _clientPort;
@@ -44,8 +44,8 @@ public:
     void init();
     
 private:
-    GameConfig();
-    ~GameConfig();
-    GameConfig(const GameConfig&);
-    GameConfig& operator=(const GameConfig&);
+    MainConfig();
+    ~MainConfig();
+    MainConfig(const MainConfig&);
+    MainConfig& operator=(const MainConfig&);
 };

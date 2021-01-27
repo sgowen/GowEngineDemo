@@ -12,9 +12,10 @@
 
 #include "Assets.hpp"
 #include "Macros.hpp"
-#include "GowAudioEngine.hpp"
-#include "InputManager.hpp"
-#include "GameConfig.hpp"
+#include "MainInputManager.hpp"
+#include "MainConfig.hpp"
+#include "Engine.hpp"
+#include "StringUtil.hpp"
 
 #include <stdlib.h>
 #include <assert.h>
@@ -39,31 +40,32 @@ void MainEngineState::destroy()
     s_instance = NULL;
 }
 
-void MainEngineState::enter(Engine* engine)
+void MainEngineState::enter(Engine* e)
+{
+    createDeviceDependentResources();
+    onWindowSizeChanged(e->screenWidth(), e->screenHeight(), e->cursorWidth(), e->cursorHeight());
+    
+    _state = MESS_Default;
+}
+
+void MainEngineState::execute(Engine* e)
 {
     // Empty
 }
 
-void MainEngineState::execute(Engine* engine)
+void MainEngineState::exit(Engine* e)
 {
-    // Empty
-}
-
-void MainEngineState::exit(Engine* engine)
-{
-    // Empty
+    releaseDeviceDependentResources();
 }
 
 void MainEngineState::createDeviceDependentResources()
 {
-    GAME_CONFIG.init();
-    ASSETS.initWithJSONFile("json/assets.json");
+    MainInputManager::create();
+    
+    MAIN_CFG.init();
+    ASSETS.initWithJSONFile("json/assets_main.json");
     
     _renderer->createDeviceDependentResources();
-    
-    GowAudioEngine::create();
-    GOW_AUDIO->loadFromAssets();
-    GOW_AUDIO->playMusic();
 }
 
 void MainEngineState::onWindowSizeChanged(int screenWidth, int screenHeight, int cursorWidth, int cursorHeight)
@@ -73,45 +75,114 @@ void MainEngineState::onWindowSizeChanged(int screenWidth, int screenHeight, int
 
 void MainEngineState::releaseDeviceDependentResources()
 {
-    GowAudioEngine::destroy();
+    MainInputManager::destroy();
     
     _renderer->releaseDeviceDependentResources();
-    
-    ASSETS.clear();
 }
 
 void MainEngineState::onResume()
 {
-    GOW_AUDIO->resume();
+    // Empty
 }
 
 void MainEngineState::onPause()
 {
-    GOW_AUDIO->pause();
+    // Empty
 }
 
 void MainEngineState::update()
 {
-    std::vector<CursorEvent*>& cursorEvents = INPUT_MGR.getCursorEvents();
-    for (auto e : cursorEvents)
+    MainInputManager* mim = MainInputManager::getInstance();
+    
+    mim->update();
+    
+    int menuState = mim->getMenuState();
+    
+    if (mim->isLiveMode())
     {
-        if (e->_type == CursorEventType_UP)
+        if (menuState == MIMS_ESCAPE)
         {
-            GOW_AUDIO->playSound(1);
+            mim->setLiveInputMode(false);
+            
+            _state = MESS_Default;
+        }
+        else if (mim->isTimeToProcessInput())
+        {
+            bool needsToProcessInput = true;
+            if (_state == MESS_InputIpAddress)
+            {
+                _serverIPAddress = StringUtil::format("%s:%d", mim->getLiveInput().c_str(), MAIN_CFG._serverPort);
+                _name.clear();
+                _state = MESS_InputName;
+            }
+            else if (_state == MESS_InputName)
+            {
+                _name = mim->getLiveInput();
+                if (_name.length() > 0)
+                {
+                    mim->setLiveInputMode(false);
+                    
+                    if (_serverIPAddress.length() == 0)
+                    {
+                        // TODO
+//                        GameEngine::sHandleHostServer(engine, _name);
+                    }
+                    else
+                    {
+                        // TODO
+//                        GameEngine::sHandleJoinServer(engine, _serverIPAddress, _name);
+                    }
+                    
+                    needsToProcessInput = false;
+                }
+            }
+            
+            if (needsToProcessInput)
+            {
+                mim->onInputProcessed();
+            }
+        }
+    }
+    else
+    {
+        if (menuState == MIMS_ENTER_STUDIO)
+        {
+            // TODO
+//            engine->getStateMachine().changeState(StudioEngine::getInstance());
+        }
+        else if (menuState == MIMS_START_SERVER)
+        {
+            _serverIPAddress.clear();
+            _name.clear();
+            _state = MESS_InputName;
+            mim->setLiveInputMode(true);
+        }
+        else if (menuState == MIMS_JOIN_LOCAL_SERVER)
+        {
+            _serverIPAddress.clear();
+            _state = MESS_InputIpAddress;
+            mim->setLiveInputMode(true);
+        }
+        else if (menuState == MIMS_ESCAPE)
+        {
+            // TODO
+//            engine->setRequestedAction(REQUESTED_ACTION_EXIT);
         }
     }
 }
 
 void MainEngineState::render()
 {
-    _renderer->render();
-    GOW_AUDIO->render();
+    _renderer->render(*this);
 }
 
 MainEngineState* MainEngineState::s_instance = NULL;
 
 MainEngineState::MainEngineState() : EngineState(),
-_renderer(new MainRenderer())
+_renderer(new MainRenderer()),
+_serverIPAddress(""),
+_name(""),
+_state(MESS_Default)
 {
     // Empty
 }

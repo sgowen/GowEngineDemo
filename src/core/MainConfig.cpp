@@ -1,25 +1,25 @@
 //
-//  GameConfig.cpp
+//  MainConfig.cpp
 //  GowEngineDemo
 //
 //  Created by Stephen Gowen on 1/5/18.
 //  Copyright © 2021 Stephen Gowen. All rights reserved.
 //
 
-#include "GameConfig.hpp"
+#include "MainConfig.hpp"
 
 #include "Config.hpp"
 
-GameConfig& GameConfig::getInstance()
+MainConfig& MainConfig::getInstance()
 {
-    static GameConfig ret = GameConfig();
+    static MainConfig ret = MainConfig();
     return ret;
 }
 
-void GameConfig::init()
+void MainConfig::init()
 {
     Config c;
-    c.initWithJSONFile("config.json");
+    c.initWithJSONFile("json/config.json");
     
     _serverPort = c.getInt("ServerPort");
     _clientPort = c.getInt("ClientPort");
@@ -66,12 +66,12 @@ void GameConfig::init()
     _tempStaticLight2[5] = c.getFloat("TempStaticLight2A");
 }
 
-GameConfig::GameConfig()
+MainConfig::MainConfig()
 {
     // Empty
 }
 
-GameConfig::~GameConfig()
+MainConfig::~MainConfig()
 {
     // Empty
 }

@@ -1,6 +1,6 @@
 {
-    "ServerPort": "9999",
     "ClientPort": "1337",
+    "ServerPort": "9999",
     "FramebufferWidth": "1024",
     "FramebufferHeight": "576",
     "CamWidth": "64",
@@ -16,13 +16,13 @@
     "RobotLightPositionFactorY": "0.5",
     "MaxRobotVelocityX": "14.0",
     "MaxRobotVelocityY": "5.2",
-    "PlayerLightZ": "0.075",
-    "BehindPlayerLightZFactor": "1.4",
-    "FrontPlayerLightZFactor": "0.7",
     "PlayerLightColorR": "1.0",
     "PlayerLightColorG": "0.8",
     "PlayerLightColorB": "0.6",
     "PlayerLightColorA": "1.0",
+    "PlayerLightZ": "0.075",
+    "BehindPlayerLightZFactor": "1.4",
+    "FrontPlayerLightZFactor": "0.7",
     "AmbientColorR": "0.6",
     "AmbientColorG": "0.6",
     "AmbientColorB": "1.0",
@@ -48,8 +48,8 @@
 // Server Port - UDP port for the server to bind on
 // Cam Width - should always be the Framebuffer Width divided by 16 for optimal performance
 // Cam Height - should always be the Framebuffer Height divided by 16 for optimal performance
-// PlayerLightZ - can be toggled in-game by using the up and down arrow keys
+// RobotLightPositionFactor - where should the light be centered? 0.5 means exactly in the middle
 // PlayerLightColor - Player Light RGB and intensity (alpha)
+// PlayerLightZ - can be toggled in-game by using the up and down arrow keys
 // AmbientColor - Ambient RGB and intensity (alpha)
 // LightFalloff - Attenuation coefficients for light falloff
-// RobotLightPositionFactor - where should the light be centered? 0.5 means exactly in the middle

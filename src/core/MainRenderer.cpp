@@ -2,22 +2,33 @@
 //  MainRenderer.cpp
 //  GowEngineDemo
 //
-//  Created by Stephen Gowen on 4/23/20.
+//  Created by Stephen Gowen on 2/22/14.
 //  Copyright © 2021 Stephen Gowen. All rights reserved.
 //
 
 #include "MainRenderer.hpp"
 
+#include "MainEngineState.hpp"
+
 #include "OpenGLWrapper.hpp"
 #include "Macros.hpp"
 #include "Color.hpp"
+#include "MainConfig.hpp"
+#include "MainInputManager.hpp"
+#include "CursorConverter.hpp"
+
+#include <sstream>
+#include <ctime>
+#include <string>
+#include <assert.h>
 
 MainRenderer::MainRenderer() :
 _textureManager(),
 _shaderManager(),
-_spriteBatcher(64),
+_spriteBatcher(128),
 _screenRenderer(),
-_framebuffer(2048, 1535)
+_framebuffer(2048, 1535),
+_font(0, 0, 16, 64, 75, 1024, 1024)
 {
     // Empty
 }
@@ -52,70 +63,65 @@ void MainRenderer::releaseDeviceDependentResources()
     OGL.unloadFramebuffer(_framebuffer);
 }
 
-void MainRenderer::render()
+void MainRenderer::render(MainEngineState& mes)
 {
     Color white(COLOR_WHITE);
-    float w = _framebuffer._width;
-    float h = _framebuffer._height;
     
     mat4_identity(_matrix);
-    mat4_ortho(_matrix, 0, w, 0, h, -1, 1);
+    mat4_ortho(_matrix, 0, MAIN_CFG._camWidth, 0, MAIN_CFG._camHeight, -1, 1);
+    CURSOR_CONVERTER.setMatrixSize(MAIN_CFG._camWidth, MAIN_CFG._camHeight);
     
     OGL.bindFramebuffer(_framebuffer);
     OGL.clearFramebuffer(COLOR_BLACK);
     OGL.enableBlending();
     
+    _spriteBatcher.begin();
+    
+    switch (mes._state)
     {
-        auto& t = _textureManager.texture("texture_002");
-        auto& td = t._descriptor;
-        _spriteBatcher.begin();
-        _spriteBatcher.addSprite(td.textureRegion("forest"), w / 2.0f, h / 2.0f, w, h);
-        _spriteBatcher.end(_shaderManager.shader("shader_002"), _matrix, t, white);
+        case MESS_Default:
+            renderMainMenu();
+            break;
+        case MESS_InputName:
+            renderEnterUsernameText();
+            break;
+        case MESS_InputIpAddress:
+            renderJoiningLocalServerByIPText();
+            break;
+        default:
+            break;
     }
     
-    float heightFactor = 1.334201954397394f;
-    
-    {
-        auto& t = _textureManager.texture("texture_003");
-        auto& td = t._descriptor;
-        _spriteBatcher.begin();
-        auto& chicken = td.textureRegion("obj_food_chicken");
-        auto& watermelon = td.textureRegion("obj_food_watermelon");
-        auto& duck = td.textureRegion("ms_duck");
-        auto& pig = td.textureRegion("mr_pig");
-        auto& mrbaby = td.textureRegion("mr_baby2");
-        auto& dino = td.textureRegion("baby_triceratops");
-        _spriteBatcher.addSprite(chicken, 400, 1000, chicken._width, chicken._height * heightFactor);
-        _spriteBatcher.addSprite(watermelon, 800, 1000, watermelon._width, watermelon._height * heightFactor);
-        _spriteBatcher.addSprite(duck, 400, 560, duck._width, duck._height * heightFactor);
-        _spriteBatcher.addSprite(pig, 800, 560, pig._width, pig._height * heightFactor);
-        _spriteBatcher.addSprite(mrbaby, 1300, 560, mrbaby._width, mrbaby._height * heightFactor);
-        _spriteBatcher.addSprite(dino, 1800, 560, dino._width, dino._height * heightFactor);
-        _spriteBatcher.end(_shaderManager.shader("shader_002"), _matrix, t, white);
-    }
-    
-    {
-        auto& t = _textureManager.texture("texture_001");
-        auto& td = t._descriptor;
-        _spriteBatcher.begin();
-        auto& tr = td.textureRegion("forest_grass2");
-        _spriteBatcher.addSprite(tr, tr._width / 2.0f, tr._height / 2.0f, tr._width, tr._height);
-        _spriteBatcher.end(_shaderManager.shader("shader_002"), _matrix, t, white);
-    }
-    
-    {
-        auto& t = _textureManager.texture("texture_001");
-        auto& td = t._descriptor;
-        auto& menu_toys_tab = td.textureRegion("menu_toys_tab");
-        auto& menu_food_tab = td.textureRegion("menu_food_tab");
-        auto& menu_characters_tab = td.textureRegion("menu_characters_tab");
-        _spriteBatcher.begin();
-        _spriteBatcher.addSprite(menu_toys_tab, 24 + menu_characters_tab._width + menu_food_tab._width + menu_toys_tab._width / 2.0f, menu_toys_tab._height * heightFactor / 2.0f, menu_toys_tab._width, menu_toys_tab._height * heightFactor);
-        _spriteBatcher.addSprite(menu_food_tab, 24 + menu_characters_tab._width + menu_food_tab._width / 2.0f, menu_food_tab._height * heightFactor / 2, menu_food_tab._width, menu_food_tab._height * heightFactor);
-        _spriteBatcher.addSprite(menu_characters_tab, 24 + menu_characters_tab._width / 2.0f, menu_characters_tab._height * heightFactor / 2.0f, menu_characters_tab._width, menu_characters_tab._height * heightFactor);
-        _spriteBatcher.addSprite(td.textureRegion("btn_forest"), 840 / 2.0f + 24, h - (159 / 2.0) - 24, 840, 159.0f);
-        _spriteBatcher.end(_shaderManager.shader("shader_002"), _matrix, t, white);
-    }
-    
+    Texture& t = _textureManager.texture("texture_010");
+    _spriteBatcher.end(_shaderManager.shader("shader_002"), _matrix, t, white);
+
     _screenRenderer.render(_shaderManager.shader("shader_001"), _framebuffer);
+}
+
+void MainRenderer::renderMainMenu()
+{
+    renderText("[E] to enter Studio",       MAIN_CFG._camWidth / 4, MAIN_CFG._camHeight - 2, FONT_ALIGN_LEFT);
+    renderText("[S] to start local server", MAIN_CFG._camWidth / 4, MAIN_CFG._camHeight - 6, FONT_ALIGN_LEFT);
+    renderText("[J] to join server by IP",  MAIN_CFG._camWidth / 4, MAIN_CFG._camHeight - 8, FONT_ALIGN_LEFT);
+    renderText("[ESC] to exit game",        MAIN_CFG._camWidth / 2,                       4, FONT_ALIGN_CENTER);
+}
+
+void MainRenderer::renderEnterUsernameText()
+{
+    renderText("Enter Username to join, [ESC] to exit", MAIN_CFG._camWidth / 2, MAIN_CFG._camHeight - 4, FONT_ALIGN_CENTER);
+    renderText(MainInputManager::getInstance()->getLiveInputRef().c_str(), MAIN_CFG._camWidth / 2, MAIN_CFG._camHeight - 8, FONT_ALIGN_CENTER);
+}
+
+void MainRenderer::renderJoiningLocalServerByIPText()
+{
+    renderText("Enter Server Address to join, [ESC] to exit", MAIN_CFG._camWidth / 2, MAIN_CFG._camHeight - 4, FONT_ALIGN_CENTER);
+    renderText(MainInputManager::getInstance()->getLiveInputRef().c_str(), MAIN_CFG._camWidth / 2, MAIN_CFG._camHeight - 8, FONT_ALIGN_CENTER);
+}
+
+void MainRenderer::renderText(std::string text, float x, float y, int justification)
+{
+    float glyphWidth = 64 / MAIN_CFG._camWidth;
+    float glyphHeight = glyphWidth * 1.171875f;
+
+    _font.renderText(_spriteBatcher, text, x, y, glyphWidth, glyphHeight, justification);
 }

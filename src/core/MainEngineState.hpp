@@ -10,18 +10,29 @@
 
 #include "EngineState.hpp"
 
+#include <string>
+
 class MainRenderer;
+
+enum MainEngineStateState
+{
+    MESS_Default =          1 << 0,
+    MESS_InputName =        1 << 1,
+    MESS_InputIpAddress =   1 << 2
+};
 
 class MainEngineState : public EngineState
 {
+    friend class MainRenderer;
+    
 public:
     static void create();
     static MainEngineState* getInstance();
     static void destroy();
     
-    virtual void enter(Engine* engine);
-    virtual void execute(Engine* engine);
-    virtual void exit(Engine* engine);
+    virtual void enter(Engine* e);
+    virtual void execute(Engine* e);
+    virtual void exit(Engine* e);
     
     virtual void createDeviceDependentResources();
     virtual void onWindowSizeChanged(int screenWidth, int screenHeight, int cursorWidth, int cursorHeight);
@@ -35,6 +46,9 @@ private:
     static MainEngineState* s_instance;
     
     MainRenderer* _renderer;
+    std::string _serverIPAddress;
+    std::string _name;
+    uint32_t _state;
     
     MainEngineState();
     ~MainEngineState();
