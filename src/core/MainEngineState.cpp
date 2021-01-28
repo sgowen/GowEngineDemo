@@ -16,6 +16,8 @@
 #include "MainConfig.hpp"
 #include "Engine.hpp"
 #include "StringUtil.hpp"
+#include "StudioEngineState.hpp"
+#include "GameEngineState.hpp"
 
 #include <stdlib.h>
 #include <assert.h>
@@ -50,7 +52,8 @@ void MainEngineState::enter(Engine* e)
 
 void MainEngineState::execute(Engine* e)
 {
-    // Empty
+    // TODO, this is ugly
+    _engine = e;
 }
 
 void MainEngineState::exit(Engine* e)
@@ -62,7 +65,7 @@ void MainEngineState::createDeviceDependentResources()
 {
     MainInputManager::create();
     
-    MAIN_CFG.init();
+    CFG_MAIN.init();
     ASSETS.initWithJSONFile("json/assets_main.json");
     
     _renderer->createDeviceDependentResources();
@@ -111,7 +114,7 @@ void MainEngineState::update()
             bool needsToProcessInput = true;
             if (_state == MESS_InputIpAddress)
             {
-                _serverIPAddress = StringUtil::format("%s:%d", mim->getLiveInput().c_str(), MAIN_CFG._serverPort);
+                _serverIPAddress = StringUtil::format("%s:%d", mim->getLiveInput().c_str(), CFG_MAIN._serverPort);
                 _name.clear();
                 _state = MESS_InputName;
             }
@@ -124,13 +127,11 @@ void MainEngineState::update()
                     
                     if (_serverIPAddress.length() == 0)
                     {
-                        // TODO
-//                        GameEngine::sHandleHostServer(engine, _name);
+                        GameEngineState::sHandleHostServer(_engine, _name);
                     }
                     else
                     {
-                        // TODO
-//                        GameEngine::sHandleJoinServer(engine, _serverIPAddress, _name);
+                        GameEngineState::sHandleJoinServer(_engine, _serverIPAddress, _name);
                     }
                     
                     needsToProcessInput = false;
@@ -147,8 +148,7 @@ void MainEngineState::update()
     {
         if (menuState == MIMS_ENTER_STUDIO)
         {
-            // TODO
-//            engine->getStateMachine().changeState(StudioEngine::getInstance());
+            _engine->getStateMachine().changeState(StudioEngineState::getInstance());
         }
         else if (menuState == MIMS_START_SERVER)
         {
@@ -165,20 +165,22 @@ void MainEngineState::update()
         }
         else if (menuState == MIMS_ESCAPE)
         {
-            // TODO
-//            engine->setRequestedAction(REQUESTED_ACTION_EXIT);
+            _engine->setRequestedAction(REQUESTED_ACTION_EXIT);
         }
     }
 }
 
-void MainEngineState::render()
+void MainEngineState::render(double alpha)
 {
+    UNUSED(alpha);
+    
     _renderer->render(*this);
 }
 
 MainEngineState* MainEngineState::s_instance = NULL;
 
 MainEngineState::MainEngineState() : EngineState(),
+_engine(NULL),
 _renderer(new MainRenderer()),
 _serverIPAddress(""),
 _name(""),

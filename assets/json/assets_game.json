@@ -4,37 +4,37 @@
   },
   "sounds": [
     {
-      "soundId": 1,
+      "soundID": 1,
       "filePath": "sounds/sound_001.wav",
       "numInstances": 4
     },
     {
-      "soundId": 2,
+      "soundID": 2,
       "filePath": "sounds/sound_002.wav",
       "numInstances": 2
     },
     {
-      "soundId": 3,
+      "soundID": 3,
       "filePath": "sounds/sound_003.wav",
       "numInstances": 2
     },
     {
-      "soundId": 4,
+      "soundID": 4,
       "filePath": "sounds/sound_004.wav",
       "numInstances": 2
     },
     {
-      "soundId": 5,
+      "soundID": 5,
       "filePath": "sounds/sound_005.wav",
       "numInstances": 2
     },
     {
-      "soundId": 6,
+      "soundID": 6,
       "filePath": "sounds/sound_006.wav",
       "numInstances": 2
     },
     {
-      "soundId": 7,
+      "soundID": 7,
       "filePath": "sounds/sound_007.wav",
       "numInstances": 2
     }
@@ -162,6 +162,7 @@
       "filePath": "textures/texture_001.png",
       "filterMin": "LINEAR",
       "filterMag": "LINEAR",
+      "layer": 0,
       "mappings": {
         "Zone1BackgroundParallaxLayer1": {
           "x": 0,
@@ -187,6 +188,7 @@
       "filePath": "textures/texture_002.png",
       "filterMin": "LINEAR",
       "filterMag": "LINEAR",
+      "layer": 1,
       "mappings": {
         "Zone1BackgroundParallaxLayer2": {
           "x": 0,
@@ -206,6 +208,7 @@
       "filePath": "textures/texture_003.png",
       "filterMin": "LINEAR",
       "filterMag": "LINEAR",
+      "layer": 2,
       "mappings": {
         "Zone1BackgroundParallaxLayer3": {
           "x": 0,
@@ -225,6 +228,7 @@
       "filePath": "textures/texture_004.png",
       "filterMin": "LINEAR",
       "filterMag": "LINEAR",
+      "layer": 3,
       "mappings": {
         "Zone1BackgroundStaticLayer1": {
           "x": 0,
@@ -370,6 +374,7 @@
       "filePath": "textures/texture_005.png",
       "filterMin": "LINEAR",
       "filterMag": "LINEAR",
+      "layer": 4,
       "mappings": {
         "Crawler_Crawl": {
           "x": 0,
@@ -416,6 +421,7 @@
       "filePath": "textures/texture_006.png",
       "filterMin": "LINEAR",
       "filterMag": "LINEAR",
+      "layer": 5,
       "mappings": {
         "Player_Running": {
           "x": 0,
@@ -481,6 +487,7 @@
       "filePath": "textures/texture_007.png",
       "filterMin": "LINEAR",
       "filterMag": "LINEAR",
+      "layer": 6,
       "mappings": {
         "Map_Crate": {
           "x": 0,
@@ -500,6 +507,7 @@
       "filePath": "textures/texture_008.png",
       "filterMin": "LINEAR",
       "filterMag": "LINEAR",
+      "layer": 7,
       "mappings": {
         "Zone1DoorUndamaged": {
           "x": 0,
@@ -549,6 +557,7 @@
       "filePath": "textures/texture_009.png",
       "filterMin": "LINEAR",
       "filterMag": "LINEAR",
+      "layer": 8,
       "mappings": {
         "Ground1": {
           "x": 0,
@@ -726,7 +735,7 @@
     },
     {
       "name": "texture_010",
-      "textureName": "textures/texture_010.png",
+      "filePath": "textures/texture_010.png",
       "mipMap": false
     }
   ]

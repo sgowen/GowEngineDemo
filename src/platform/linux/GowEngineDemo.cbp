@@ -31,7 +31,9 @@
 		</Build>
 		<Compiler>
 			<Add option="-Wall" />
-			<Add option="-fexceptions" />
+			<Add option="-fno-rtti" />
+			<Add option="-fno-exceptions" />
+			<Add option="-fno-unwind-tables" />
 			<Add option="-D_GLFW_X11" />
 			<Add directory="../../../deps/GowEngine/deps/box2d/include" />
 			<Add directory="../../../deps/GowEngine/deps/box2d/src" />
@@ -169,6 +171,13 @@
 		<Unit filename="../../../deps/GowEngine/deps/glfw/src/xkb_unicode.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="../../../deps/GowEngine/src/Rectangle.hpp" />
+		<Unit filename="../../core/BasicFollowAndAttackController.cpp" />
+		<Unit filename="../../core/BasicFollowAndAttackController.hpp" />
+		<Unit filename="../../core/DestructibleController.cpp" />
+		<Unit filename="../../core/DestructibleController.hpp" />
+		<Unit filename="../../core/PlayerController.cpp" />
+		<Unit filename="../../core/PlayerController.hpp" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />

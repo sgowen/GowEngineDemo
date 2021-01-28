@@ -16,9 +16,9 @@ class MainRenderer;
 
 enum MainEngineStateState
 {
-    MESS_Default =          1 << 0,
-    MESS_InputName =        1 << 1,
-    MESS_InputIpAddress =   1 << 2
+    MESS_Default =          0,
+    MESS_InputName =        1 << 0,
+    MESS_InputIpAddress =   1 << 1
 };
 
 class MainEngineState : public EngineState
@@ -40,11 +40,12 @@ public:
     virtual void onResume();
     virtual void onPause();
     virtual void update();
-    virtual void render();
+    virtual void render(double alpha);
     
 private:
     static MainEngineState* s_instance;
     
+    Engine* _engine;
     MainRenderer* _renderer;
     std::string _serverIPAddress;
     std::string _name;

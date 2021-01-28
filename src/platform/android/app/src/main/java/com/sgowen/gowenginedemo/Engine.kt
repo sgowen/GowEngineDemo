@@ -9,18 +9,18 @@ class Engine
         init()
     }
 
-    external fun createDeviceDependentResources(assetManager: AssetManager): Void
-    external fun onWindowSizeChanged(screenWidth: Int, screenHeight: Int, cursorWidth: Int, cursorHeight: Int): Void
-    external fun releaseDeviceDependentResources(): Void
-    external fun onResume(): Void
-    external fun onPause(): Void
-    external fun update(deltaTime: Double): Void
-    external fun render(): Void
-    external fun onCursorDown(x: Float, y: Float): Void
-    external fun onCursorDragged(x: Float, y: Float): Void
-    external fun onCursorUp(x: Float, y: Float): Void
+    external fun createDeviceDependentResources(assetManager: AssetManager)
+    external fun onWindowSizeChanged(screenWidth: Int, screenHeight: Int, cursorWidth: Int, cursorHeight: Int)
+    external fun releaseDeviceDependentResources()
+    external fun onResume()
+    external fun onPause()
+    external fun update(deltaTime: Double): Int
+    external fun render()
+    external fun onCursorDown(x: Float, y: Float)
+    external fun onCursorDragged(x: Float, y: Float)
+    external fun onCursorUp(x: Float, y: Float)
 
-    private external fun init(): Void
+    private external fun init()
 
     companion object
     {

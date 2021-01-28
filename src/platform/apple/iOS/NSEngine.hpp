@@ -17,7 +17,7 @@
 - (void)releaseDeviceDependentResources;
 - (void)onResume;
 - (void)onPause;
-- (void)update:(double)deltaTime;
+- (int)update:(double)deltaTime;
 - (void)render;
 - (void)onCursorDown:(float)x :(float)y;
 - (void)onCursorDragged:(float)x :(float)y;

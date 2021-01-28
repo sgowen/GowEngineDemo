@@ -8,7 +8,7 @@
 
 #pragma once
 
-#define MAIN_CFG MainConfig::getInstance()
+#define CFG_MAIN MainConfig::getInstance()
 
 class MainConfig
 {

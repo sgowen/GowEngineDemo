@@ -54,9 +54,9 @@
     _engine->onPause();
 }
 
-- (void)update:(double)deltaTime
+- (int)update:(double)deltaTime
 {
-    _engine->update(deltaTime);
+    return _engine->update(deltaTime);
 }
 
 - (void)render

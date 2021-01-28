@@ -23,7 +23,7 @@
 
 World::World(uint32_t flags) :
 _flags(flags),
-_world(new b2World(b2Vec2(0.0f, MAIN_CFG._gravity))),
+_world(new b2World(b2Vec2(0.0f, CFG_MAIN._gravity))),
 _entityContactListener(new EntityContactListener()),
 _entityContactFilter(new EntityContactFilter()),
 _entityIDManager(static_cast<EntityIDManager*>(INSTANCE_MGR.get(_flags & WorldFlag_Studio ? INSTANCE_ENTITY_ID_MANAGER_STUDIO : _flags & WorldFlag_Server ? INSTANCE_ENTITY_ID_MANAGER_SERVER : INSTANCE_ENTITY_ID_MANAGER_CLIENT))),
@@ -61,7 +61,7 @@ void World::loadMap(uint32_t map)
     EntityLayoutDef& eld = ENTITY_LAYOUT_MAPPER.getEntityLayoutDef();
     for (EntityInstanceDef eid : eld._entities)
     {
-        EntityDef* ed = ENTITY_MAPPER.getEntityDef(eid._type);
+        EntityDef* ed = ENTITY_MAPPER.getEntityDef(eid._key);
         if (_flags & WorldFlag_Client && isDynamic(*ed))
         {
             // On the client, Dynamic Entities must arrive via network
@@ -84,23 +84,23 @@ void World::saveMapAs(uint32_t map)
     
     for (Entity* e : _layers)
     {
-        layout._entities.push_back(EntityInstanceDef(e->getID(), e->getEntityDef().type, e->getPosition().x, e->getPosition().y));
+        layout._entities.push_back(EntityInstanceDef(e->getID(), e->getEntityDef()._key, e->getPosition().x, e->getPosition().y));
     }
     
     for (Entity* e : _staticEntities)
     {
-        layout._entities.push_back(EntityInstanceDef(e->getID(), e->getEntityDef().type, e->getPosition().x, e->getPosition().y));
+        layout._entities.push_back(EntityInstanceDef(e->getID(), e->getEntityDef()._key, e->getPosition().x, e->getPosition().y));
     }
     
     for (Entity* e : _dynamicEntities)
     {
-        if (e->getEntityDef().bodyFlags & BodyFlag_Player)
+        if (e->getEntityDef()._bodyFlags & BodyFlag_Player)
         {
             // Don't save players into the map, since they are spawned dynamically by the server
             continue;
         }
         
-        layout._entities.push_back(EntityInstanceDef(e->getID(), e->getEntityDef().type, e->getPosition().x, e->getPosition().y));
+        layout._entities.push_back(EntityInstanceDef(e->getID(), e->getEntityDef()._key, e->getPosition().x, e->getPosition().y));
     }
     
     ENTITY_LAYOUT_MAPPER.saveEntityLayout(map, &layout);
@@ -223,15 +223,15 @@ b2World& World::getWorld()
 
 bool World::isLayer(Entity* e)
 {
-    return e->getEntityDef().fixtures.size() == 0 &&
-    e->getEntityDef().bodyFlags == 0;
+    return e->getEntityDef()._fixtures.size() == 0 &&
+    e->getEntityDef()._bodyFlags == 0;
 }
 
 bool World::isStatic(Entity* e)
 {
-    return e->getEntityDef().fixtures.size() > 0 &&
-    (e->getEntityDef().bodyFlags & BodyFlag_Static) &&
-    !e->getEntityDef().stateSensitive;
+    return e->getEntityDef()._fixtures.size() > 0 &&
+    (e->getEntityDef()._bodyFlags & BodyFlag_Static) &&
+    !e->getEntityDef()._stateSensitive;
 }
 
 bool World::isDynamic(Entity* e)
@@ -241,7 +241,7 @@ bool World::isDynamic(Entity* e)
 
 bool World::isDynamic(EntityDef& ed)
 {
-    return ed.fixtures.size() > 0 && (!(ed.bodyFlags & BodyFlag_Static) || ed.stateSensitive);
+    return ed._fixtures.size() > 0 && (!(ed._bodyFlags & BodyFlag_Static) || ed._stateSensitive);
 }
 
 void World::refreshPlayers()
@@ -250,7 +250,7 @@ void World::refreshPlayers()
     
     for (Entity* e : _dynamicEntities)
     {
-        if (e->getEntityDef().bodyFlags & BodyFlag_Player)
+        if (e->getEntityDef()._bodyFlags & BodyFlag_Player)
         {
             _players.push_back(e);
         }
@@ -259,7 +259,7 @@ void World::refreshPlayers()
 
 void World::removeEntity(Entity* e, std::vector<Entity*>& entities)
 {
-    assert(e);
+    assert(e != NULL);
     
     for (std::vector<Entity*>::iterator i = entities.begin(); i != entities.end(); )
     {

@@ -1,119 +1,260 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Source Files">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
-    </Filter>
-    <Filter Include="Header Files">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
-    </Filter>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
-    </Filter>
+    <ClCompile Include="..\..\..\deps\GowEngine\deps\glfw\deps\glad_gl.c" />
+    <ClCompile Include="..\..\..\deps\GowEngine\deps\glfw\src\context.c" />
+    <ClCompile Include="..\..\..\deps\GowEngine\deps\glfw\src\egl_context.c" />
+    <ClCompile Include="..\..\..\deps\GowEngine\deps\glfw\src\init.c" />
+    <ClCompile Include="..\..\..\deps\GowEngine\deps\glfw\src\input.c" />
+    <ClCompile Include="..\..\..\deps\GowEngine\deps\glfw\src\monitor.c" />
+    <ClCompile Include="..\..\..\deps\GowEngine\deps\glfw\src\osmesa_context.c" />
+    <ClCompile Include="..\..\..\deps\GowEngine\deps\glfw\src\vulkan.c" />
+    <ClCompile Include="..\..\..\deps\GowEngine\deps\glfw\src\wgl_context.c" />
+    <ClCompile Include="..\..\..\deps\GowEngine\deps\glfw\src\win32_init.c" />
+    <ClCompile Include="..\..\..\deps\GowEngine\deps\glfw\src\win32_joystick.c" />
+    <ClCompile Include="..\..\..\deps\GowEngine\deps\glfw\src\win32_monitor.c" />
+    <ClCompile Include="..\..\..\deps\GowEngine\deps\glfw\src\win32_thread.c" />
+    <ClCompile Include="..\..\..\deps\GowEngine\deps\glfw\src\win32_time.c" />
+    <ClCompile Include="..\..\..\deps\GowEngine\deps\glfw\src\win32_window.c" />
+    <ClCompile Include="..\..\..\deps\GowEngine\deps\glfw\src\window.c" />
+    <ClCompile Include="..\..\..\deps\GowEngine\deps\box2d\src\collision\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\deps\box2d\src\collision\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\deps\box2d\src\collision\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\deps\box2d\src\collision\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\deps\box2d\src\collision\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\deps\box2d\src\collision\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\deps\box2d\src\collision\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\deps\box2d\src\collision\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\deps\box2d\src\collision\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\deps\box2d\src\collision\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\deps\box2d\src\collision\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\deps\box2d\src\collision\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\deps\box2d\src\common\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\deps\box2d\src\common\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\deps\box2d\src\common\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\deps\box2d\src\common\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\deps\box2d\src\common\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\deps\box2d\src\common\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\deps\box2d\src\dynamics\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\deps\box2d\src\dynamics\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\deps\box2d\src\dynamics\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\deps\box2d\src\dynamics\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\deps\box2d\src\dynamics\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\deps\box2d\src\dynamics\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\deps\box2d\src\dynamics\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\deps\box2d\src\dynamics\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\deps\box2d\src\dynamics\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\deps\box2d\src\dynamics\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\deps\box2d\src\dynamics\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\deps\box2d\src\dynamics\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\deps\box2d\src\dynamics\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\deps\box2d\src\dynamics\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\deps\box2d\src\dynamics\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\deps\box2d\src\dynamics\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\deps\box2d\src\dynamics\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\deps\box2d\src\dynamics\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\deps\box2d\src\dynamics\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\deps\box2d\src\dynamics\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\deps\box2d\src\dynamics\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\deps\box2d\src\dynamics\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\deps\box2d\src\dynamics\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\deps\box2d\src\dynamics\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\deps\box2d\src\dynamics\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\deps\box2d\src\dynamics\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\deps\box2d\src\rope\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\deps\DirectXTK\Audio\AudioEngine.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\deps\DirectXTK\Audio\DynamicSoundEffectInstance.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\deps\DirectXTK\Audio\SoundCommon.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\deps\DirectXTK\Audio\SoundEffect.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\deps\DirectXTK\Audio\SoundEffectInstance.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\deps\DirectXTK\Audio\SoundStreamInstance.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\deps\DirectXTK\Audio\WaveBank.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\deps\DirectXTK\Audio\WaveBankReader.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\deps\DirectXTK\Audio\WAVFileReader.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\src\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\src\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\src\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\src\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\src\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\src\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\src\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\src\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\src\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\src\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\src\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\src\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\src\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\src\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\src\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\src\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\src\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\src\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\src\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\src\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\src\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\src\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\src\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\src\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\src\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\src\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\src\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\src\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\src\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\src\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\src\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\src\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\src\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\src\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\src\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\src\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\src\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\src\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\src\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\src\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\src\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\src\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\src\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\src\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\src\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\src\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\src\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\src\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\src\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\src\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\src\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\src\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\src\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\src\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\src\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\src\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\src\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\src\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\src\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\src\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\src\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\src\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\src\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\src\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\src\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\src\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\src\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\src\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\src\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\src\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\src\windows\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\src\windows\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\src\windows\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\src\windows\*.cpp" />
+    <ClCompile Include="..\..\..\deps\GowEngine\src\glfw\*.cpp" />
+    <ClCompile Include="..\..\core\*.cpp" />
+    <ClCompile Include="..\..\core\*.cpp" />
+    <ClCompile Include="..\..\core\*.cpp" />
+    <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\deps\GowEngine\deps\glfw\deps\glad_gl.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\deps\GowEngine\deps\glfw\src\context.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\deps\GowEngine\deps\glfw\src\egl_context.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\deps\GowEngine\deps\glfw\src\init.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\deps\GowEngine\deps\glfw\src\input.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\deps\GowEngine\deps\glfw\src\monitor.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\deps\GowEngine\deps\glfw\src\osmesa_context.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\deps\GowEngine\deps\glfw\src\vulkan.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\deps\GowEngine\deps\glfw\src\wgl_context.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\deps\GowEngine\deps\glfw\src\win32_init.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\deps\GowEngine\deps\glfw\src\win32_joystick.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\deps\GowEngine\deps\glfw\src\win32_monitor.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\deps\GowEngine\deps\glfw\src\win32_thread.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\deps\GowEngine\deps\glfw\src\win32_time.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\deps\GowEngine\deps\glfw\src\win32_window.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\deps\GowEngine\deps\glfw\src\window.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\deps\GowEngine\src\*.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\deps\GowEngine\src\windows\*.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\core\*.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="main.cpp">
-      <Filter>Source Files</Filter>
-    <ClCompile Include="..\..\..\deps\GowEngine\deps\DirectXTK\Audio\AudioEngine.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\deps\GowEngine\deps\DirectXTK\Audio\DynamicSoundEffectInstance.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\deps\GowEngine\deps\DirectXTK\Audio\SoundCommon.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\deps\GowEngine\deps\DirectXTK\Audio\SoundEffect.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\deps\GowEngine\deps\DirectXTK\Audio\SoundEffectInstance.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\deps\GowEngine\deps\DirectXTK\Audio\SoundStreamInstance.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\deps\GowEngine\deps\DirectXTK\Audio\WaveBank.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\deps\GowEngine\deps\DirectXTK\Audio\WaveBankReader.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\deps\GowEngine\deps\DirectXTK\Audio\WAVFileReader.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="..\..\..\deps\GowEngine\src\*.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\deps\GowEngine\src\windows\*.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\deps\GowEngine\src\glfw\*.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\core\*.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
+    <ClInclude Include="..\..\..\deps\GowEngine\src\*.hpp" />
+    <ClInclude Include="..\..\..\deps\GowEngine\src\*.hpp" />
+    <ClInclude Include="..\..\..\deps\GowEngine\src\*.hpp" />
+    <ClInclude Include="..\..\..\deps\GowEngine\src\*.hpp" />
+    <ClInclude Include="..\..\..\deps\GowEngine\src\*.hpp" />
+    <ClInclude Include="..\..\..\deps\GowEngine\src\*.hpp" />
+    <ClInclude Include="..\..\..\deps\GowEngine\src\*.hpp" />
+    <ClInclude Include="..\..\..\deps\GowEngine\src\*.hpp" />
+    <ClInclude Include="..\..\..\deps\GowEngine\src\*.hpp" />
+    <ClInclude Include="..\..\..\deps\GowEngine\src\*.hpp" />
+    <ClInclude Include="..\..\..\deps\GowEngine\src\*.hpp" />
+    <ClInclude Include="..\..\..\deps\GowEngine\src\*.hpp" />
+    <ClInclude Include="..\..\..\deps\GowEngine\src\*.hpp" />
+    <ClInclude Include="..\..\..\deps\GowEngine\src\*.hpp" />
+    <ClInclude Include="..\..\..\deps\GowEngine\src\*.hpp" />
+    <ClInclude Include="..\..\..\deps\GowEngine\src\*.hpp" />
+    <ClInclude Include="..\..\..\deps\GowEngine\src\*.hpp" />
+    <ClInclude Include="..\..\..\deps\GowEngine\src\*.hpp" />
+    <ClInclude Include="..\..\..\deps\GowEngine\src\*.hpp" />
+    <ClInclude Include="..\..\..\deps\GowEngine\src\*.hpp" />
+    <ClInclude Include="..\..\..\deps\GowEngine\src\*.hpp" />
+    <ClInclude Include="..\..\..\deps\GowEngine\src\*.hpp" />
+    <ClInclude Include="..\..\..\deps\GowEngine\src\*.hpp" />
+    <ClInclude Include="..\..\..\deps\GowEngine\src\*.hpp" />
+    <ClInclude Include="..\..\..\deps\GowEngine\src\*.hpp" />
+    <ClInclude Include="..\..\..\deps\GowEngine\src\*.hpp" />
+    <ClInclude Include="..\..\..\deps\GowEngine\src\*.hpp" />
+    <ClInclude Include="..\..\..\deps\GowEngine\src\*.hpp" />
+    <ClInclude Include="..\..\..\deps\GowEngine\src\*.hpp" />
+    <ClInclude Include="..\..\..\deps\GowEngine\src\*.hpp" />
+    <ClInclude Include="..\..\..\deps\GowEngine\src\*.hpp" />
+    <ClInclude Include="..\..\..\deps\GowEngine\src\*.hpp" />
+    <ClInclude Include="..\..\..\deps\GowEngine\src\*.hpp" />
+    <ClInclude Include="..\..\..\deps\GowEngine\src\*.hpp" />
+    <ClInclude Include="..\..\..\deps\GowEngine\src\*.hpp" />
+    <ClInclude Include="..\..\..\deps\GowEngine\src\*.hpp" />
+    <ClInclude Include="..\..\..\deps\GowEngine\src\*.hpp" />
+    <ClInclude Include="..\..\..\deps\GowEngine\src\*.hpp" />
+    <ClInclude Include="..\..\..\deps\GowEngine\src\*.hpp" />
+    <ClInclude Include="..\..\..\deps\GowEngine\src\*.hpp" />
+    <ClInclude Include="..\..\..\deps\GowEngine\src\*.hpp" />
+    <ClInclude Include="..\..\..\deps\GowEngine\src\*.hpp" />
+    <ClInclude Include="..\..\..\deps\GowEngine\src\*.hpp" />
+    <ClInclude Include="..\..\..\deps\GowEngine\src\*.hpp" />
+    <ClInclude Include="..\..\..\deps\GowEngine\src\*.hpp" />
+    <ClInclude Include="..\..\..\deps\GowEngine\src\*.hpp" />
+    <ClInclude Include="..\..\..\deps\GowEngine\src\*.hpp" />
+    <ClInclude Include="..\..\..\deps\GowEngine\src\*.hpp" />
+    <ClInclude Include="..\..\..\deps\GowEngine\src\*.hpp" />
+    <ClInclude Include="..\..\..\deps\GowEngine\src\*.hpp" />
+    <ClInclude Include="..\..\..\deps\GowEngine\src\*.hpp" />
+    <ClInclude Include="..\..\..\deps\GowEngine\src\*.hpp" />
+    <ClInclude Include="..\..\..\deps\GowEngine\src\*.hpp" />
+    <ClInclude Include="..\..\..\deps\GowEngine\src\*.hpp" />
+    <ClInclude Include="..\..\..\deps\GowEngine\src\*.hpp" />
+    <ClInclude Include="..\..\..\deps\GowEngine\src\*.hpp" />
+    <ClInclude Include="..\..\..\deps\GowEngine\src\*.hpp" />
+    <ClInclude Include="..\..\..\deps\GowEngine\src\*.hpp" />
+    <ClInclude Include="..\..\..\deps\GowEngine\src\*.hpp" />
+    <ClInclude Include="..\..\..\deps\GowEngine\src\*.hpp" />
+    <ClInclude Include="..\..\..\deps\GowEngine\src\*.hpp" />
+    <ClInclude Include="..\..\..\deps\GowEngine\src\*.hpp" />
+    <ClInclude Include="..\..\..\deps\GowEngine\src\*.hpp" />
+    <ClInclude Include="..\..\..\deps\GowEngine\src\*.hpp" />
+    <ClInclude Include="..\..\..\deps\GowEngine\src\*.hpp" />
+    <ClInclude Include="..\..\..\deps\GowEngine\src\*.hpp" />
+    <ClInclude Include="..\..\..\deps\GowEngine\src\*.hpp" />
+    <ClInclude Include="..\..\..\deps\GowEngine\src\*.hpp" />
+    <ClInclude Include="..\..\..\deps\GowEngine\src\*.hpp" />
+    <ClInclude Include="..\..\..\deps\GowEngine\src\*.hpp" />
+    <ClInclude Include="..\..\..\deps\GowEngine\src\*.hpp" />
+    <ClInclude Include="..\..\..\deps\GowEngine\src\*.hpp" />
+    <ClInclude Include="..\..\..\deps\GowEngine\src\*.hpp" />
+    <ClInclude Include="..\..\..\deps\GowEngine\src\*.hpp" />
+    <ClInclude Include="..\..\..\deps\GowEngine\src\*.hpp" />
+    <ClInclude Include="..\..\..\deps\GowEngine\src\*.hpp" />
+    <ClInclude Include="..\..\..\deps\GowEngine\src\*.hpp" />
+    <ClInclude Include="..\..\..\deps\GowEngine\src\*.hpp" />
+    <ClInclude Include="..\..\..\deps\GowEngine\src\*.hpp" />
+    <ClInclude Include="..\..\..\deps\GowEngine\src\*.hpp" />
+    <ClInclude Include="..\..\..\deps\GowEngine\src\*.hpp" />
+    <ClInclude Include="..\..\..\deps\GowEngine\src\*.hpp" />
+    <ClInclude Include="..\..\..\deps\GowEngine\src\*.hpp" />
+    <ClInclude Include="..\..\..\deps\GowEngine\src\*.hpp" />
+    <ClInclude Include="..\..\..\deps\GowEngine\src\*.hpp" />
+    <ClInclude Include="..\..\..\deps\GowEngine\src\*.hpp" />
+    <ClInclude Include="..\..\..\deps\GowEngine\src\*.hpp" />
+    <ClInclude Include="..\..\..\deps\GowEngine\src\*.hpp" />
+    <ClInclude Include="..\..\..\deps\GowEngine\src\*.hpp" />
+    <ClInclude Include="..\..\..\deps\GowEngine\src\*.hpp" />
+    <ClInclude Include="..\..\..\deps\GowEngine\src\*.hpp" />
+    <ClInclude Include="..\..\..\deps\GowEngine\src\*.hpp" />
+    <ClInclude Include="..\..\..\deps\GowEngine\src\*.hpp" />
+    <ClInclude Include="..\..\..\deps\GowEngine\src\*.hpp" />
+    <ClInclude Include="..\..\..\deps\GowEngine\src\*.hpp" />
+    <ClInclude Include="..\..\..\deps\GowEngine\src\*.hpp" />
+    <ClInclude Include="..\..\..\deps\GowEngine\src\windows\*.hpp" />
+    <ClInclude Include="..\..\..\deps\GowEngine\src\windows\*.hpp" />
+    <ClInclude Include="..\..\..\deps\GowEngine\src\windows\*.hpp" />
+    <ClInclude Include="..\..\..\deps\GowEngine\src\windows\*.hpp" />
+    <ClInclude Include="..\..\..\deps\GowEngine\src\glfw\*.hpp" />
+    <ClInclude Include="..\..\core\*.hpp" />
+    <ClInclude Include="..\..\core\*.hpp" />
+    <ClInclude Include="..\..\core\*.hpp" />
   </ItemGroup>
 </Project>
