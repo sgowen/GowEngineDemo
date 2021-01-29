@@ -141,7 +141,7 @@ void GameInputManager::update()
                     case GOW_KEY_SPACE_BAR:
                         SET_BIT(_currentState->getPlayerInputState(0)._inputState, GameInputStateFlag_MainAction, e.isPressed());
                         continue;
-#ifdef _DEBUG
+#if IS_DEBUG
                     // Add local players, debug Only
                     case GOW_KEY_TWO:
                         SET_BIT(_currentState->getPlayerInputState(1)._inputState, GameInputStateFlag_Jumping, e.isPressed());

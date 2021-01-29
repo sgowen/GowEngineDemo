@@ -196,7 +196,7 @@ void Server::handleNewClient(uint8_t playerID, std::string playerName)
         {
             if (_map == 0)
             {
-                _map = 'Z001';
+                _map = 'Z002';
                 
                 loadMap();
             }

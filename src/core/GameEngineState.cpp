@@ -213,6 +213,7 @@ void GameEngineState::createDeviceDependentResources()
     
     GowAudioEngine::create();
     GOW_AUDIO->loadFromAssets();
+    GOW_AUDIO->playMusic();
 }
 
 void GameEngineState::onWindowSizeChanged(int screenWidth, int screenHeight, int cursorWidth, int cursorHeight)

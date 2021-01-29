@@ -88,10 +88,10 @@ _framebuffers{
     Framebuffer(1024, 576)
 },
 _camBounds{
-    Rektangle(0, 0, CFG_MAIN._camWidth, CFG_MAIN._camHeight),
-    Rektangle(0, 0, CFG_MAIN._camWidth, CFG_MAIN._camHeight),
-    Rektangle(0, 0, CFG_MAIN._camWidth, CFG_MAIN._camHeight),
-    Rektangle(0, 0, CFG_MAIN._camWidth, CFG_MAIN._camHeight)
+    Rektangle(),
+    Rektangle(),
+    Rektangle(),
+    Rektangle()
 },
 _gameEngineState(NULL),
 _map(0),
