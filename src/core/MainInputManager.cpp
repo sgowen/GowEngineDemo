@@ -76,7 +76,7 @@ void MainInputManager::update()
                     }
                     else
                     {
-                        char key = charForKey(keyboardEvent->_key);
+                        char key = keyboardEvent->_key;
                         ss << StringUtil::format("%c", key);
                     }
                 }

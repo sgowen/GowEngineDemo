@@ -86,7 +86,7 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_GLFW_WIN32;WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_WINSOCKAPI_;_CRT_SECURE_NO_WARNINGS;_GLFW_WIN32;WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>../../../deps/GowEngine/deps/box2d/include;../../../deps/GowEngine/deps/box2d/src;../../../deps/GowEngine/deps/DirectXTK/Inc;../../../deps/GowEngine/deps/DirectXTK/Src;../../../deps/GowEngine/deps/glfw/include;../../../deps/GowEngine/deps/glfw/deps;../../../deps/GowEngine/src;../../../deps/GowEngine/deps/rapidjson/include;../../../deps/GowEngine/deps/stb;../../core;</AdditionalIncludeDirectories>
       <RuntimeTypeInfo>false</RuntimeTypeInfo>
@@ -108,7 +108,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_GLFW_WIN32;WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_WINSOCKAPI_;_CRT_SECURE_NO_WARNINGS;_GLFW_WIN32;WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>../../../deps/GowEngine/deps/box2d/include;../../../deps/GowEngine/deps/box2d/src;../../../deps/GowEngine/deps/DirectXTK/Inc;../../../deps/GowEngine/deps/DirectXTK/Src;../../../deps/GowEngine/deps/glfw/include;../../../deps/GowEngine/deps/glfw/deps;../../../deps/GowEngine/src;../../../deps/GowEngine/deps/rapidjson/include;../../../deps/GowEngine/deps/stb;../../core;</AdditionalIncludeDirectories>
       <RuntimeTypeInfo>false</RuntimeTypeInfo>
@@ -130,7 +130,7 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_GLFW_WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_WINSOCKAPI_;_CRT_SECURE_NO_WARNINGS;_GLFW_WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>../../../deps/GowEngine/deps/box2d/include;../../../deps/GowEngine/deps/box2d/src;../../../deps/GowEngine/deps/DirectXTK/Inc;../../../deps/GowEngine/deps/DirectXTK/Src;../../../deps/GowEngine/deps/glfw/include;../../../deps/GowEngine/deps/glfw/deps;../../../deps/GowEngine/src;../../../deps/GowEngine/deps/rapidjson/include;../../../deps/GowEngine/deps/stb;../../core;</AdditionalIncludeDirectories>
       <RuntimeTypeInfo>false</RuntimeTypeInfo>
@@ -152,7 +152,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_GLFW_WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_WINSOCKAPI_;_CRT_SECURE_NO_WARNINGS;_GLFW_WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>../../../deps/GowEngine/deps/box2d/include;../../../deps/GowEngine/deps/box2d/src;../../../deps/GowEngine/deps/DirectXTK/Inc;../../../deps/GowEngine/deps/DirectXTK/Src;../../../deps/GowEngine/deps/glfw/include;../../../deps/GowEngine/deps/glfw/deps;../../../deps/GowEngine/src;../../../deps/GowEngine/deps/rapidjson/include;../../../deps/GowEngine/deps/stb;../../core;</AdditionalIncludeDirectories>
       <RuntimeTypeInfo>false</RuntimeTypeInfo>
