@@ -260,31 +260,36 @@ void GameInputManager::update()
         }
     }
     
-//#if IS_MOBILE
+#if IS_MOBILE
     std::vector<CursorEvent*>& cursorEvents = INPUT_MGR.getCursorEvents();
     for (std::vector<CursorEvent *>::iterator i = cursorEvents.begin(); i != cursorEvents.end(); ++i)
     {
         CursorEvent& e = *(*i);
-        if (e._type == CursorEventType_DOWN
-            || e._type == CursorEventType_DRAGGED)
+        if (e._type == CursorEventType_DOWN ||
+            e._type == CursorEventType_DRAGGED)
         {
             Vector2& vec = CURSOR_CONVERTER.convert(*(*i));
-            SET_BIT(_currentState->getPlayerInputState(0)._inputState, GameInputStateFlag_MovingLeft, vec.x() < (CFG_MAIN._camWidth / 2));
-            SET_BIT(_currentState->getPlayerInputState(0)._inputState, GameInputStateFlag_MovingRight, vec.x() > (CFG_MAIN._camWidth / 2));
-            
-            if (e._type == CursorEventType_DOWN)
+            if (vec.y() > (CFG_MAIN._camHeight / 2))
             {
                 SET_BIT(_currentState->getPlayerInputState(0)._inputState, GameInputStateFlag_Jumping, true);
             }
+            else
+            {
+                SET_BIT(_currentState->getPlayerInputState(0)._inputState, GameInputStateFlag_MovingLeft, vec.x() < (CFG_MAIN._camWidth / 3));
+                SET_BIT(_currentState->getPlayerInputState(0)._inputState, GameInputStateFlag_MovingRight, vec.x() > (CFG_MAIN._camWidth / 3) && vec.x() < (CFG_MAIN._camWidth / 3 * 2));
+                SET_BIT(_currentState->getPlayerInputState(0)._inputState, GameInputStateFlag_MainAction, vec.x() > (CFG_MAIN._camWidth / 3 * 2));
+            }
+        }
+        else if (e._type == CursorEventType_UP)
+        {
+            _currentState->getPlayerInputState(0)._inputState = 0;
         }
         else
         {
             _currentState->getPlayerInputState(0)._inputState = 0;
-            
-            continue;
         }
     }
-//#endif
+#endif
     
     if (_currentState->isRequestingToAddLocalPlayer())
     {
