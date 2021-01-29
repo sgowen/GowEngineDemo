@@ -1,3 +1,0 @@
-[submodule "deps/GowEngine"]
-	path = deps/GowEngine
-	url = https://github.com/sgowen/GowEngine.git
