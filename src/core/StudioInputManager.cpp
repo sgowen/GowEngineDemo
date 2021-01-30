@@ -17,7 +17,6 @@
 #include "KeyboardLookup.hpp"
 #include "StringUtil.hpp"
 #include "MathUtil.hpp"
-#include "Constants.hpp"
 #include "StudioRenderer.hpp"
 #include "World.hpp"
 #include "EntityLayoutMapper.hpp"

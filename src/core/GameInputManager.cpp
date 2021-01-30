@@ -14,7 +14,6 @@
 
 #include "Timing.hpp"
 #include "InputManager.hpp"
-#include "Constants.hpp"
 #include "KeyboardLookup.hpp"
 #include "StringUtil.hpp"
 #include "MathUtil.hpp"

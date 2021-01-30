@@ -15,7 +15,6 @@
 #include "EntityIDManager.hpp"
 
 #include "NetworkManagerServer.hpp"
-#include "Constants.hpp"
 #include "EntityManager.hpp"
 #include "SocketServerHelper.hpp"
 #include "MachineAddress.hpp"

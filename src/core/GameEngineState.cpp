@@ -15,7 +15,6 @@
 #include "GameInputManager.hpp"
 #include "Server.hpp"
 
-#include "Constants.hpp"
 #include "CursorConverter.hpp"
 #include "StringUtil.hpp"
 #include "MathUtil.hpp"

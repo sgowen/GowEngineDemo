@@ -39,7 +39,6 @@
 #include "CircleBatcher.hpp"
 #include "PolygonBatcher.hpp"
 #include "LineBatcher.hpp"
-#include "Constants.hpp"
 #include "Circle.hpp"
 #include "Line.hpp"
 #include "Assets.hpp"

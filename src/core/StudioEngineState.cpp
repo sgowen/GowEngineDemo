@@ -15,7 +15,6 @@
 #include "StudioInputManager.hpp"
 #include "EntityManager.hpp"
 #include "Assets.hpp"
-#include "Constants.hpp"
 #include "FPSUtil.hpp"
 #include "CursorConverter.hpp"
 #include "EntityMapper.hpp"

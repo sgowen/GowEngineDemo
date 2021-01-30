@@ -13,7 +13,6 @@
 #include <string>
 #include <vector>
 
-#include "Constants.hpp"
 #include "TextureManager.hpp"
 #include "ShaderManager.hpp"
 #include "SpriteBatcher.hpp"

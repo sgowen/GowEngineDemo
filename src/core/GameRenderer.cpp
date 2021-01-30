@@ -19,7 +19,6 @@
 #include "Shader.hpp"
 #include "Color.hpp"
 #include "Assets.hpp"
-#include "Constants.hpp"
 #include "Rektangle.hpp"
 #include "Line.hpp"
 #include "SpriteBatcher.hpp"
